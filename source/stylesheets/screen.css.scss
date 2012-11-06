@@ -1,0 +1,268 @@
+//Imports
+@import "modules/grid.css.scss";
+@import "modules/normalize.css";
+//Variables
+$text-color: #594F4F;
+$bg-color: #fff;
+$link-color: #45ADA8;
+$title-color: #547980;
+$highlight-color: #9DE0AD;
+
+//Grid
+header{
+  margin-right: auto;
+  margin-left: auto;
+}
+h1{
+  width: 100%;
+  display: block;
+  font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
+  text-shadow: 0px 2px 1px $highlight-color;
+  filter: dropshadow(color=$highlight-color, offx=0, offy=1);
+  margin-top: 0px;
+  padding-top: 10px;
+}
+body{
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  background: $text-color url('/images/background-wood.jpg');
+  color: $text-color;
+}
+#wrapper{
+  padding: 10px;
+  background-color: $bg-color;
+  border-right: 4px $highlight-color solid;
+  border-left: 4px $highlight-color solid;
+}
+.line{
+  border-bottom: 1px solid $title-color;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px 7px 10px;
+}
+.line-half{
+  border-bottom: 1px solid $title-color;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  margin: 0 10px 7px 10px;
+}
+h2{
+  color: $title-color;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+h1, h3, h4, h5, h6 {
+  color: $title-color;
+  margin-top: 10px;
+}
+header, #intro{
+  text-align: center;
+}
+a, a:visited{
+  color: $link-color;
+}
+a:hover{
+  color: $highlight-color;
+}
+ul{
+  list-style: none;
+}
+p{
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+hr{
+  border-bottom: 1px solid $title-color;
+  border-top:none;
+  margin-bottom: 1em;
+}
+h2{
+  margin-bottom: 6px / $em;
+}
+.right-col, .left-col{
+  margin-bottom: 10px;
+}
+/*
+  Mobile layout
+  240–479 px
+  Zoomed out below 320 px
+*/
+@media screen and (min-width: 15em) {
+
+  //Typography
+  p{
+    font-size: ($font-size - 4) / $em;
+  }
+  h1{
+    font-size: ($font-size +11) / $em;
+    margin-bottom: 4px / $em;
+    padding-top: 8px / $em;
+  }
+  h2{
+    font-size: ($font-size - 3) / $em;
+  }
+  //Grid
+  header{
+    @include width(4);
+  }
+  #container, #wrapper{
+    margin: 0 auto;
+    @include width(4);
+  }
+
+  #intro{
+    @include width(4);
+  }
+  .left-col{
+    @include width(4);
+  }
+  .right-col{
+    @include width(4);
+  }
+}
+/*
+  Wide mobile layout
+  480-767 px
+  Zoomed in above 480 px
+*/
+@media screen and (min-width: 30em) {
+
+  //Typography
+  p{
+    font-size: ($font-size - 2) / $em;
+  }
+  h1{
+    font-size: ($font-size + 20) / $em;
+  }
+  h2{
+    font-size: ($font-size - 1) / $em;
+  }
+  //Grid
+  header{
+    @include width(6);
+  }
+  #container, #wrapper{
+    @include width(6);
+  }
+  #intro{
+    @include width(6);
+  }
+  .left-col{
+    @include width(6);
+  }
+  .right-col{
+    @include width(6);
+  }
+}
+/*
+  Tablet layout
+  600-911 px
+  Zoomed in above 600 px
+*/
+@media screen and (min-width: 37.5em) {
+
+  //Typography
+  p {
+    font-size: ($font-size - 2) / $em;
+  }
+  h1{
+    font-size: ($font-size + 30) / $em;
+  }
+  h2{
+    font-size: ($font-size - 1) / $em;
+  }
+  //Grid
+  header{
+    @include width(8);
+  }
+  #container, #wrapper{
+    @include width(8);
+  }
+  #intro{
+    @include width(8);
+  }
+  .left-col{
+    @include width(4);
+    float: left;
+    margin-right: $gutter;
+  }
+  .right-col{
+    @include width(4);
+    float: right;
+  }
+}
+/*
+  Widescreen layout
+  912-1887 px
+  Zoomed in above 912 px
+*/
+@media screen and (min-width: 57em) {
+  //Typography
+  p {
+    font-size: ($font-size) / $em;
+  }
+  h1{
+    font-size: ($font-size + 50) / $em;
+  }
+  h2{
+    font-size: ($font-size + 10) / $em;
+  }
+  //Grid
+  header{
+    @include width(12);
+  }
+  #container, #wrapper{
+    @include width(12);
+  }
+  #intro{
+    @include width(12);
+  }
+  .left-col{
+    @include width(6);
+    float: left;
+    margin-right: $gutter;
+  }
+  .right-col{
+    @include width(6);
+    float: right;
+  }
+  .full-width{
+    @include width(12);
+    clear: both;
+  }
+  .third-col{
+    @include width(4);
+    margin-right: $gutter;
+    float: left;
+  }
+  .third-col.last{
+    margin-right: 0px;
+  }
+  .sixth-col{
+    @include width(2);
+    margin-right: $gutter;
+    float: left;
+  }
+  .sixth-col.last{
+    margin-right: 0px;
+  }
+}
+
+// Custom rules
+header img{
+  float: left;
+  padding-top: 35px;
+  padding-left: 15px;
+}
+#sponsors div{
+  margin-bottom: 15px;
+  text-align: center;
+}
+#alumni div{
+  text-align: center;
+}
+#alumni p, #alumni h3{
+  text-align: left;
+}
