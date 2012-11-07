@@ -33,27 +33,7 @@ body{
   border-right: 4px $highlight-color solid;
   border-left: 4px $highlight-color solid;
 }
-.line{
-  border-bottom: 1px solid $title-color;
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  margin: 0 10px 7px 10px;
-}
-.line-half{
-  border-bottom: 1px solid $title-color;
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  margin: 0 10px 7px 10px;
-}
-h2{
-  color: $title-color;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  display: inline-block;
-}
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: $title-color;
   margin-top: 10px;
 }
@@ -67,7 +47,7 @@ a:hover{
   color: $highlight-color;
 }
 ul{
-  list-style: none;
+  margin-left: 15px;
 }
 p{
   line-height: 1.5em;
@@ -95,31 +75,32 @@ h2{
   p{
     font-size: ($font-size - 4) / $em;
   }
+  li a{
+    font-size: ($font-size - 4) / $em;
+  }
   h1{
     font-size: ($font-size +11) / $em;
     margin-bottom: 4px / $em;
     padding-top: 8px / $em;
   }
   h2{
-    font-size: ($font-size - 3) / $em;
+    font-size: ($font-size + 1) / $em;
+  }
+  h3{
+    font-size: ($font-size - 2) / $em;
   }
   //Grid
-  header{
-    @include width(4);
-  }
   #container, #wrapper{
     margin: 0 auto;
     @include width(4);
   }
 
-  #intro{
+  .left-col, .right-col, .full-width, .third-col{
     @include width(4);
   }
-  .left-col{
-    @include width(4);
-  }
-  .right-col{
-    @include width(4);
+  .sixth-col{
+    @include width(2);
+    float: left;
   }
 }
 /*
@@ -140,20 +121,12 @@ h2{
     font-size: ($font-size - 1) / $em;
   }
   //Grid
-  header{
+  #container, #wrapper, .left-col, .right-col, .full-width, .third-col{
     @include width(6);
   }
-  #container, #wrapper{
-    @include width(6);
-  }
-  #intro{
-    @include width(6);
-  }
-  .left-col{
-    @include width(6);
-  }
-  .right-col{
-    @include width(6);
+  .sixth-col{
+    @include width(2);
+    float: left;
   }
 }
 /*
@@ -174,13 +147,7 @@ h2{
     font-size: ($font-size - 1) / $em;
   }
   //Grid
-  header{
-    @include width(8);
-  }
   #container, #wrapper{
-    @include width(8);
-  }
-  #intro{
     @include width(8);
   }
   .left-col{
@@ -191,6 +158,25 @@ h2{
   .right-col{
     @include width(4);
     float: right;
+  }
+  .full-width{
+    @include width(8);
+    clear: both;
+  }
+  .third-col{
+    @include width(4);
+    float: left;
+  }
+  .third-col.first {
+    margin-right: $gutter;
+  }
+  .third-col.last{
+    @include width(8);
+    clear: both;
+  }
+  .sixth-col{
+    @include width(2);
+    float: left;
   }
 }
 /*
@@ -210,13 +196,7 @@ h2{
     font-size: ($font-size + 10) / $em;
   }
   //Grid
-  header{
-    @include width(12);
-  }
   #container, #wrapper{
-    @include width(12);
-  }
-  #intro{
     @include width(12);
   }
   .left-col{
@@ -248,14 +228,36 @@ h2{
   .sixth-col.last{
     margin-right: 0px;
   }
+
+  .line{
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px 7px 10px;
+  }
+  .line-half{
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    margin: 0 10px 7px 10px;
+  }
+  h2{
+    color: $title-color;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+
+  header img{
+    float: left;
+    padding-top: 35px;
+    padding-left: 15px;
+  }
 }
 
 // Custom rules
-header img{
-  float: left;
-  padding-top: 35px;
-  padding-left: 15px;
-}
 #sponsors div{
   margin-bottom: 15px;
   text-align: center;
