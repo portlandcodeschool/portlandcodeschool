@@ -19,7 +19,25 @@
 
   <body lang="en">
     <div id="wrapper">
-      <%= yield %>
+      <header class="full-width">
+        <a href="/">
+          <%= image_tag('/images/t-rex.jpg', :alt => 'middleman logo', :width => 250) %>
+          <h1>Portland Code School</h1>
+        </a>
+      </header>
+      <div id="menu" class="full-width">
+        <ul>
+          <li><a href="">The Program</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Applying</a></li>
+          <li><a href="">Hiring a Student</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div id="container">
+        <%= yield %>
+      </div>
       <div class="clearfix"></div>
     </div>
   </body>

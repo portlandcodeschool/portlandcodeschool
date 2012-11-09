@@ -1,90 +1,65 @@
-<% @title = "Frameless Middleman" %>
-<header class="full-width">
-  <%= image_tag('/images/t-rex.jpg', :alt => 'middleman logo', :width => 250) %>
-  <h1>Portland Code School</h1>
-</header>
-<div id="container">
-  <div id="intro" class="full-width">
-    <center>
-      <span class="line"></span>
-      <h2>The Program</h2>
-      <span class="line"></span>
-    </center>
-    <p>Hiring skilled developers is hard enough, hiring someone who's awesome at other things as well is near impossible. But it's easier to train tech skills than it is to train awesomeness. We find awesome people, surround them with mentors, and watch as they blossom into some of the best developers we've ever seen.</p>
+<% @title = "Portland Code School" %>
+<div id="intro" class="full-width">
+  <h2 class="line">The Program</h2>
+  <p>Hiring skilled developers is hard enough, hiring someone who's awesome at other things as well is near impossible. But it's easier to train tech skills than it is to train awesomeness. We find awesome people, surround them with mentors, and watch as they blossom into some of the best developers we've ever seen.</p>
+</div>
+<div class="left-col">
+  <h2 class="line-half">Students</h2>
+  <p>Whether you're coming from another career or already know some programming, you probably have a lot of questions about this program. Lets see if we can sort those out so that we can get you on your way to a career full of creativity and joy.</p><p>If you have questions that aren't answered below you can always email us directly or call us: <a href="/contact">Contact Us</a></p>
+  <ul>
+    <li><a href="/program.html">Program Description</a></li>
+    <li><a href="">Application Process</a></li>
+    <li><a href="">Alumni</a></li>
+    <li><a href="">FAQ</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Technologies We Use</a></li>
+  </ul>
+</div>
+<div class="right-col">
+  <h2 class="line-half">Employers</h2>
+  <p>Finding awesome people that work hard and get along with clients is incredibly hard. We've done most of that work for you, now all you need to do is find the one that matches your company style and ambitions and show them where to sit.</p><p>If you have questions that aren't answered below you can always email us directly or call us: <a href="/contact">Contact Us</a></p>
+  <ul>
+    <li><a href="">About Us</a></li>
+    <li><a href="">Hiring a Student</a></li>
+    <li><a href="">Lend a Hand</a></li>
+    <li><a href="">FAQ</a></li>
+  </ul>
+</div>
+<div class="full-width" id="alumni">
+  <h2 class="line-half">Program Alumni</h2>
+  <div class="third-col first">
+    <img src="http://placekitten.com/g/200/300">
+    <h3>Matthew Danskey</h3>
+    <p><%= lorem.paragraph %></p>
   </div>
-  <div class="left-col">
-    <center>
-      <span class="line-half"></span>
-      <h2>Students</h2>
-      <span class="line-half"></span>
-    </center>
-    <p>Whether you're coming from another career or already know some programming, you probably have a lot of questions about this program. Lets see if we can sort those out so that we can get you on your way to a career full of creativity and joy.</p><p>If you have questions that aren't answered below you can always email us directly or call us: <a href="/contact">Contact Us</a></p>
-    <ul>
-      <li><a href="">Program Description</a></li>
-      <li><a href="">Application Process</a></li>
-      <li><a href="">Alumni</a></li>
-      <li><a href="">FAQ</a></li>
-      <li><a href="">Blog</a></li>
-    </ul>
+  <div class="third-col">
+    <img src="http://placekitten.com/g/200/300">
+    <h3>Pete Kinnecom</h3>
+    <p><%= lorem.paragraph %></p>
   </div>
-  <div class="right-col">
-    <center>
-      <span class="line-half"></span>
-      <h2>Employers</h2>
-      <span class="line-half"></span>
-    </center>
-    <p>Finding awesome people that work hard and get along with clients is incredibly hard. We've done most of that work for you, now all you need to do is find the one that matches your company style and ambitions and show them where to sit.</p><p>If you have questions that aren't answered below you can always email us directly or call us: <a href="/contact">Contact Us</a></p>
-    <ul>
-      <li><a href="">About Us</a></li>
-      <li><a href="">Hiring a Student</a></li>
-      <li><a href="">Lend a Hand</a></li>
-      <li><a href="">FAQ</a></li>
-    </ul>
+  <div class="third-col last">
+    <img src="http://placekitten.com/g/200/300">
+    <h3>Rachel Sakry</h3>
+    <p><%= lorem.paragraph %></p>
   </div>
-  <div class="full-width" id="alumni">
-    <center>
-      <span class="line"></span>
-      <h2>Program Alumni</h2>
-      <span class="line"></span>
-    </center>
-    <div class="third-col first">
-      <img src="http://placekitten.com/g/200/300">
-      <h3>Matthew Danskey</h3>
-      <p><%= lorem.paragraph %></p>
-    </div>
-    <div class="third-col">
-      <img src="http://placekitten.com/g/200/300">
-      <h3>Pete Kinnecom</h3>
-      <p><%= lorem.paragraph %></p>
-    </div>
-    <div class="third-col last">
-      <img src="http://placekitten.com/g/200/300">
-      <h3>Rachel Sakry</h3>
-      <p><%= lorem.paragraph %></p>
-    </div>
+</div>
+<div class="full-width" id="sponsors">
+  <h2 class="line">Sponsors</h2>
+  <div class="image-row">
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col last"><img src="http://placekitten.com/g/100/100"></div>
   </div>
-  <div class="full-width" id="sponsors">
-    <center>
-      <span class="line"></span>
-      <h2>Sponsors</h2>
-      <span class="line"></span>
-    </center>
-    <div class="image-row">
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col last"><img src="http://placekitten.com/g/100/100"></div>
-    </div>
-    <div class="image-row">
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
-      <div class="sixth-col last"><img src="http://placekitten.com/g/100/100"></div>
-    </div>
-    <div class="clearfix"></div>
+  <div class="image-row">
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col"><img src="http://placekitten.com/g/100/100"></div>
+    <div class="sixth-col last"><img src="http://placekitten.com/g/100/100"></div>
   </div>
+  <div class="clearfix"></div>
 </div>

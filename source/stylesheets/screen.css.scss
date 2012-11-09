@@ -22,20 +22,44 @@ h1{
   margin-top: 0px;
   padding-top: 10px;
 }
+header a{
+  text-decoration: none;
+}
 body{
+  height: 100%;
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   background: $text-color url('/images/background-wood.jpg');
   color: $text-color;
 }
+#menu ul{
+  text-align: center;
+  width: 100%;
+}
+#menu li{
+  margin-right: 12px;
+  list-style: none;
+  display: inline-block;
+}
+#menu li a{
+  color: $title-color;
+  font-weight: lighter;
+  font-size: ($font-size + 8) / $em;
+  text-decoration: none;
+}
+#menu li a:hover{
+  color: $text-color;
+}
 #wrapper{
-  padding: 10px;
+  padding: 24px;
   background-color: $bg-color;
   border-right: 4px $highlight-color solid;
   border-left: 4px $highlight-color solid;
+  min-height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
   color: $title-color;
   margin-top: 10px;
+  font-weight: lighter;
 }
 header, #intro{
   text-align: center;
@@ -64,12 +88,22 @@ h2{
 .right-col, .left-col{
   margin-bottom: 10px;
 }
+.right{
+  float: right;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.left{
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
 /*
   Mobile layout
   240–479 px
   Zoomed out below 320 px
 */
-@media screen and (min-width: 15em) {
+@media screen and (min-width: 15em) and (max-width: 30em) {
 
   //Typography
   p{
@@ -95,7 +129,7 @@ h2{
     @include width(4);
   }
 
-  .left-col, .right-col, .full-width, .third-col{
+  .left-col, .right-col, .full-width, .third-col, .readable-width{
     @include width(4);
   }
   .sixth-col{
@@ -109,13 +143,33 @@ h2{
   #sponsors h2{
     margin-left: -30px;
   }
+  #intro{
+    text-align: left;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 280px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+    padding-left: 25px;
+  }
+  #menu ul li{
+    text-align: left;
+    width: 100%;
+    margin-top: 5px;
+  }
+  #menu ul li a{
+    font-size: ($font-size - 1) / $em;
+  }
 }
 /*
   Wide mobile layout
   480-767 px
   Zoomed in above 480 px
 */
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 30em) and (max-width: 37.5em) {
 
   //Typography
   p{
@@ -128,12 +182,18 @@ h2{
     font-size: ($font-size - 1) / $em;
   }
   //Grid
-  #container, #wrapper, .left-col, .right-col, .full-width, .third-col{
+  #container, #wrapper {
+    margin: 0 auto;
+  }
+  #container, #wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
     @include width(6);
   }
   .sixth-col{
     @include width(2);
     float: left;
+  }
+  #intro{
+    text-align: left;
   }
   #sponsors {
     @include width(6);
@@ -141,6 +201,17 @@ h2{
   }
   #sponsors h2{
     margin-left: -50px;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 445px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+  }
+  #menu ul li a{
+    font-size: ($font-size - 1) / $em;
   }
 }
 /*
@@ -158,11 +229,12 @@ h2{
     font-size: ($font-size + 30) / $em;
   }
   h2{
-    font-size: ($font-size - 1) / $em;
+    font-size: ($font-size + 3) / $em;
   }
   //Grid
   #container, #wrapper{
     @include width(8);
+    margin: 0 auto;
   }
   .left-col{
     @include width(4);
@@ -173,7 +245,7 @@ h2{
     @include width(4);
     float: right;
   }
-  .full-width{
+  .full-width, .readable-width{
     @include width(8);
     clear: both;
   }
@@ -199,6 +271,17 @@ h2{
   #sponsors h2{
     margin-left: -70px;
   }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 585px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+  }
+  #menu ul li a{
+    font-size: ($font-size + 3) / $em;
+  }
 }
 /*
   Widescreen layout
@@ -219,6 +302,7 @@ h2{
   //Grid
   #container, #wrapper{
     @include width(12);
+    margin: 0 auto;
   }
   .left-col{
     @include width(6);
@@ -232,6 +316,11 @@ h2{
   .full-width{
     @include width(12);
     clear: both;
+  }
+  .readable-width{
+    @include width(8);
+    clear: both;
+    margin: 0 auto;
   }
   .third-col{
     @include width(4);
@@ -250,31 +339,45 @@ h2{
     margin-right: 0px;
   }
 
-  .line{
-    border-bottom: 1px solid $title-color;
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    margin: 0 10px 7px 10px;
-  }
-  .line-half{
-    border-bottom: 1px solid $title-color;
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    margin: 0 10px 7px 10px;
-  }
   h2{
     color: $title-color;
     margin-top: 30px;
     margin-bottom: 15px;
     display: inline-block;
   }
+  .line, .line-half{
+    width: 100%;
+    text-align: center;
+  }
+  .line:after, .line:before{
+    content: "";
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px 7px 10px;
+  }
+  .line-half:after, .line-half:before{
+    content: "";
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    margin: 0 10px 7px 10px;
+  }
 
   header img{
     float: left;
     padding-top: 35px;
     padding-left: 15px;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 875px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 60px;
   }
 }
 
