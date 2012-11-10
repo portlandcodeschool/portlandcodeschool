@@ -12,6 +12,7 @@ $highlight-color: #9DE0AD;
 header{
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 header a{
   text-decoration: none;
@@ -189,6 +190,14 @@ a.button{
   #menu ul li a{
     font-size: ($font-size - 1) / $em;
   }
+  #burnside-logo{
+    margin-left: 30px;
+    margin-top: 15px;
+    z-index: 1;
+  }
+  #alumni{
+    display: none;
+  }
 }
 /*
   Wide mobile layout
@@ -308,6 +317,12 @@ a.button{
   #menu ul li a{
     font-size: ($font-size + 3) / $em;
   }
+  #burnside-logo{
+    position: absolute;
+    left: 300px;
+    top: 35px;
+    z-index: 1;
+  }
 }
 /*
   Widescreen layout
@@ -413,6 +428,15 @@ a.button{
   }
   #intro p{
     padding: 0 100px;
+  }
+  #burnside-logo{
+    position: absolute;
+    left: -100px;
+    top: 153px;
+    z-index: 1;
+  }
+  #burnside-logo img{
+    width: 150px;
   }
 }
 
