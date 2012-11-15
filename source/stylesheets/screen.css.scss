@@ -2,11 +2,19 @@
 @import "modules/grid.css.scss";
 @import "modules/normalize.css";
 //Variables
+$main-bg-color: #FFF;
+// I demand a pancake
+// $text-color: #594F4F;
+// $bg-color: #E5FCC2;
+// $link-color: #45ADA8;
+// $title-color: #547980;
+// $highlight-color: #9DE0AD;
+// I love you
 $text-color: #594F4F;
-$bg-color: #fff;
-$link-color: #45ADA8;
-$title-color: #547980;
-$highlight-color: #9DE0AD;
+$bg-color: #009989;
+$link-color: #EDB92E;
+$title-color: #CE1836;
+$highlight-color: #EDB92E;
 
 //Grid
 header{
@@ -20,7 +28,7 @@ header a{
 body{
   height: 100%;
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  background: $text-color url('/images/background-wood.jpg');
+  background: $bg-color;
   color: $text-color;
 }
 #menu ul{
@@ -34,16 +42,17 @@ body{
 }
 #menu li a{
   color: $title-color;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: ($font-size + 8) / $em;
   text-decoration: none;
+  text-shadow: 0px 1px 0px lighten($title-color, 50%);
 }
 #menu li a:hover{
   color: $text-color;
 }
 #wrapper{
   padding: 24px;
-  background-color: $bg-color;
+  background-color: $main-bg-color;
   border-right: 4px $highlight-color solid;
   border-left: 4px $highlight-color solid;
   min-height: 100%;
@@ -190,11 +199,6 @@ a.button{
   #menu ul li a{
     font-size: ($font-size - 1) / $em;
   }
-  #burnside-logo{
-    margin-left: 30px;
-    margin-top: 15px;
-    z-index: 1;
-  }
   #alumni{
     display: none;
   }
@@ -317,12 +321,6 @@ a.button{
   #menu ul li a{
     font-size: ($font-size + 3) / $em;
   }
-  #burnside-logo{
-    position: absolute;
-    left: 300px;
-    top: 35px;
-    z-index: 1;
-  }
 }
 /*
   Widescreen layout
@@ -428,15 +426,6 @@ a.button{
   }
   #intro p{
     padding: 0 100px;
-  }
-  #burnside-logo{
-    position: absolute;
-    left: -100px;
-    top: 153px;
-    z-index: 1;
-  }
-  #burnside-logo img{
-    width: 150px;
   }
 }
 
