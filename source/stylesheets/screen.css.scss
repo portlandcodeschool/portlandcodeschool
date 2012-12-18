@@ -361,6 +361,14 @@ a.button{
     @include width(8);
     clear: both;
     margin: 0 auto;
+
+    ul {
+      margin-top: -9px;
+    }
+    li {
+      margin-left: 5px;
+      padding-bottom: 4px;
+    }
   }
   .third-col{
     @include width(4);
