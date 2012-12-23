@@ -393,7 +393,7 @@ a.button{
     margin-bottom: 15px;
     display: inline-block;
   }
-  .line, .line-half{
+  .line, .line-half, .line-quarter{
     width: 100%;
     text-align: center;
   }
@@ -411,6 +411,14 @@ a.button{
     position: relative;
     display: inline-block;
     width: 100px;
+    margin: 0 10px 7px 10px;
+  }
+  .line-quarter:after, .line-quarter:before {
+    content: "";
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 75px;
     margin: 0 10px 7px 10px;
   }
 
