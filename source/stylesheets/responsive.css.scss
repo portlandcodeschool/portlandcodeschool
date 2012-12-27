@@ -1,0 +1,315 @@
+@import "modules/colors.css.scss";
+
+/*
+  Mobile layout
+  240–479 px
+  Zoomed out below 320 px
+*/
+@media screen and (min-width: 15em) and (max-width: 30em) {
+
+  //Typography
+  p{
+    font-size: ($font-size - 4) / $em;
+  }
+  li a{
+    font-size: ($font-size - 4) / $em;
+  }
+  h1{
+    font-size: ($font-size +11) / $em;
+    margin-bottom: 4px / $em;
+    padding-top: 8px / $em;
+  }
+  h2{
+    font-size: ($font-size + 1) / $em;
+  }
+  h3{
+    font-size: ($font-size - 2) / $em;
+  }
+  //Grid
+  #container, #wrapper{
+    margin: 0 auto;
+    @include width(4);
+  }
+
+  .left-col, .right-col, .full-width, .third-col, .readable-width{
+    @include width(4);
+  }
+  .sixth-col{
+    @include width(2);
+    float: left;
+  }
+  #sponsors {
+    @include width(4);
+    margin-left: 15px;
+  }
+  #sponsors h2{
+    margin-left: -30px;
+  }
+  #intro{
+    text-align: left;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 280px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+    padding-left: 25px;
+  }
+  #menu ul li{
+    text-align: left;
+    width: 100%;
+    margin-top: 5px;
+  }
+  #menu ul li a{
+    font-size: ($font-size - 1) / $em;
+  }
+  #alumni{
+    display: none;
+  }
+}
+/*
+  Wide mobile layout
+  480-767 px
+  Zoomed in above 480 px
+*/
+@media screen and (min-width: 30em) and (max-width: 37.5em) {
+
+  //Typography
+  p{
+    font-size: ($font-size - 2) / $em;
+  }
+  h1{
+    font-size: ($font-size + 20) / $em;
+  }
+  h2{
+    font-size: ($font-size - 1) / $em;
+  }
+  //Grid
+  #container, #wrapper {
+    margin: 0 auto;
+  }
+  #container, #wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
+    @include width(6);
+  }
+  .sixth-col{
+    @include width(2);
+    float: left;
+  }
+  #intro{
+    text-align: left;
+  }
+  #sponsors {
+    @include width(6);
+    margin-left: 25px;
+  }
+  #sponsors h2{
+    margin-left: -50px;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 445px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+  }
+  #menu ul li a{
+    font-size: ($font-size - 1) / $em;
+  }
+}
+/*
+  Tablet layout
+  600-911 px
+  Zoomed in above 600 px
+*/
+@media screen and (min-width: 37.5em) and (max-width: 57em) {
+
+  //Typography
+  p {
+    font-size: ($font-size - 2) / $em;
+  }
+  h1{
+    font-size: ($font-size + 30) / $em;
+  }
+  h2{
+    font-size: ($font-size + 3) / $em;
+  }
+  //Grid
+  #container, #wrapper{
+    @include width(8);
+    margin: 0 auto;
+  }
+  .left-col{
+    @include width(4);
+    float: left;
+    margin-right: $gutter;
+  }
+  .right-col{
+    @include width(4);
+    float: right;
+  }
+  .full-width, .readable-width{
+    @include width(8);
+    clear: both;
+  }
+  .third-col{
+    @include width(4);
+    float: left;
+  }
+  .third-col.first {
+    margin-right: $gutter;
+  }
+  .third-col.last{
+    @include width(8);
+    clear: both;
+  }
+  .sixth-col{
+    @include width(2);
+    float: left;
+  }
+  #sponsors {
+    @include width(8);
+    margin-left: 35px;
+  }
+  #sponsors h2{
+    margin-left: -70px;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 585px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+  }
+  #menu ul li a{
+    font-size: ($font-size + 3) / $em;
+  }
+}
+/*
+  Widescreen layout
+  912-1887 px
+  Zoomed in above 912 px
+*/
+@media screen and (min-width: 57em) {
+  //Typography
+  p {
+    font-size: ($font-size) / $em;
+  }
+  h1{
+    font-size: ($font-size + 50) / $em;
+  }
+  h2{
+    font-size: ($font-size + 10) / $em;
+  }
+  //Grid
+  #container, #wrapper{
+    @include width(12);
+    margin: 0 auto;
+  }
+  .left-col{
+    @include width(6);
+    float: left;
+    margin-right: $gutter;
+  }
+  .right-col{
+    @include width(6);
+    float: right;
+  }
+  .full-width{
+    @include width(12);
+    clear: both;
+  }
+  aside{
+    @include width(4);
+    float: left;
+  }
+  .readable-width{
+    float: left;
+    @include width(8);
+
+    ul {
+      margin-top: -9px;
+    }
+    li {
+      margin-left: 5px;
+      padding-bottom: 4px;
+    }
+  }
+  .third-col{
+    @include width(4);
+    margin-right: $gutter;
+    float: left;
+  }
+  .third-col.last{
+    margin-right: 0px;
+  }
+  .sixth-col{
+    @include width(2);
+    margin-right: $gutter;
+    float: left;
+  }
+  .sixth-col.last{
+    margin-right: 0px;
+  }
+
+  h2{
+    color: $title-color;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  .line, .line-half, .line-quarter{
+    width: 100%;
+    text-align: center;
+  }
+  .line:after, .line:before{
+    content: "";
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px 7px 10px;
+  }
+  .line-half:after, .line-half:before{
+    content: "";
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    margin: 0 10px 7px 10px;
+  }
+  .line-quarter:after, .line-quarter:before {
+    content: "";
+    border-bottom: 1px solid $title-color;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    margin: 0 10px 7px 10px;
+  }
+
+  header img{
+    float: left;
+    padding-top: 8px;
+    padding-left: 15px;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 875px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 40px;
+  }
+  #menu ul li.first{
+    margin-left: 24px;
+  }
+  #menu ul li{
+    margin-right: 36px;
+  }
+  #intro p{
+    padding: 0 100px;
+  }
+}
