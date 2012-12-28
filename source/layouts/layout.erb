@@ -11,7 +11,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&text=PortlandCodeSchool' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheets/modules/font-awesome.css"/>
     <link rel="stylesheet" href="stylesheets/screen.css"/>
     <link rel="stylesheet" href="stylesheets/responsive.css"/>
     <link rel="stylesheet" href="stylesheets/pages.css"/>
@@ -57,28 +56,31 @@
       </div>
       <div id="container">
         <aside>
-          <!-- Begin MailChimp Signup Form -->
+          <div id="social-row">
+            <a href="http://www.facebook.com/PortlandCodeSchool"><img src="/images/icons/facebook.png"></a>
+            <a href="http://www.twitter.com/pdxcodeschool"><img src="/images/icons/twitter.png"></a>
+            <a href="mailto:info@portlandcodeschool.com"><img src="/images/icons/mail.png"></a>
+          </div>
           <div id="mc_embed_signup">
-          <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <h2>Subscribe to our mailing list</h2>
-          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-          </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <h2>Mailing List</h2>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </label>
+              </div>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </form>
           </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </form>
+          <div id="contact">
+            <h2>Contact Us</h2>
+            <p><a href="mailto:info@portlandcodeschool.com">info@portlandcodeschool.com</a></p>
+            <p>503-367-6226</p>
           </div>
-
-          <!--End mc_embed_signup-->
         </aside>
         <%= yield %>
+        <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
     </div>
   </body>
 

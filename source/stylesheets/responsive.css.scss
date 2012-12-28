@@ -227,7 +227,7 @@
     float: left;
   }
   .readable-width{
-    float: left;
+    margin-left: $cols4;
     @include width(8);
 
     ul {

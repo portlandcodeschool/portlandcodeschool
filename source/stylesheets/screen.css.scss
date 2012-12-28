@@ -18,6 +18,25 @@ body{
   background: $bg-color;
   color: $text-color;
 }
+aside{
+  text-align: center;
+  margin-left: -12px;
+  padding-top: 30px;
+
+  h2{
+    margin-top: 0;
+  }
+  &> div{
+    padding: 8px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: lighten($bg-color, 10%);
+    margin-bottom: 10px;
+  }
+  .mc-field-group{
+    margin-bottom: 15px;
+  }
+}
 #menu ul{
   text-align: center;
   width: 100%;
