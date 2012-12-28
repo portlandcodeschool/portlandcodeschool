@@ -21,17 +21,9 @@ body{
 aside{
   text-align: center;
   margin-left: -12px;
-  padding-top: 30px;
 
-  h2{
-    margin-top: 0;
-  }
   &> div{
-    padding: 8px;
-    border-radius: 12px;
-    padding: 20px;
-    background-color: lighten($bg-color, 10%);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .mc-field-group{
     margin-bottom: 15px;
