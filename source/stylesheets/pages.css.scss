@@ -3,3 +3,29 @@
 #homepage aside{
   display: none;
 }
+
+#faq .question {
+  margin-bottom: 30px;
+  p:nth-child(1) {
+    margin-bottom: .5em;
+  }
+}
+
+#hire .engagement {
+  img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 2.5em;
+    height: 100px;
+  }
+  p {
+    margin-left: 120px;
+  }
+}
+
+#apply {
+  table {
+    margin-top: 20px;
+  }
+}

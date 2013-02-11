@@ -258,36 +258,10 @@
   h2{
     color: $title-color;
     margin-top: 30px;
-    margin-bottom: 15px;
-    display: inline-block;
-  }
-  .line, .line-half, .line-quarter{
-    width: 100%;
+    margin-bottom: 30px;
+    display: block;
     text-align: center;
-  }
-  .line:after, .line:before{
-    content: "";
-    border-bottom: 1px solid $title-color;
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    margin: 0 10px 7px 10px;
-  }
-  .line-half:after, .line-half:before{
-    content: "";
-    border-bottom: 1px solid $title-color;
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    margin: 0 10px 7px 10px;
-  }
-  .line-quarter:after, .line-quarter:before {
-    content: "";
-    border-bottom: 1px solid $title-color;
-    position: relative;
-    display: inline-block;
-    width: 75px;
-    margin: 0 10px 7px 10px;
+    border-bottom: 1px dashed $title-color;
   }
 
   header img{
