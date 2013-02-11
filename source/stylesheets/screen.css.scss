@@ -21,6 +21,7 @@ body{
   line-height: 1.5;
 }
 #menu ul{
+  margin-left: 15px;
   text-align: center;
   width: 100%;
 }
@@ -72,12 +73,6 @@ header img{
 }
 footer {
   text-align: center;
-  .third-col.alpha {
-    margin-left: 12px;
-  }
-  .third-col.omega {
-    margin-right: 0px;
-  }
   input {
     width: 73%;
     margin-bottom: 8px;
@@ -101,7 +96,7 @@ a:hover{
   color: $highlight-color;
 }
 ul{
-  margin-left: 15px;
+  margin-left: $gutter;
   margin-bottom: 1em;
   ul {
     margin-bottom: 0;

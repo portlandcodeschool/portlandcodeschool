@@ -70,14 +70,17 @@
 @media screen and (min-width: 30em) and (max-width: 37.5em) {
 
   //Typography
-  p{
+  p,ul,td,th{
     font-size: ($font-size - 2) / $em;
+  }
+  ul ul{
+    font-size: 1em;
   }
   h1{
     font-size: ($font-size + 20) / $em;
   }
   h2{
-    font-size: ($font-size - 1) / $em;
+    font-size: 1.2em;
   }
   //Grid
   #container, #wrapper {
@@ -87,8 +90,7 @@
     @include width(6);
   }
   .sixth-col{
-    @include width(2);
-    float: left;
+    @include width(6);
   }
   #intro{
     text-align: left;
@@ -102,7 +104,18 @@
     margin-top: 15px;
   }
   #menu ul li a{
-    font-size: ($font-size - 1) / $em;
+    font-size: 1.5em;
+    text-shadow: none;
+  }
+  #homepage #sponsors {
+    h2 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .image-row {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }
 /*
@@ -113,8 +126,11 @@
 @media screen and (min-width: 37.5em) and (max-width: 57em) {
 
   //Typography
-  p {
+  p,ul,td,th{
     font-size: ($font-size - 2) / $em;
+  }
+  ul ul{
+    font-size: 1em;
   }
   h1{
     font-size: ($font-size + 30) / $em;
@@ -165,6 +181,15 @@
   }
   #menu ul li a{
     font-size: ($font-size + 3) / $em;
+  }
+  #homepage #sponsors {
+    h2 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .image-row {
+      margin-left: $cols4;
+    }
   }
 }
 /*
@@ -265,5 +290,19 @@
     padding: 8px;
     margin-top: 40px;
     border-top: 5px solid $highlight-color;
+  }
+
+  #homepage #sponsors {
+    padding-top: 10px;
+    .third-col {
+      margin: 0 auto;
+      text-align: center;
+    }
+    #crowdcompass a {
+      top: -9px;
+    }
+    #elemental a {
+      top: -3px;
+    }
   }
 }
