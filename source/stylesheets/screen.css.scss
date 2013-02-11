@@ -103,6 +103,9 @@ a:hover{
 ul{
   margin-left: 15px;
   margin-bottom: 1em;
+  ul {
+    margin-bottom: 0;
+  }
 }
 li{
   margin-top: 0.25em;
@@ -172,6 +175,7 @@ table {
   border: none;
 }
 .image-row a{
+  position: relative;
   line-height: 100px;
   img{
     vertical-align: middle;
@@ -179,18 +183,3 @@ table {
 }
 
 @import "responsive.css.scss";
-
-// Custom rules
-#sponsors div{
-  margin-bottom: 15px;
-  text-align: center;
-}
-#alumni div{
-  text-align: center;
-}
-#alumni p, #alumni h3{
-  text-align: left;
-}
-#contact{
-  color: $link-color;
-}

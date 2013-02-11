@@ -38,13 +38,6 @@
     @include width(2);
     float: left;
   }
-  #sponsors {
-    @include width(4);
-    margin-left: 15px;
-  }
-  #sponsors h2{
-    margin-left: -30px;
-  }
   #intro{
     text-align: left;
   }
@@ -99,13 +92,6 @@
   }
   #intro{
     text-align: left;
-  }
-  #sponsors {
-    @include width(6);
-    margin-left: 25px;
-  }
-  #sponsors h2{
-    margin-left: -50px;
   }
   #menu ul{
     position: relative;
@@ -169,13 +155,6 @@
     @include width(2);
     float: left;
   }
-  #sponsors {
-    @include width(8);
-    margin-left: 35px;
-  }
-  #sponsors h2{
-    margin-left: -70px;
-  }
   #menu ul{
     position: relative;
     left: -40px;
@@ -222,17 +201,10 @@
     @include width(12);
     clear: both;
   }
-  aside{
-    @include width(4);
-    float: left;
-  }
   .readable-width{
-    margin-left: $cols2;
-    @include width(8);
+    margin-left: (1 * ($column + $gutter)) / $em;
+    @include width(10);
 
-    ul {
-      margin-top: -9px;
-    }
     li {
       margin-left: 5px;
       padding-bottom: 4px;

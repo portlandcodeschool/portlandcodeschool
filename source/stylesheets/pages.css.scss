@@ -2,6 +2,16 @@
 
 #homepage #sponsors {
   padding-top: 10px;
+  .third-col {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #crowdcompass a {
+    top: -9px;
+  }
+  #elemental a {
+    top: -3px;
+  }
 }
 
 #faq .question {
@@ -27,5 +37,8 @@
 #apply {
   table {
     margin-top: 20px;
+  }
+  h3 {
+    margin-bottom: 16px;
   }
 }
