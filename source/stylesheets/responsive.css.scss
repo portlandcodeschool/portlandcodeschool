@@ -227,7 +227,7 @@
     float: left;
   }
   .readable-width{
-    margin-left: $cols4;
+    margin-left: $cols2;
     @include width(8);
 
     ul {
@@ -285,5 +285,13 @@
   }
   #intro p{
     padding: 0 100px;
+  }
+  footer {
+    position: relative;
+    left: -24px;
+    width: 875px;
+    padding: 8px;
+    margin-top: 40px;
+    border-top: 5px solid $highlight-color;
   }
 }

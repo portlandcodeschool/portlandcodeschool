@@ -42,44 +42,46 @@
           <h1>Portland Code School</h1>
         </a>
       </header>
-      <div id="menu" class="full-width">
+      <div id="menu" class="full-width clearfix">
         <ul>
           <li class="first"><a href="/">Home</a></li>
-          <li><a href="/about.html">About Us</a></li>
           <li><a href="/program.html">Program</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/hire.html">Employers</a></li>
           <li class="last"><a href="/apply.html">Apply Now</a></li>
         </ul>
-        <div class="clearfix"></div>
       </div>
-      <div id="container">
-        <aside>
-          <div id="mc_embed_signup">
-            <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <h2>Mailing List</h2>
-              <div class="mc-field-group">
-                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </label>
-              </div>
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </form>
-          </div>
-          <div id="contact">
-            <h2>Contact Us</h2>
-            <p><a href="mailto:info@portlandcodeschool.com">info@portlandcodeschool.com</a></p>
-            <p>503-367-6226</p>
-          </div>
+      <div id="container" class="clearfix">
+        <%= yield %>
+      </div>
+      <footer class="clearfix">
+        <div id="mc_embed_signup" class="alpha third-col">
+          <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <h2>Mailing List</h2>
+            <div class="mc-field-group">
+              <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+            </div>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </form>
+        </div>
+        <div id="bottom-links" class="third-col">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">Questions</a></li>
+            <li><a href="http://www.github.com/portlandcodeschool">Github</a></li>
+          </ul>
+        </div>
+        <div id="contact" class="third-col omega">
+          <h2>Contact Us</h2>
+          <p><a href="mailto:info@portlandcodeschool.com">info@portlandcodeschool.com</a></p>
+          <p>503-367-6226</p>
           <div id="social-row">
             <a href="http://www.facebook.com/PortlandCodeSchool"><img src="/images/icons/facebook.png"></a>
             <a href="http://www.twitter.com/pdxcodeschool"><img src="/images/icons/twitter.png"></a>
             <a href="mailto:info@portlandcodeschool.com"><img src="/images/icons/mail.png"></a>
           </div>
-        </aside>
-        <%= yield %>
-        <div class="clearfix"></div>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 

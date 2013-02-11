@@ -20,17 +20,6 @@ body{
   color: $text-color;
   line-height: 1.5;
 }
-aside{
-  text-align: center;
-  margin-left: -12px;
-
-  &> div{
-    margin-bottom: 30px;
-  }
-  .mc-field-group{
-    margin-bottom: 15px;
-  }
-}
 #menu ul{
   text-align: center;
   width: 100%;
@@ -80,6 +69,30 @@ header p, #intro p{
 }
 header img{
   margin-right: 16px;
+}
+footer {
+  text-align: center;
+  .third-col.alpha {
+    margin-left: 12px;
+  }
+  .third-col.omega {
+    margin-right: 0px;
+  }
+  input {
+    width: 73%;
+    margin-bottom: 8px;
+  }
+  .button {
+    width: 75%;
+  }
+  h2 {
+    border-bottom: 0;
+    margin-bottom: 16px;
+  }
+  #bottom-links ul {
+    list-style: none;
+    margin: 0;
+  }
 }
 a, a:visited{
   color: $link-color;
