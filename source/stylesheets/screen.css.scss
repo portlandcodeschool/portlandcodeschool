@@ -16,7 +16,7 @@ header a{
 body{
   height: 100%;
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  background: $bg-color;
+  background: #CCC url('http://blogimg.goo.ne.jp/user_image/76/65/6df340dc0d29f83b49dc3d083c2673b4.jpg') repeat;
   color: $text-color;
   line-height: 1.5;
 }
@@ -41,14 +41,9 @@ body{
   color: $text-color;
 }
 #wrapper{
-  padding: 24px;
   background-color: $main-bg-color;
-  border-right: 4px $highlight-color solid;
-  border-left: 4px $highlight-color solid;
-  min-height: 100%;
-  box-shadow: 0px -5px 10px #666;
 }
-h1{
+/* h1{
   width: 100%;
   display: block;
   font-family: 'Press Start 2P', Helvetica, Arial, sans-serif;
@@ -57,7 +52,7 @@ h1{
   margin-top: 0px;
   padding-top: 10px;
   color: $title-color;
-}
+} */
 h2, h3, h4, h5, h6 {
   font-family: 'ABeeZee', sans-serif;
   color: $title-color;
@@ -68,9 +63,72 @@ header p, #intro p{
   text-align: justify;
   font-style: italic;
 }
-header img{
-  margin-right: 16px;
+
+#page-wrapper {
+  box-shadow: 0 3px 10px black;
+  padding: 10px 0 20px;
 }
+
+/* HEADER STYLES ============= */
+
+header {
+  position: relative;
+  width: 85%;
+}
+#school-logo {
+  width: 20%;
+}
+header .nav {
+  position: absolute;
+  right: -25px;
+  top: 15px;
+}
+.spacer {
+  height: 130px;
+}
+
+/* INDEX PAGE STYLES ============= */
+
+.home-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.home-img img {
+  opacity: .6;
+}
+.text-overlay {
+  position: absolute;
+  left: 12%;
+  top: 0;
+}
+.text-overlay p {
+  font-size: 3em;
+  color: #444;
+  text-shadow: 1px 1px white;
+}
+.home-img button {
+  position: absolute;
+  right: 45%;
+  top: 175px;
+}
+
+/* PROGRAM PAGE STYLES ============= */
+
+.rails-logo, .js-logo {
+  width: 85%;
+  margin: 20px auto;
+  text-align: center;
+}
+.rails-logo img, .js-logo img {
+  width: 15%;
+  margin-bottom: 10px;
+}
+
+
+/* FOOTER STYLES ============= */
+
 footer {
   text-align: center;
   input {

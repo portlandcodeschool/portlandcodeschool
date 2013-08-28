@@ -11,10 +11,11 @@
 
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&text=PortlandCodeSchool' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
     <link rel="stylesheet" href="stylesheets/screen.css"/>
     <link rel="stylesheet" href="stylesheets/responsive.css"/>
     <link rel="stylesheet" href="stylesheets/pages.css"/>
-    <%= javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js','/javascripts/core.js', '/javascripts/respond.min.js') %>
+    <%= javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js','/javascripts/core.js', '/javascripts/respond.min.js', '/javascripts/bootstrap.min.js') %>
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <link rel="stylesheet" href="stylesheets/modules/font-awesome-ie7.css"/>
@@ -30,59 +31,71 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
+
   </head>
 
   <body lang="en" id="<%= @body_id %>">
-    <div id="wrapper">
-      <header class="full-width">
-        <a href="/">
-          <%= image_tag('/images/t-rex.jpg', :alt => 'middleman logo', :width => 250) %>
-          <h1>Portland Code School</h1>
-        </a>
-      </header>
-      <div id="menu" class="full-width clearfix">
+    <div id="container">
+      <!-- <div id="menu" class="">
         <ul>
           <li class="first"><a href="/">Home</a></li>
           <li><a href="/program.html">Program</a></li>
           <li><a href="/hire.html">Employers</a></li>
           <li class="last"><a href="/apply.html">Apply Now</a></li>
         </ul>
-      </div>
-      <div id="container" class="clearfix">
-        <%= yield %>
-      </div>
-      <footer class="clearfix">
-        <div id="mc_embed_signup" class="alpha third-col">
-          <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <h2>Mailing List</h2>
-            <div class="mc-field-group">
-              <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-            </div>
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </form>
-        </div>
-        <div id="bottom-links" class="third-col">
-          <h2>Links</h2>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">Questions</a></li>
-            <li><a href="http://www.github.com/portlandcodeschool">Github</a></li>
-          </ul>
-        </div>
-        <div id="contact" class="third-col omega">
-          <h2>Contact Us</h2>
-          <p><a href="mailto:info@portlandcodeschool.com">ckelly@portlandcodeschool.com</a></p>
-          <p>503-880-3551</p>
-          <div id="social-row">
-            <a href="http://www.facebook.com/PortlandCodeSchool"><img src="/images/icons/facebook.png"></a>
-            <a href="http://www.twitter.com/pdxcodeschool"><img src="/images/icons/twitter.png"></a>
-            <a href="mailto:info@portlandcodeschool.com"><img src="/images/icons/mail.png"></a>
+      </div> -->
+      <div id="wrapper">
+
+        <header>
+          <div id="school-logo">
+            <a href="/"><%= image_tag('/images/PCS-logo.png') %></a>
           </div>
+          <ul id="menu" class="nav nav-pills clearfix">
+            <li><a href="/program.html">Classes</a></li>
+            <li><a href="/hire.html">Employers</a></li>
+            <li><a href="/about.html">Contact</a></li>
+          </ul>
+        </header>
+        <div class="spacer"></div>
+
+        <div id="page-wrapper">
+          <%= yield %>
         </div>
-      </footer>
-    </div>
+
+
+        <footer class="clearfix">
+          <div id="mc_embed_signup" class="alpha third-col">
+            <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <h2>Mailing List</h2>
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
+              </div>
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </form>
+          </div>
+          <div id="bottom-links" class="third-col">
+            <h2>Links</h2>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="http://www.github.com/portlandcodeschool">Github</a></li>
+            </ul>
+          </div>
+          <div id="contact" class="third-col omega">
+            <h2>Contact Us</h2>
+            <p><a href="mailto:ckelly@portlandcodeschool.com">ckelly@portlandcodeschool.com</a></p>
+            <p>503-880-3551</p>
+            <div id="social-row">
+              <a href="http://www.facebook.com/PortlandCodeSchool"><img src="/images/icons/facebook.png"></a>
+              <a href="http://www.twitter.com/pdxcodeschool"><img src="/images/icons/twitter.png"></a>
+              <a href="mailto:info@portlandcodeschool.com"><img src="/images/icons/mail.png"></a>
+            </div>
+          </div>
+        </footer>
+      </div> <!-- end wrapper -->
+    </div> <!-- end container -->
+
   </body>
 
 </html>
