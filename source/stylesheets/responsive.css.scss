@@ -233,6 +233,8 @@
   .readable-width{
     margin-left: (1 * ($column + $gutter)) / $em;
     @include width(10);
+    padding: 25px 0;
+
 
     li {
       margin-left: 5px;
@@ -258,7 +260,6 @@
 
   h2{
     color: $title-color;
-    margin-top: 30px;
     margin-bottom: 30px;
     display: block;
     text-align: center;
@@ -290,7 +291,7 @@
     position: relative;
     left: -24px;
     width: 875px;
-    padding: 8px;
+    padding: 30px 12px 30px 17px;
   }
 
   #homepage #sponsors {
