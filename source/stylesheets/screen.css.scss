@@ -82,6 +82,11 @@ header .nav {
   right: -25px;
   top: 15px;
 }
+header button {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
 .spacer {
   height: 130px;
 }
@@ -124,8 +129,17 @@ header .nav {
   text-align: center;
 }
 .rails-logo img, .js-logo img {
-  width: 15%;
   margin-bottom: 10px;
+  padding-top: 10px
+}
+.rails-logo img {
+  width: 10%;
+}
+.js-logo img {
+  width: 15%;
+}
+.rails-logo h3, .js-logo h3 {
+  color: #649DFF;
 }
 
 /* CONTACT PAGE STYLES ============= */
