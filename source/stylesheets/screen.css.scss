@@ -82,13 +82,18 @@ header .nav {
   right: -25px;
   top: 15px;
 }
-header button {
+header .btn-apply {
   position: absolute;
   right: 0;
   top: 80px;
 }
 .spacer {
   height: 130px;
+}
+header .btn-event {
+  position: absolute;
+  top: 80px;
+  right: 10%;
 }
 
 /* INDEX PAGE STYLES ============= */
