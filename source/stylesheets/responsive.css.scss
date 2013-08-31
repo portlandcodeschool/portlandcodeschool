@@ -142,6 +142,27 @@
   h2{
     font-size: ($font-size + 3) / $em;
   }
+  .next-event-button {
+    position: relative;
+    top: -100px;
+    left: -18%;
+  }
+  .now-accepting {
+    bottom: 165px;
+  }
+  .now-accepting h3 {
+    font-size: 1.2em;
+    padding-left: 30px;
+  }
+  .text-overlay p {
+    font-size: 2em;
+  }
+  .spacer {
+    height: 30px;
+  }
+  .home-img {
+    height: 365px;
+  }
   //Grid
   #container, #wrapper{
     @include width(8);
@@ -194,6 +215,10 @@
     .image-row {
       margin-left: $cols4;
     }
+  }
+  .readable-width {
+    width: 95%;
+    padding: 20px;
   }
 }
 /*
