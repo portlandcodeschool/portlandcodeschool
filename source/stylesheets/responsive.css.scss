@@ -1,227 +1,6 @@
 @import "modules/colors.css.scss";
 
 /*
-  Mobile layout
-  240–479 px
-  Zoomed out below 320 px
-*/
-@media screen and (min-width: 15em) and (max-width: 30em) {
-
-  //Typography
-  p,ul,td,th{
-    font-size: ($font-size - 1) / $em;
-  }
-  ul ul{
-    font-size: 1em;
-  }
-  li a{
-    font-size: ($font-size - 1) / $em;
-  }
-  h1{
-    font-size: ($font-size +11) / $em;
-    margin-bottom: 4px / $em;
-    padding-top: 8px / $em;
-  }
-  h2{
-    font-size: ($font-size + 3) / $em;
-  }
-  h3{
-    font-size: ($font-size + 1) / $em;
-  }
-  //Grid
-  #container, #wrapper{
-    margin: 0 auto;
-    @include width(4);
-  }
-
-  .left-col, .right-col, .full-width, .third-col, .readable-width{
-    @include width(4);
-  }
-  .sixth-col{
-    @include width(2);
-    float: left;
-  }
-  #intro{
-    text-align: left;
-  }
-  #menu ul{
-    position: relative;
-    left: -40px;
-    width: 280px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
-    padding-left: 25px;
-  }
-  #menu ul li{
-    text-align: left;
-    width: 100%;
-    margin-top: 5px;
-  }
-  #menu ul li a{
-    font-size: ($font-size + 5) / $em;
-    text-shadow: none;
-  }
-  #alumni{
-    display: none;
-  }
-}
-/*
-  Wide mobile layout
-  480-767 px
-  Zoomed in above 480 px
-*/
-@media screen and (min-width: 30em) and (max-width: 37.5em) {
-
-  //Typography
-  p,ul,td,th{
-    font-size: ($font-size - 2) / $em;
-  }
-  ul ul{
-    font-size: 1em;
-  }
-  h1{
-    font-size: ($font-size + 20) / $em;
-  }
-  h2{
-    font-size: 1.2em;
-  }
-  //Grid
-  #container, #wrapper {
-    margin: 0 auto;
-  }
-  #container, #wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
-    @include width(6);
-  }
-  .sixth-col{
-    @include width(6);
-  }
-  #intro{
-    text-align: left;
-  }
-  #menu ul{
-    position: relative;
-    left: -40px;
-    width: 445px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
-  }
-  #menu ul li a{
-    font-size: 1.5em;
-    text-shadow: none;
-  }
-  #homepage #sponsors {
-    h2 {
-      text-align: center;
-      padding-top: 20px;
-    }
-    .image-row {
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
-}
-/*
-  Tablet layout
-  600-911 px
-  Zoomed in above 600 px
-*/
-@media screen and (min-width: 37.5em) and (max-width: 57em) {
-
-  //Typography
-  p,ul,td,th{
-    font-size: ($font-size - 2) / $em;
-  }
-  ul ul{
-    font-size: 1em;
-  }
-  h1{
-    font-size: ($font-size + 30) / $em;
-  }
-  h2{
-    font-size: ($font-size + 3) / $em;
-  }
-  .next-event-button {
-    position: relative;
-    top: -100px;
-    left: -18%;
-  }
-  .now-accepting {
-    bottom: 165px;
-  }
-  .now-accepting h3 {
-    font-size: 1.2em;
-    padding-left: 30px;
-  }
-  .text-overlay p {
-    font-size: 2em;
-  }
-  .spacer {
-    height: 30px;
-  }
-  .home-img {
-    height: 365px;
-  }
-  //Grid
-  #container, #wrapper{
-    @include width(8);
-    margin: 0 auto;
-  }
-  .left-col{
-    @include width(4);
-    float: left;
-    margin-right: $gutter;
-  }
-  .right-col{
-    @include width(4);
-    float: right;
-  }
-  .full-width, .readable-width{
-    @include width(8);
-    clear: both;
-  }
-  .third-col{
-    @include width(4);
-    float: left;
-  }
-  .third-col.first {
-    margin-right: $gutter;
-  }
-  .third-col.last{
-    @include width(8);
-    clear: both;
-  }
-  .sixth-col{
-    @include width(2);
-    float: left;
-  }
-  #menu ul{
-    position: relative;
-    left: -40px;
-    width: 585px;
-    background-color: $highlight-color;
-    padding: 8px;
-    margin-top: 15px;
-  }
-  #menu ul li a{
-    font-size: ($font-size + 3) / $em;
-  }
-  #homepage #sponsors {
-    h2 {
-      text-align: center;
-      padding-top: 20px;
-    }
-    .image-row {
-      margin-left: $cols4;
-    }
-  }
-  .readable-width {
-    width: 95%;
-    padding: 20px;
-  }
-}
-/*
   Widescreen layout
   912-1887 px
   Zoomed in above 912 px
@@ -332,4 +111,280 @@
       top: -3px;
     }
   }
+}
+/*
+  Tablet layout
+  600-911 px
+  Zoomed in above 600 px
+*/
+@media screen and (min-width: 37.5em) and (max-width: 57em) {
+
+  //Typography
+  p,ul,td,th{
+    font-size: ($font-size - 2) / $em;
+  }
+  ul ul{
+    font-size: 1em;
+  }
+  h1{
+    font-size: ($font-size + 30) / $em;
+  }
+  h2{
+    font-size: ($font-size + 3) / $em;
+  }
+  .next-event-button {
+    position: relative;
+    top: -100px;
+    left: -18%;
+  }
+  .now-accepting {
+    bottom: 165px;
+  }
+  .now-accepting h3 {
+    font-size: 1.2em;
+    padding-left: 30px;
+  }
+  .text-overlay p {
+    font-size: 2em;
+  }
+  .spacer {
+    height: 30px;
+  }
+  .home-img {
+    height: 365px;
+  }
+  //Grid
+  #container, #wrapper{
+    @include width(8);
+    margin: 0 auto;
+  }
+  .left-col{
+    @include width(4);
+    float: left;
+    margin-right: $gutter;
+  }
+  .right-col{
+    @include width(4);
+    float: right;
+  }
+  .full-width, .readable-width{
+    @include width(8);
+    clear: both;
+  }
+  .third-col{
+    @include width(4);
+    float: left;
+  }
+  .third-col.first {
+    margin-right: $gutter;
+  }
+  .third-col.last{
+    @include width(8);
+    clear: both;
+  }
+  .sixth-col{
+    @include width(2);
+    float: left;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 585px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+  }
+  #menu ul li a{
+    font-size: ($font-size + 3) / $em;
+  }
+  #homepage #sponsors {
+    h2 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .image-row {
+      margin-left: $cols4;
+    }
+  }
+  .readable-width {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/*
+  Wide mobile layout
+  480-767 px
+  Zoomed in above 480 px
+*/
+@media screen and (min-width: 30em) and (max-width: 37.5em) {
+
+  //Typography
+  p,ul,td,th{
+    font-size: ($font-size - 2) / $em;
+  }
+  ul ul{
+    font-size: 1em;
+  }
+  h1{
+    font-size: ($font-size + 20) / $em;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+  .now-accepting h3 {
+    font-size: 1em;
+    padding-left: 30px;
+  }
+  .text-overlay p {
+    font-size: 1.5em;
+  }
+  //Grid
+  #container, #wrapper {
+    margin: 0 auto;
+  }
+  #container, #wrapper, .left-col, .right-col, .full-width, .third-col, .readable-width{
+    @include width(6);
+  }
+  .sixth-col{
+    @include width(6);
+  }
+  #intro{
+    text-align: left;
+  }
+  #menu li a{
+    font-size: 1em;
+    text-shadow: none;
+  }
+  #homepage #sponsors {
+    h2 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .image-row {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .now-accepting {
+    bottom: 260px;
+    left: 13%;
+  }
+  .spacer {
+    height: 30px;
+  }
+  header .btn-event {
+    top: 60px;
+    right: 13%;
+  }
+  header .btn-apply {
+    right: -5%;
+    top: 60px;
+  }
+  .home-img {
+    height: 270px;
+  }
+  .home-img button {
+    top: 110px;
+    right: 39%;
+  }
+}
+
+/*
+  Mobile layout
+  240–479 px
+  Zoomed out below 320 px
+*/
+@media screen and (min-width: 15em) and (max-width: 30em) {
+
+  //Typography
+  p,ul,td,th{
+    font-size: ($font-size - 1) / $em;
+  }
+  ul ul{
+    font-size: 1em;
+  }
+  li a{
+    font-size: ($font-size - 1) / $em;
+  }
+  h1{
+    font-size: ($font-size +11) / $em;
+    margin-bottom: 4px / $em;
+    padding-top: 8px / $em;
+  }
+  h2{
+    font-size: ($font-size + 3) / $em;
+  }
+  h3{
+    font-size: ($font-size + 1) / $em;
+  }
+  .now-accepting h3 {
+    font-size: 1em;
+    padding-left: 30px;
+    line-height: 1em;
+    text-align: center;
+  }
+  .text-overlay p {
+    font-size: 1em;
+  }
+  //Grid
+  #container, #wrapper{
+    margin: 0 auto;
+    @include width(4);
+  }
+
+  .left-col, .right-col, .full-width, .third-col, .readable-width{
+    @include width(4);
+  }
+  .sixth-col{
+    @include width(2);
+    float: left;
+  }
+  #intro{
+    text-align: left;
+  }
+  #menu ul{
+    position: relative;
+    left: -40px;
+    width: 280px;
+    background-color: $highlight-color;
+    padding: 8px;
+    margin-top: 15px;
+    padding-left: 25px;
+  }
+  #menu ul li{
+    text-align: left;
+    width: 100%;
+    margin-top: 5px;
+  }
+  #menu li a {
+    font-size: 0.7em;
+    text-shadow: none;
+    padding: 0;
+  }
+  #alumni {
+    display: none;
+  }
+  .now-accepting {
+    bottom: 345px;
+    left: 13%;
+    width: 67%;
+  }
+  .spacer {
+    height: 50px;
+  }
+  header .btn-event {
+    top: 55px;
+    right: 5%;
+    width: 90%;
+  }
+  header .btn-apply {
+    display: none;
+  }
+  .home-img {
+    height: 175px;
+  }
+  .home-img button {
+    top: 60px;
+    right: 34%;  }
 }
