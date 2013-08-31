@@ -138,7 +138,9 @@
     left: -18%;
   }
   .now-accepting {
-    bottom: 165px;
+    bottom: 50px;
+    width: 100%;
+    left: 6%;
   }
   .now-accepting h3 {
     font-size: 1.2em;
@@ -234,7 +236,6 @@
   }
   .now-accepting h3 {
     font-size: 1em;
-    padding-left: 30px;
   }
   .text-overlay p {
     font-size: 1.5em;
@@ -267,8 +268,9 @@
     }
   }
   .now-accepting {
-    bottom: 260px;
-    left: 13%;
+    bottom: 45px;
+    left: 6%;
+    width: 100%;
   }
   .spacer {
     height: 30px;
@@ -287,6 +289,10 @@
   .home-img button {
     top: 110px;
     right: 39%;
+  }
+  .readable-width {
+    width: 95%;
+    padding: 20px;
   }
 }
 
@@ -320,7 +326,6 @@
   }
   .now-accepting h3 {
     font-size: 1em;
-    padding-left: 30px;
     line-height: 1em;
     text-align: center;
   }
@@ -366,9 +371,9 @@
     display: none;
   }
   .now-accepting {
-    bottom: 345px;
-    left: 13%;
-    width: 67%;
+    bottom: 50px;
+    left: 5%;
+    width: 90%;
   }
   .spacer {
     height: 50px;
@@ -382,9 +387,30 @@
     display: none;
   }
   .home-img {
-    height: 175px;
+    height: 170px;
   }
   .home-img button {
     top: 60px;
     right: 34%;  }
+  .rails-logo img, .js-logo img {
+    width: 25%;
+  }
+  .readable-width {
+    width: 88%;
+    padding: 20px;
+  }
+  #contact-box {
+    padding: 20px 0;
+  }
+  #contact-box a {
+    font-size: .9em;
+  }
+  #contact-box h1 {
+    font-size: 1em;
+  }
+  #contact-box h1 + h3 {
+    padding: 0;
+  }
+
+
 }
