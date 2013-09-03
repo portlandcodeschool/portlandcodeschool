@@ -153,7 +153,11 @@
     height: 30px;
   }
   .home-img {
-    height: 365px;
+    height: 200px;
+  }
+  .home-img button {
+    top: 86px;
+    right: 41%;
   }
   //Grid
   #container, #wrapper{
@@ -284,10 +288,10 @@
     top: 60px;
   }
   .home-img {
-    height: 270px;
+    height: 150px;
   }
   .home-img button {
-    top: 110px;
+    top: 56px;
     right: 39%;
   }
   .readable-width {
@@ -371,7 +375,7 @@
     display: none;
   }
   .now-accepting {
-    bottom: 50px;
+    bottom: 43px;
     left: 5%;
     width: 90%;
   }
@@ -387,11 +391,17 @@
     display: none;
   }
   .home-img {
-    height: 170px;
+    height: 97px;
   }
   .home-img button {
-    top: 60px;
-    right: 34%;  }
+    display: none;
+  }
+  .home-img .btn-mobile {
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: 40%;
+  }
   .rails-logo img, .js-logo img {
     width: 25%;
   }
