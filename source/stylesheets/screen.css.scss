@@ -16,7 +16,6 @@ header a{
 body{
   height: 100%;
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  background: #CCC url('http://blogimg.goo.ne.jp/user_image/76/65/6df340dc0d29f83b49dc3d083c2673b4.jpg') repeat;
   color: $text-color;
   line-height: 1.5;
 }
@@ -65,7 +64,7 @@ header p, #intro p{
 }
 
 #page-wrapper {
-  box-shadow: 0 3px 10px black;
+  /* box-shadow: 0 3px 10px black; */
 }
 
 /* HEADER STYLES ============= */
