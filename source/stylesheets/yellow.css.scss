@@ -1,0 +1,327 @@
+@import "bourbon/bourbon";
+@import "modules/colors.css.scss";
+
+
+@font-face {
+  font-family: OpenSans-Light;
+  src: url("../OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: OpenSans-CondLight;
+  src: url("../OpenSans-CondLight.ttf");
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("../OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: OpenSans-CondBold;
+  src: url("../OpenSans-CondBold.ttf");
+}
+
+/* HEADER styles ============= */
+
+header, header ul li, header ul li a {
+  height: 60px;
+}
+header {
+  width: 70%;
+  background: $elvish;
+  margin: 50px auto;
+  position: absolute;
+  top: -35px;
+  left: 15%;
+  height: 60px;
+}
+header ul {
+  margin: 0 10% 0 57%;
+  font-family: OpenSans-CondLight;
+}
+header ul li {
+  display: block;
+  list-style: none;
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+header ul li a {
+  display: block;
+  line-height: 60px;
+}
+header ul li a:link {
+  color: $yum-sauce;
+}
+header ul li a:visited {
+  color: $yum-sauce;
+}
+header ul li a:hover {
+  background: $yum-sauce;
+  color: $elvish;
+  text-decoration: none;
+}
+header ul li a:active {
+  color: white;
+}
+.search-box {
+  position: relative;
+}
+header .search-box img {
+  display: block;
+  position: absolute;
+}
+.pcs-logo {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+}
+.mag-box {
+  right: 0;
+}
+.mag {
+  right: 21px;
+  top: 24px;
+}
+
+/* BOTTOM LINKS styles ============= */
+
+.footerBox {
+  height: 150px;
+  position: relative;
+  top: 175px;
+  background: $elvish;
+  text-align: center;
+}
+.yellowBoxes ul,
+.contact-bottom-box ul,
+.applyBottomLinks ul {
+  width: 200px;
+  position: absolute;
+  top: 540px;
+  left: 185px;
+  z-index: 10;
+}
+.yellowBoxes ul li,
+.contact-bottom-box ul li,
+.applyBottomLinks ul li {
+  float: left;
+  list-style: none;
+}
+.stupidBullet {
+  padding: 0 10px;
+}
+.yellowBoxes ul li,
+.yellowBoxes a,
+.contact-bottom-box ul li,
+.contact-bottom-box ul a,
+.applyBottomLinks ul li,
+.applyBottomLinks ul a {
+  color: $yum-sauce;
+  font-family: OpenSans-CondLight;
+}
+
+/* HOMEPAGE styles ============= */
+
+.text-a, .apply-box {
+  position: absolute;
+  height: 50px;
+  left: 15%;
+  font-family: OpenSans-CondLight;
+}
+.text-a {
+  color: $elvish;
+  background: $yum-sauce;
+  font-size: 2em;
+  line-height: 46px;
+  padding: 0 40px;
+  margin: -250px 0 0 0;
+}
+.apply-box {
+  margin: -194px 0 0 0
+}
+.text-b a {
+  display: inline-block;
+  color: $yum-sauce;
+  width: 150px;
+  background: #403f45;
+  font-size: 1.2em;
+  line-height: 50px;
+  text-align: center;
+}
+.text-b a:hover {
+  text-decoration: none;
+}
+.apply-arrow {
+  background: $yum-sauce;
+  width: 50px;
+  position: relative;
+  top: -50px;
+  left: 150px;
+}
+.apply-arrow a {
+  display: inline-block;
+  width: 100%;
+  line-height: 50px;
+}
+.apply-arrow img {
+  position: relative;
+  left: 19px;
+}
+
+/* HOMEPAGE#gray-layer styles ============= */
+
+.greyMatter {
+  height: 300px;
+  position: relative;
+
+}
+
+/* HOMEPAGE#yellowBoxes styles ============= */
+
+.yellowBoxes {
+  position: absolute;
+  margin: -350px auto 0;
+  left: 25%;
+}
+.yellowRails, .yellowJS {
+  width: 262px;
+  position: relative;
+  background: $yum-sauce;
+}
+.railsIcon, .jsIcon {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+.railsIcon {
+  margin-top: 6px;
+}
+.jsIcon {
+  margin: 5px 0 5px 7px;
+}
+.yellowJS {
+  right: 0;
+  top: -340px;
+  left: 280px;
+}
+.yellowJS h4, .yellowRails h4 {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 14px;
+  font-family: OpenSans-CondBold;
+}
+.yellowJSBody, .yellowRailsBody {
+  margin: 10px 0 0 4px;
+}
+.yellowJSHead, .yellowRailsHead {
+  background: #FFF600;
+  height: 50px;
+}
+.yellowJS p, .yellowRails p {
+  font-family: OpenSans-CondLight;
+}
+.yellowJS a, .yellowRails a {
+  display: inline-block;
+  background: $elvish;
+  height: 50px;
+  color: $yum-sauce;
+  text-align: center;
+  font-family: OpenSans-CondBold;
+  width: 100%;
+  line-height: 50px;
+}
+.mailingList, .contactBox {
+  width: 372px;
+  position: absolute;
+  top: 365px;
+  height: 145px;
+}
+.mailingList {
+  left: -110px;
+}
+.mailingList form {
+  text-align: center;
+}
+.contactBox {
+  left: 280px;
+  text-align: center;
+}
+.contactBox h2 {
+  font-family: OpenSans-CondBold;
+  font-size: 22px;
+}
+.contactBox p, .contactBox a {
+  font-family: OpenSans-Regular;
+  color: #646367;
+}
+.social-row {
+  margin-top: 18px;
+}
+.mailingList input[type="email"] {
+  width: 75%;
+  height: 50px;
+  margin: 20px auto;
+  text-align: center;
+  @include placeholder {
+    color: #CCCCCC;
+  }
+}
+.mailingList input[type="submit"] {
+  border: none;
+  background: none;
+  margin: 0 auto;
+  font-family: OpenSans-CondBold;
+  color: $elvish;
+  padding-bottom: 10px;
+}
+.greyMatter, .mailingList, .contactBox {
+  background: #E5E5E5;
+}
+
+/* CONTACT PAGE styles ============= */
+
+.text-a h1 {
+  font-size: 1em;
+  margin-top: 4px;
+}
+#com-box {
+  width: 374px;
+}
+#phone-box {
+  float: left;
+  width: 140px;
+  background: $elvish;
+}
+#phone-box h4 {
+  margin: 0;
+}
+#phone-box img {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+#phone-box a {
+  width: 100%;
+  background: none;
+  padding-left: 13px;
+}
+#email-box {
+  width: 240px;
+  background: none;
+  left: 145px;
+}
+#email-box h4 {
+}
+#email-box a {
+  background: $elvish;
+  color: $yum-sauce;
+  text-align: center;
+  width: 230px;
+}
+.contact-bottom-box {
+  position: relative;
+  top: -350px;
+  left: 40%;
+}
+.contact-bottom-box ul {
+  left: -10px;
+}
