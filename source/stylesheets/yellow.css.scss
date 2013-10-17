@@ -19,6 +19,13 @@
   src: url("../OpenSans-CondBold.ttf");
 }
 
+/* GLOBAL styles ============= */
+
+.home-img img {
+  max-width: inherit;
+}
+
+
 /* HEADER styles ============= */
 
 header, header ul li, header ul li a {
@@ -172,7 +179,6 @@ header .search-box img {
 .greyMatter {
   height: 300px;
   position: relative;
-
 }
 
 /* HOMEPAGE#yellowBoxes styles ============= */
