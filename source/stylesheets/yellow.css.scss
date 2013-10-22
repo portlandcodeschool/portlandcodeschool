@@ -101,32 +101,24 @@ header .search-box img {
   position: relative;
   top: 175px;
   background: $elvish;
-  text-align: center;
 }
-.yellowBoxes ul,
-.contact-bottom-box ul,
-.applyBottomLinks ul {
+#Contact .footerBox {
+  top: 30px;
+}
+.bottom-links {
+  margin-left: 7%;
+}
+.bottom-links ul {
   width: 200px;
-  position: absolute;
-  top: 540px;
-  left: 185px;
-  z-index: 10;
+  margin: 10px auto;
 }
-.yellowBoxes ul li,
-.contact-bottom-box ul li,
-.applyBottomLinks ul li {
+.bottom-links ul li {
   float: left;
   list-style: none;
+  text-align: center;
+  padding: 5px;
 }
-.stupidBullet {
-  padding: 0 10px;
-}
-.yellowBoxes ul li,
-.yellowBoxes a,
-.contact-bottom-box ul li,
-.contact-bottom-box ul a,
-.applyBottomLinks ul li,
-.applyBottomLinks ul a {
+.bottom-links ul li, .bottom-links a {
   color: $yum-sauce;
   font-family: OpenSans-CondLight;
 }
@@ -246,7 +238,11 @@ header .search-box img {
   top: 365px;
   height: 145px;
 }
-.mailingList {
+.contact-bottom-box .mailingList {
+  margin: 0 auto;
+  position: relative;
+}
+.yellowBoxes .mailingList {
   left: -110px;
 }
 .mailingList form {
@@ -331,7 +327,6 @@ header .search-box img {
 .contact-bottom-box {
   position: relative;
   top: -350px;
-  left: 40%;
 }
 .contact-bottom-box ul {
   left: -10px;
@@ -340,7 +335,41 @@ header .search-box img {
 /* ABOUT PAGE styles ============= */
 
 .about-wrapper {
-  margin: 120px auto;
+  margin: 120px auto 0;
   width: 70%;
   font-family: OpenSans-Regular;
 }
+
+/* CALENDAR PAGE styles ============= */
+
+#Calendar .about-wrapper {
+  text-align: center;
+  /*background: $cloudy;*/
+}
+#Calendar h1, #Calendar h2 {
+  color: $elvish;
+  padding: 10px 0 0;
+}
+#Calendar h2 {
+  font-size: 1.5em;
+}
+.event-box {
+  width: 60%;
+  margin: 0 auto;
+  background: $cloudy;
+  color: $elvish;
+  box-shadow: 2px 2px 7px black;
+}
+.event-box p {
+  padding: 0 10px 5px;
+}
+.event-box a {
+  text-decoration: underline;
+  color: $elvish;
+}
+.event-box a:hover {
+  opacity: .5;
+}
+
+
+
