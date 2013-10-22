@@ -85,9 +85,14 @@ header .search-box img {
   right: 0;
 }
 .mag {
-  right: 21px;
-  top: 24px;
+  width: 50px;
+  top: 7px;
+  right: 5px;
 }
+.mag:hover {
+  opacity: .5;
+}
+
 
 /* BOTTOM LINKS styles ============= */
 
@@ -330,4 +335,12 @@ header .search-box img {
 }
 .contact-bottom-box ul {
   left: -10px;
+}
+
+/* ABOUT PAGE styles ============= */
+
+.about-wrapper {
+  margin: 120px auto;
+  width: 70%;
+  font-family: OpenSans-Regular;
 }
