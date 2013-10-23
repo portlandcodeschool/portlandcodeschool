@@ -99,11 +99,11 @@ header .search-box img {
 .footerBox {
   height: 150px;
   position: relative;
-  top: 175px;
+  top: 30px;
   background: $elvish;
 }
-#Contact .footerBox {
-  top: 30px;
+#homepage .footerBox {
+  top: 175px;
 }
 .bottom-links {
   margin-left: 7%;
@@ -371,5 +371,19 @@ header .search-box img {
   opacity: .5;
 }
 
+/* CLASSES PAGE styles ============= */
 
+.classes-box {
+  margin-top: 50px;
+}
+.classes-box h2 {
+  border-bottom: 1px solid black;
+}
+.classes-box a {
+  color: $elvish;
+}
+.classes-box a:hover {
+  opacity: .5;
+  text-decoration: underline;
+}
 
