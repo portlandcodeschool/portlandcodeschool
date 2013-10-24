@@ -387,3 +387,33 @@ header .search-box img {
   text-decoration: underline;
 }
 
+/* EMPLOYERS PAGE styles ============= */
+
+#Employers h1, .emp-box {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+#Employers h1 {
+  margin-bottom: 20px;
+}
+.emp-box-top {
+  margin-top: 50px;
+}
+
+.employer-logo {
+  width: 100px;
+  margin: 30px 50px;
+}
+.employer-logo:hover {
+  opacity: .5;
+}
+.emp-logo-big {
+  width: 200px;
+}
+
+
+
+
+
+
