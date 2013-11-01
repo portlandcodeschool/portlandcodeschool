@@ -391,7 +391,7 @@ header .search-box img {
 
 #Employers h1, .emp-box {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   text-align: center;
 }
 #Employers h1 {
@@ -400,7 +400,6 @@ header .search-box img {
 .emp-box-top {
   margin-top: 50px;
 }
-
 .employer-logo {
   width: 100px;
   margin: 30px 50px;
@@ -411,6 +410,26 @@ header .search-box img {
 .emp-logo-big {
   width: 200px;
 }
+.vitamin-logo {
+  margin: 30px 0;
+}
+.tree-logo {
+  margin: 30px 40px;
+}
+
+/* FAQ PAGE styles ============= */
+
+.question a {
+  color: $elvish;
+  text-decoration: underline;
+}
+.answer {
+  display: none;
+}
+
+
+
+
 
 
 
