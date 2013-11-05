@@ -424,7 +424,13 @@ header .search-box img {
   text-decoration: underline;
 }
 .answer {
-  display: none;
+  height: 100px;
+}
+.long-answer {
+  height: 200px;
+}
+.longer-answer {
+  height: 300px;
 }
 
 
