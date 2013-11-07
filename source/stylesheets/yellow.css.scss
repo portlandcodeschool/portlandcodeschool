@@ -386,6 +386,18 @@ header .search-box img {
   opacity: .5;
   text-decoration: underline;
 }
+.internal-trainer {
+  color: $yum-sauce;
+  background: $elvish;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.internal-trainer a {
+  color: yellow;
+  text-decoration: underline;
+}
 
 /* EMPLOYERS PAGE styles ============= */
 
