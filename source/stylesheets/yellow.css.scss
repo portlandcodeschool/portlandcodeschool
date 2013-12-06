@@ -110,7 +110,7 @@ header .search-box img {
 }
 .bottom-links ul {
   width: 200px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 .bottom-links ul li {
   float: left;
@@ -118,10 +118,12 @@ header .search-box img {
   text-align: center;
   padding: 5px;
 }
-.bottom-links ul li, .bottom-links a {
+.bottom-links ul li,
+.bottom-links a {
   color: $yum-sauce;
   font-family: OpenSans-CondLight;
 }
+
 
 /* HOMEPAGE styles ============= */
 
@@ -293,7 +295,7 @@ header .search-box img {
 #com-box {
   width: 374px;
 }
-#phone-box {
+#phone-box, #address-box {
   float: left;
   width: 140px;
   background: $elvish;
@@ -330,6 +332,13 @@ header .search-box img {
 }
 .contact-bottom-box ul {
   left: -10px;
+}
+#address-box {
+  width: 365px;
+  color: $yum-sauce;
+  position: absolute;
+  top: 56px;
+  padding-left: 10px;
 }
 
 /* ABOUT PAGE styles ============= */
