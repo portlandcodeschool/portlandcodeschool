@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import "bootstrap";
+@charset "utf-8";
+
+/* ===FONTS=== */
+
+/* Default version */
+@font-face {
+  font-family: 'Larke Sans';
+  src: url('fonts/Larke_Sans_Light_2.eot');
+  src: 
+        local('Larke Sans'),
+        local('Larke-Sans'),
+        url('./fonts/Larke_Sans_Light_2.ttf')
+        format('truetype');
+}
+
+/* Bold version */
+@font-face {
+  font-family: 'Larke Sans';
+  src: url('fonts/Larke_Sans_Bold.eot');
+  src: 
+        local('Larke Sans Bold'),
+        local('Larke-Sans-Bold'),
+        url('fonts/Larke_Sans_Bold.ttf')
+        format('truetype');
+  font-weight: bold;
+}
+
+/* ===MAIN STYLES=== */
+
+html body {
+  font-family: 'Varela Round', 'sans-serif';
+}
+
+h1 {
+  font-family: 'Larke Sans', 'serif';
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  padding: 20px;
+}
+
+.header-text {
+  float: left;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Larke Sans';
+  font-size: 5em;
+}
+
+.header-buttons {
+  float: left;
+  padding: 20px;
+}
+
+button.apply-button {
+  width: 100%;
+}
