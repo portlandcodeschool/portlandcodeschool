@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-@import "bootstrap";
 @charset "utf-8";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 /* ===FONTS=== */
 
@@ -38,26 +38,12 @@ h1 {
   font-weight: bold;
 }
 
-header {
-  width: 100%;
+.header-padding {
+  padding: 20px 20px;
 }
 
-.logo {
-  float: left;
-  padding: 20px;
-}
-
-.header-text {
-  float: left;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Larke Sans';
-  font-size: 5em;
-}
-
-.header-buttons {
-  float: left;
-  padding: 20px;
+.grid-container {
+  padding: 0 15px;
 }
 
 button.apply-button {

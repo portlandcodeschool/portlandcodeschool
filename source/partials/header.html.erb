@@ -1,29 +1,31 @@
 <header class="nav navbar-default navbar-fixed-to-top">
-  <div class="logo">
-    <%= image_tag "http://placekitten.com/100/100" %>
-  </div>
-  <div class="header-text">
-    <%= link_to "Portland Code School", "http://portlandcodeschool.com" %>
-  </div>
-  <div class="header-buttons">
-    <div class="navbar-stacked">
-      <button type="button" class="btn btn-default navbar-btn">
-        <%= link_to "GitHub", "http://github.com/portlandcodeschool" %>
-      </button>
-      <button type="button" class="btn btn-default navbar-btn">
-        <%= link_to "Twitter", "http://twitter.com/pdxcodeschool" %>
-      </button>
-      <button type="button" class="btn btn-default navbar-btn">
-        <%= link_to "Facebook", "https://www.facebook.com/PortlandCodeSchool" %>
-      </button>
-      <button type="button" class="btn btn-default navbar-btn">
-        <%= link_to "Google+", "https://plus.google.com/communities/109115545781652920966" %>
-      </button>
+  <div class="row header-padding">
+    <div class="col-md-2">
+      <%= image_tag "http://placekitten.com/100/100" %>
     </div>
-    <div class="navbar-stacked">
-      <button type="button" class="btn btn-default navbar-btn apply-button">
-        <%= link_to "Apply now!", "#" %>
-      </button>
+    <div class="col-md-7">
+      <%= link_to "Portland Code School", "http://portlandcodeschool.com" %>
+    </div>
+    <div class="col-md-3">
+      <div class="navbar-stacked">
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "GH", "http://github.com/portlandcodeschool" %>
+        </button>
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "Tw", "http://twitter.com/pdxcodeschool" %>
+        </button>
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "FB", "https://www.facebook.com/PortlandCodeSchool" %>
+        </button>
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "G+", "https://plus.google.com/communities/109115545781652920966" %>
+        </button>
+      </div>
+      <div class="navbar-stacked">
+        <button type="button" class="btn btn-default navbar-btn apply-button">
+          <%= link_to "Apply now!", "#" %>
+        </button>
+      </div>
     </div>
   </div>
 </header>
