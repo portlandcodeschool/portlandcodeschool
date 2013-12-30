@@ -1,33 +1,25 @@
 <header class="navbar navbar-default">
-  <div class="row header-padding">
+  <div class="row">
 
     <!-- PCS logo -->
-    <div class="col-md-2">
-      <%= image_tag "http://placekitten.com/100/100" %>
+    <div class="col-md-2 header-padding logo">
+      <%= link_to "<img src=\"/images/logo.png\">", "index.html" %>
     </div> <!-- end PCS logo -->
 
     <!-- Central text -->
-    <div class="col-md-7 heading">
-      <%= link_to "Portland Code School", "/index.html" %>
+    <div class="col-md-7">
+      <h1>Portland Code School</h1>
     </div> <!-- end central text -->
 
     <!-- Social media/Apply buttons -->
-    <div class="col-md-3">
+    <div class="col-md-3 header-padding">
 
       <!-- Social media buttons -->
       <div class="navbar-stacked">
-        <button type="button" class="btn btn-default navbar-btn">
-          <%= link_to "GH", "http://github.com/portlandcodeschool" %>
-        </button>
-        <button type="button" class="btn btn-default navbar-btn">
-          <%= link_to "Tw", "http://twitter.com/pdxcodeschool" %>
-        </button>
-        <button type="button" class="btn btn-default navbar-btn">
-          <%= link_to "FB", "https://www.facebook.com/PortlandCodeSchool" %>
-        </button>
-        <button type="button" class="btn btn-default navbar-btn">
-          <%= link_to "G+", "https://plus.google.com/communities/109115545781652920966" %>
-        </button>
+        <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://github.com/portlandcodeschool" %>
+        <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool" %>
+        <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool" %>
+        <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://plus.google.com/communities/109115545781652920966" %>
       </div> <!-- end social media buttons -->
 
       <!-- Apply button -->

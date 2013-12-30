@@ -31,14 +31,20 @@
 
 body {
   font-family: 'Varela Round', 'sans-serif';
+  font-size: 18px;
+  line-height: 1.6em;
   color: #4C413C;
 }
 
  h1 {
   font-family: 'Larke Sans', 'sans-serif';
+  font-size: 4em;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 header, footer {
+  font-family: 'Larke Sans', 'sans-serif';
   text-align: center;
   &.navbar-default {
   background-color: #B8DED4;
@@ -67,22 +73,18 @@ header, footer {
   }
 }
 
-.heading {
-  font-size: 5.8em;
-  font-family: 'Larke Sans', 'sans-serif';
+.logo {
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .header-padding {
-  padding: 10px 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .grid-container {
   padding: 0 15px;
-}
-
-.footing {
-  font-size: 2em;
-  font-family: 'Larke Sans', 'sans-serif';
 }
 
 .break {
