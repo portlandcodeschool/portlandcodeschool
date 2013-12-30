@@ -29,23 +29,62 @@
 
 /* ===MAIN STYLES=== */
 
-html body {
+body {
   font-family: 'Varela Round', 'sans-serif';
+  color: #4C413C;
 }
 
-h1 {
-  font-family: 'Larke Sans', 'serif';
-  font-weight: bold;
+ h1 {
+  font-family: 'Larke Sans', 'sans-serif';
+}
+
+header, footer {
+  text-align: center;
+  &.navbar-default {
+  background-color: #B8DED4;
+  }
+  a {
+    color: #4C413C;
+    text-decoration: none;
+    &:hover {
+      color: #63918E;
+      text-decoration: none;
+    }
+  }
+}
+
+.apply-button {
+  background-color: #EB231C;
+  &:hover {
+    color: #63918E;
+    background-color: #4C413C;
+  }
+  a {
+    color: #FFFFFF;
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.heading {
+  font-size: 5.8em;
+  font-family: 'Larke Sans', 'sans-serif';
 }
 
 .header-padding {
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 
 .grid-container {
   padding: 0 15px;
 }
 
-button.apply-button {
-  width: 100%;
+.footing {
+  font-size: 2em;
+  font-family: 'Larke Sans', 'sans-serif';
+}
+
+.break {
+  height: 20px;
 }

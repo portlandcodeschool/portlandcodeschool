@@ -1,12 +1,20 @@
-<header class="nav navbar-default navbar-fixed-to-top">
+<header class="navbar navbar-default">
   <div class="row header-padding">
+
+    <!-- PCS logo -->
     <div class="col-md-2">
       <%= image_tag "http://placekitten.com/100/100" %>
-    </div>
-    <div class="col-md-7">
-      <%= link_to "Portland Code School", "http://portlandcodeschool.com" %>
-    </div>
+    </div> <!-- end PCS logo -->
+
+    <!-- Central text -->
+    <div class="col-md-7 heading">
+      <%= link_to "Portland Code School", "/index.html" %>
+    </div> <!-- end central text -->
+
+    <!-- Social media/Apply buttons -->
     <div class="col-md-3">
+
+      <!-- Social media buttons -->
       <div class="navbar-stacked">
         <button type="button" class="btn btn-default navbar-btn">
           <%= link_to "GH", "http://github.com/portlandcodeschool" %>
@@ -20,12 +28,15 @@
         <button type="button" class="btn btn-default navbar-btn">
           <%= link_to "G+", "https://plus.google.com/communities/109115545781652920966" %>
         </button>
-      </div>
+      </div> <!-- end social media buttons -->
+
+      <!-- Apply button -->
       <div class="navbar-stacked">
         <button type="button" class="btn btn-default navbar-btn apply-button">
-          <%= link_to "Apply now!", "#" %>
+          <%= link_to "Apply now!", "/apply.html" %>
         </button>
-      </div>
-    </div>
+      </div> <!-- end apply button -->
+    </div> <!-- end social media/apply buttons -->
+
   </div>
 </header>

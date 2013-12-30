@@ -1,2 +1,43 @@
-<footer>
+<footer class="navbar navbar-default">
+  <div class="row">
+
+    <!-- Partners links -->
+    <div class="col-md-4">
+      <div class="navbar-stacked">
+        <h2 class="footing">Partners</h2>
+      </div>
+      <div class="navbar-stacked">
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "CorSource", "http://www.corsource.com/" %>
+        </button>
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "Vitamin T", "http://vitamintalent.com/" %>
+        </button>
+        <button type="button" class="btn btn-default navbar-btn">
+          <%= link_to "Treehouse", "http://teamtreehouse.com/" %>
+        </button>
+      </div>
+    </div> <!-- end partner links -->
+
+    <!-- Page links -->
+    <div class="col-md-4 footing">
+      <%= link_to "Classes", "/classes.html" %> | 
+      <%= link_to "Calendar", "/calendar.html" %> | 
+      <%= link_to "About", "/about.html" %>
+    </div> <!-- end page links -->
+
+    <!-- Contact info/link -->
+    <div class="col-md-4">
+      <div class="navbar-stacked footing">
+        <%= link_to "Contact Us", "/contact.html" %>
+      </div>
+      <div class="navbar-stacked">
+        <p>
+          1771 NW Pettygrove Street, Suite 140<br>
+          Portland, OR 97209
+        </p>
+      </div>
+    </div> <!-- end contact info/link -->
+
+  </div>
 </footer>

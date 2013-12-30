@@ -17,10 +17,18 @@
   </head>
   
   <body class="<%= page_classes %>">
+    
     <div class="container grid-container">
+
+      <div class="break"></div>
+
       <%= partial "partials/header" %>
-      
+
+      <div class="break"></div>
+
       <%= yield %>
+
+      <div class="break"></div>
 
       <%= partial "partials/footer" %>
     </div>
