@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,400italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 /* ===FONTS=== */
 
@@ -30,27 +31,34 @@
 /* ===MAIN STYLES=== */
 
 body {
-  font-family: 'Varela Round', 'sans-serif';
+  font-family: 'Exo 2', 'sans-serif';
   font-size: 18px;
   line-height: 1.6em;
   color: #4C413C;
 }
 
  h1 {
-  font-family: 'Larke Sans', 'sans-serif';
+  font-family: 'Exo 2', 'sans-serif';
+  font-weight: 600;
+  font-style: italic;
   font-size: 4em;
   margin-top: 1%;
   margin-bottom: 3%;
 }
 
 header, footer {
-  font-family: 'Larke Sans', 'sans-serif';
   text-align: center;
+  &.navbar {
+    border-radius: 0px;
+    margin-bottom: 0px;
+  }
   &.navbar-default {
-  background-color: #B8DED4;
+  color: #D5B724;
+  background-color: #4C413C;
+  border-color: #4C413C;
   }
   a {
-    color: #4C413C;
+    color: #D5B724;
     text-decoration: none;
     &:hover {
       color: #63918E;
@@ -60,10 +68,11 @@ header, footer {
 }
 
 .apply-button {
+  border-color: #EB231C;
   background-color: #EB231C;
   &:hover {
     color: #63918E;
-    background-color: #4C413C;
+    background-color: #63918E;
   }
   a {
     color: #FFFFFF;
@@ -78,7 +87,7 @@ header, footer {
   padding-bottom: 1%;
 }
 
-.header-padding {
+.header-margin {
   margin-top: 1%;
   margin-bottom: 1%;
 }

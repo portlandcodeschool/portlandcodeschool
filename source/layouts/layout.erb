@@ -19,18 +19,18 @@
   
   <body class="<%= page_classes %>">
     
-    <div class="container grid-container">
-
-      <div class="break"></div>
+    <div class="">
 
       <%= partial "partials/header" %>
+      <!-- <div class="break"></div> -->
+      <div class="container grid-container">
 
-      <div class="break"></div>
+        <div class="break"></div>
 
-      <%= yield %>
+        <%= yield %>
 
-      <div class="break"></div>
-
+        <div class="break"></div>
+      </div>
       <%= partial "partials/footer" %>
     </div>
   </body>
