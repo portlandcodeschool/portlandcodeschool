@@ -2,24 +2,28 @@
   <div class="row">
 
     <!-- PCS logo -->
-    <div class="col-md-2 header-margin logo">
+    <div class="col-sm-2 col-xs-12 header-margin">
       <%= link_to "<img src=\"/images/logo.png\">", "index.html" %>
     </div> <!-- end PCS logo -->
 
     <!-- Central text -->
-    <div class="col-md-7">
-      <h1>Portland Code School</h1>
+    <div class="col-md-7 hidden-sm hidden-xs">
+      <h1 class="large-title">Portland Code School</h1>
+    </div>
+
+    <div class="col-sm-7 visible-sm">
+      <h1 class="small-title">Portland Code School</h1>
     </div> <!-- end central text -->
 
     <!-- Social media/Apply buttons -->
-    <div class="col-md-3 header-margin">
+    <div class="col-sm-3 col-xs-12 header-margin">
 
       <!-- Social media buttons -->
       <div class="navbar-stacked">
-        <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://github.com/portlandcodeschool" %>
-        <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool" %>
-        <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool" %>
-        <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://plus.google.com/communities/109115545781652920966" %>
+        <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://github.com/portlandcodeschool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://plus.google.com/communities/109115545781652920966", :class=>"icon-spacing" %>
       </div> <!-- end social media buttons -->
 
       <!-- Apply button -->

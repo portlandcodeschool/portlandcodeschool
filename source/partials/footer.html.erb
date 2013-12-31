@@ -4,17 +4,17 @@
     <!-- Partners links -->
     <div class="col-md-4">
       <div class="navbar-stacked">
-        <h2 class="footing">Partners</h2>
+        <p>Partners</p>
       </div>
       <div class="navbar-stacked">
-        <%= link_to "<img src=\"/images/partners/vitamin-logo.png\">", "http://vitamintalent.com/" %>
-        <%= link_to "<img src=\"/images/partners/corsource-logo.png\">", "http://www.corsource.com/" %>
-        <%= link_to "<img src=\"/images/partners/treehouse-logo.png\">", "http://teamtreehouse.com/" %>
+        <%= link_to "<img src=\"/images/partners/vitamin-logo.png\">", "http://vitamintalent.com/", :class=>"icon-spacing" %>
+        <%= link_to "<img src=\"/images/partners/corsource-logo.png\">", "http://www.corsource.com/", :class=>"icon-spacing"  %>
+        <%= link_to "<img src=\"/images/partners/treehouse-logo.png\">", "http://teamtreehouse.com/", :class=>"icon-spacing"  %>
       </div>
     </div> <!-- end partner links -->
 
     <!-- Page links -->
-    <div class="col-md-4 footing">
+    <div class="col-md-4 page-padding">
       <%= link_to "Classes", "/classes.html" %> | 
       <%= link_to "Calendar", "/calendar.html" %> | 
       <%= link_to "About", "/about.html" %>
@@ -22,15 +22,9 @@
 
     <!-- Contact info/link -->
     <div class="col-md-4">
-      <div class="navbar-stacked footing">
-        <%= link_to "Contact Us", "/contact.html" %>
-      </div>
-      <div class="navbar-stacked">
-        <p>
-          1771 NW Pettygrove Street, Suite 140<br>
-          Portland, OR 97209
-        </p>
-      </div>
+      <p><%= link_to "Contact Us", "/contact.html" %></p>
+      <p>ckelly@portlandcodeschool.com</p>
+      <p>503-880-3551</p>
     </div> <!-- end contact info/link -->
 
   </div>
