@@ -1,32 +1,13 @@
 @charset "utf-8";
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,400italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
-/* ===FONTS=== */
+/* ===COLOR PALETTE== */
 
-/* Default version */
-@font-face {
-  font-family: 'Larke Sans';
-  src: url('fonts/Larke_Sans_Light_2.eot');
-  src: 
-        local('Larke Sans'),
-        local('Larke-Sans'),
-        url('./fonts/Larke_Sans_Light_2.ttf')
-        format('truetype');
-}
-
-/* Bold version */
-@font-face {
-  font-family: 'Larke Sans';
-  src: url('fonts/Larke_Sans_Bold.eot');
-  src: 
-        local('Larke Sans Bold'),
-        local('Larke-Sans-Bold'),
-        url('fonts/Larke_Sans_Bold.ttf')
-        format('truetype');
-  font-weight: bold;
-}
+$brown: #4C413C;
+$yellow: #D5B724;
+$red: #EB231C;
+$dark-teal: #63918E;
 
 /* ===MAIN STYLES=== */
 
@@ -34,7 +15,7 @@ body {
   font-family: 'Exo 2', 'sans-serif';
   font-size: 18px;
   line-height: 1.6em;
-  color: #4C413C;
+  color: $brown;
 }
 
  h1 {
@@ -59,15 +40,15 @@ header, footer {
     margin-bottom: 0px;
   }
   &.navbar-default {
-  color: #D5B724;
-  background-color: #4C413C;
-  border-color: #4C413C;
+  color: $yellow;
+  background-color: $brown;
+  border-color: $brown;
   }
   a {
-    color: #D5B724;
+    color: $yellow;
     text-decoration: none;
     &:hover {
-      color: #63918E;
+      color: $dark-teal;
       text-decoration: none;
     }
   }
@@ -84,19 +65,19 @@ header, footer {
 }
 
 .apply-button {
-  border-color: #EB231C;
-  background-color: #EB231C;
+  border-color: $red;
+  background-color: $red;
   width: 75%;
   max-width: 230px;
   min-width: 175px;
   &:hover {
-    color: #63918E;
-    background-color: #63918E;
+    color: $dark-teal;
+    background-color: $dark-teal;
   }
   a {
-    color: #FFFFFF;
+    color: #FFF;
     &:hover {
-      color: #FFFFFF;
+      color: #FFF;
     }
   }
 }
