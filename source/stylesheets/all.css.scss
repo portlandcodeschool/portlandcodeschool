@@ -7,6 +7,7 @@
 $brown: #4C413C;
 $yellow: #D5B724;
 $red: #EB231C;
+$lt-teal: #B8DED4;
 $dark-teal: #63918E;
 
 /* ===MAIN STYLES=== */
@@ -33,6 +34,7 @@ body {
   }
 }
 
+/* ===BROWN W/ YELLOW TEXT HEADER/FOOTER=== */
 header, footer {
   text-align: center;
   &.navbar {
@@ -53,6 +55,28 @@ header, footer {
     }
   }
 }
+
+/* ===LIGHT BLUE W/ BROWN TEXT HEADER/FOOTER=== */
+// header, footer {
+//   text-align: center;
+//   &.navbar {
+//     border-radius: 0px;
+//     margin-bottom: 0px;
+//   }
+//   &.navbar-default {
+//   color: $brown;
+//   background-color: $lt-teal;
+//   border-color: $lt-teal;
+//   }
+//   a {
+//     color: $brown;
+//     text-decoration: none;
+//     &:hover {
+//       color: $yellow;
+//       text-decoration: none;
+//     }
+//   }
+// }
 
 .btn {
   font-size: 18px;

@@ -7,22 +7,30 @@
         <p>Partners</p>
       </div>
       <div class="navbar-stacked">
-        <%= link_to "<img src=\"/images/partners/vitamin-logo.png\">", "http://vitamintalent.com/", :class=>"icon-spacing" %>
-        <%= link_to "<img src=\"/images/partners/corsource-logo.png\">", "http://www.corsource.com/", :class=>"icon-spacing"  %>
-        <%= link_to "<img src=\"/images/partners/treehouse-logo.png\">", "http://teamtreehouse.com/", :class=>"icon-spacing"  %>
+        <% link_to "http://vitamintalent.com/", :class=>"icon-spacing" do %>
+          <%= image_tag "partners/vitamin-logo.png" %>
+        <% end %>
+
+        <% link_to "http://www.corsource.com/", :class=>"icon-spacing" do %>
+          <%= image_tag "partners/corsource-logo.png" %>
+        <% end %>
+
+        <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing" do %>
+          <%= image_tag "partners/treehouse-logo.png" %>
+        <% end %>
       </div>
     </div>
 
     <!-- Page links -->
     <div class="col-md-4 page-padding">
-      <%= link_to "Classes", "/classes.html" %> | 
-      <%= link_to "Calendar", "/calendar.html" %> | 
-      <%= link_to "About", "/about.html" %>
+      <%= link_to "Classes", "classes.html" %> | 
+      <%= link_to "Calendar", "calendar.html" %> | 
+      <%= link_to "About", "about.html" %>
     </div>
 
     <!-- Contact info/link -->
     <div class="col-md-4">
-      <p><%= link_to "Contact Us", "/contact.html" %></p>
+      <p><%= link_to "Contact Us", "contact.html" %></p>
       <p>ckelly@portlandcodeschool.com</p>
       <p>503-880-3551</p>
     </div>

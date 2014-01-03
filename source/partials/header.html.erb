@@ -3,7 +3,9 @@
 
     <!-- PCS logo -->
     <div class="col-sm-2 col-xs-12 header-margin">
-      <%= link_to "<img src=\"/images/logo.png\">", "index.html" %>
+      <% link_to "index.html" do %>
+        <%= image_tag "logo-yellow.png" %>
+      <% end %>
     </div>
 
     <!-- Central text -->
@@ -29,7 +31,7 @@
       <!-- Apply button -->
       <div class="navbar-stacked">
         <button type="button" class="btn btn-default navbar-btn apply-button">
-          <%= link_to "Apply now!", "/apply.html" %>
+          <%= link_to "Apply now!", "apply.html" %>
         </button>
       </div>
     </div>
