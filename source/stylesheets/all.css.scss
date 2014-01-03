@@ -109,3 +109,10 @@ header, footer {
   padding-top: 3%;
   padding-bottom: 3%;
 }
+
+#faq .question {
+  margin-bottom: 30px;
+  p:nth-child(1) {
+    margin-bottom: .5em;
+  }
+}
