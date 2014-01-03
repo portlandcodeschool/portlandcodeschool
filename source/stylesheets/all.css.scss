@@ -134,9 +134,40 @@ header, footer {
   padding-bottom: 3%;
 }
 
+
+/* FAQ PAGE styles ============= */
+.question a {
+  color: #403f45;
+  text-decoration: underline; }
+
+.answer {
+  height: 100px; }
+
+.long-answer {
+  height: 200px; }
+
+.longer-answer {
+  height: 300px; }
+  
+element.style {
+display: none;
+}
+
+.answer {
+height: 100px;
+}
+
 #faq .question {
   margin-bottom: 30px;
   p:nth-child(1) {
     margin-bottom: .5em;
   }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
