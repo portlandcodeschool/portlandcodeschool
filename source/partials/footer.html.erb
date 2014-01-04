@@ -1,8 +1,25 @@
+<div class="row"></div>
+
 <footer class="navbar navbar-default">
   <div class="row">
 
+    <!-- Contact info/link -->
+    <div class="col-sm-4 hidden-xs">
+      <p><%= link_to "Contact Us", "/contact.html" %></p>
+      <p>503-880-3551</p>
+      <p>ckelly@portlandcodeschool.com</p>
+    </div>
+
+    <!-- Page links -->
+    <div class="col-sm-4 page-padding">
+      <%= link_to "Classes", "/classes.html" %> | 
+      <%= link_to "Calendar", "/calendar.html" %> | 
+      <%= link_to "About", "/about.html" %>
+      <%= link_to " | Contact Us", "/contact.html", :class=> "visible-xs" %>
+    </div>
+
     <!-- Partners links -->
-    <div class="col-md-4">
+    <div class="col-sm-4">
       <div class="navbar-stacked">
         <p>Partners</p>
       </div>
@@ -19,20 +36,6 @@
           <%= image_tag "partners/treehouse-logo.png" %>
         <% end %>
       </div>
-    </div>
-
-    <!-- Page links -->
-    <div class="col-md-4 page-padding">
-      <%= link_to "Classes", "/classes.html" %> | 
-      <%= link_to "Calendar", "/calendar.html" %> | 
-      <%= link_to "About", "/about.html" %>
-    </div>
-
-    <!-- Contact info/link -->
-    <div class="col-md-4">
-      <p><%= link_to "Contact Us", "/contact.html" %></p>
-      <p>ckelly@portlandcodeschool.com</p>
-      <p>503-880-3551</p>
     </div>
 
   </div>
