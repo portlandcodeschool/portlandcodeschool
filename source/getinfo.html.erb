@@ -6,10 +6,4 @@ title: Get Info
   Thank you for your interest in attending Portland Code School! Please be sure to review our <%= link_to "classes page", "/classes.html" %> to decide which of our courses best fits your needs. If you aren't sure which class is for you, feel free to <%= mail_to "ckelly@portlandcodeschool.com", "email us" %> for more information.
 </p>
 
-<div class="hidden-xs">
-  <iframe src="https://docs.google.com/forms/d/1IkU2Ar6UJohi9YIM-eSHTy-sSZMtB2gxeUvFqgwlVmA/viewform?embedded=true" width="800" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>
-
-<div class="visible-xs">
-  <iframe src="https://docs.google.com/forms/d/1IkU2Ar6UJohi9YIM-eSHTy-sSZMtB2gxeUvFqgwlVmA/viewform?embedded=true" width="280" height="830" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>
+<%= partial "partials/infoform" %>
