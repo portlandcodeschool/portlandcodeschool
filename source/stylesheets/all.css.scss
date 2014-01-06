@@ -38,53 +38,7 @@ h2, h3, h4, h5, h6, p {
   margin-bottom: 30px;
 }
 
-/* ===BOOTSTRAP CUSTOMIZATIONS=== */
-
-/* ===BROWN W/ YELLOW TEXT HEADER/FOOTER=== */
-// header, footer {
-//   text-align: center;
-//   &.navbar {
-//     border-radius: 0px;
-//     margin-bottom: 0px;
-//   }
-//   &.navbar-default {
-//   color: $yellow;
-//   background-color: $brown;
-//   border-color: $brown;
-//   }
-//   a {
-//     color: $yellow;
-//     text-decoration: none;
-//     &:hover {
-//       color: $dark-teal;
-//       text-decoration: none;
-//     }
-//   }
-// }
-
-/* ===LIGHT BLUE W/ BROWN TEXT HEADER/FOOTER=== */
-// header, footer {
-//   text-align: center;
-//   &.navbar {
-//     border-radius: 0px;
-//     margin-bottom: 0px;
-//   }
-//   &.navbar-default {
-//   color: $brown;
-//   background-color: $lt-teal;
-//   border-color: $lt-teal;
-//   }
-//   a {
-//     color: $brown;
-//     text-decoration: none;
-//     &:hover {
-//       color: $yellow;
-//       text-decoration: none;
-//     }
-//   }
-// }
-
-/* ===BROWN W/ LIGHT BLUE TEXT HEADER/FOOTER=== */
+/* ===HEADER/FOOTER=== */
 header, footer {
   text-align: center;
   &.navbar {
@@ -105,6 +59,8 @@ header, footer {
     }
   }
 }
+
+/* ===BOOTSTRAP CUSTOMIZATIONS=== */
 
 .btn {
   font-size: 18px;
@@ -175,6 +131,21 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.google-embed {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.google-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* FAQ PAGE styles ============= */
