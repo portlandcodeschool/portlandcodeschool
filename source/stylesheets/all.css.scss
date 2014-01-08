@@ -17,6 +17,7 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
+  padding-top: 100px;
 }
 
  h1 {
@@ -41,11 +42,9 @@ h2, h3, h4, h5, h6, p {
 /* ===HEADER/FOOTER=== */
 header, footer {
   text-align: center;
-  &.navbar {
-    border-radius: 0px;
-    margin-bottom: 0px;
-  }
-  &.navbar-default {
+  &.navbar, &.navbar-fixed-top, &.navbar-default {
+  border-radius: 0px;
+  margin-bottom: 0px;
   color: $lt-teal;
   background-color: $brown;
   border-color: $brown;
@@ -58,6 +57,10 @@ header, footer {
       text-decoration: none;
     }
   }
+  &.thumbnail {
+    background-color: $brown;
+    margin-bottom: 0px;
+  }
 }
 
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
@@ -66,23 +69,26 @@ header, footer {
   font-size: 18px;
 }
 
-.grid-container {
-  padding: 0 15px;
-}
-
 .row {
   max-width: 1350px;
   margin: 15px auto;
 }
 
-.thumbnail {
-  border: none;
+#logo {
+  img {
+    height: 61px;
+    width: 135px;
+  }
 }
 
-@media (max-width: 767px) {
-  .visible-xs {
-    display: inline !important;
-  }
+.thumbnail {
+  border: none;
+  background-color: $dark-teal;
+}
+
+.navbar-toggle {
+  float: left;
+  margin: auto;
 }
 
 /* ===CUSTOM CLASSES=== */
@@ -96,7 +102,7 @@ h3 {
 .apply-button {
   border-color: $red;
   background-color: $red;
-  width: 140px;
+  width: 100px;
   &:hover {
     color: white;
     background-color: $dark-teal;
@@ -127,6 +133,7 @@ h3 {
 }
 
 .centered {
+  float: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -147,42 +154,3 @@ h3 {
   width: 100% !important;
   height: 100% !important;
 }
-
-/* FAQ PAGE styles ============= */
-// .question a {
-//   color: #403f45;
-//   text-decoration: underline; }
-
-// .answer {
-//   height: 100px; }
-
-// .long-answer {
-//   height: 200px; }
-
-// .longer-answer {
-//   height: 300px; }
-  
-// element.style {
-// display: none;
-// }
-
-// .answer {
-// height: 100px;
-// }
-
-// #faq {
-//   &.question {
-//     margin-bottom: 30px;
-//   }
-//   p:nth-child(1) {
-//     margin-bottom: .5em;
-//   }
-// }
-
-// .hide {
-//   display: none;
-// }
-
-// .show {
-//   display: block;
-// }

@@ -14,23 +14,23 @@
     
     <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" %>
     <%= stylesheet_link_tag "/stylesheets/all" %>
+
+    <%= javascript_include_tag "/javascripts/all" %>
+    <%= javascript_include_tag "/javascripts/jquery" %>
+    <%= javascript_include_tag "/javascripts/bootstrap.min" %>
     
   </head>
   
   <body class="<%= page_classes %>">
-    
-    <div class="">
 
-      <%= partial "partials/header" %>
-      <!-- <div class="break"></div> -->
-      <div class="container grid-container">
-
+    <div class="container">
+      <%= partial "partials/stickynavbar" %>
 
         <%= yield %>
 
-      </div>
-      
-      <%= partial "partials/footer" %>
     </div>
+      <%= partial "partials/footer" %>
+    
+
   </body>
 </html>
