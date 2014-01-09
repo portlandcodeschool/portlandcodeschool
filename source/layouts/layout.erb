@@ -12,19 +12,17 @@
       <%= current_page.data.title %>
     </title>
     
-    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" %>
-    <%= stylesheet_link_tag "/stylesheets/all" %>
+    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", "/stylesheets/all" %>
 
-    <%= javascript_include_tag "/javascripts/all" %>
-    <%= javascript_include_tag "/javascripts/jquery" %>
-    <%= javascript_include_tag "/javascripts/bootstrap.min" %>
+    <%= javascript_include_tag "https://code.jquery.com/jquery.js", "//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" %>
+
     
   </head>
   
   <body class="<%= page_classes %>">
 
+    <%= partial "partials/header" %>
     <div class="container">
-      <%= partial "partials/stickynavbar" %>
 
         <%= yield %>
 

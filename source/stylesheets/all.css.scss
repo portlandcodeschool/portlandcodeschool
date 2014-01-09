@@ -17,7 +17,7 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
  h1 {
@@ -49,6 +49,15 @@ header, footer {
   background-color: $brown;
   border-color: $brown;
   }
+  &.navbar-default .navbar-nav li a {
+    color: $lt-teal;
+    &:hover {
+      color: $dark-teal;
+    }
+    &:visited {
+      color: $dark-teal;
+    }
+  }
   a {
     color: $lt-teal;
     text-decoration: none;
@@ -57,9 +66,18 @@ header, footer {
       text-decoration: none;
     }
   }
+  &.navbar-default .navbar-nav li .apply-button a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
   &.thumbnail {
     background-color: $brown;
     margin-bottom: 0px;
+  }
+  &.navbar-btn {
+    margin-top: 20px;
   }
 }
 
@@ -86,9 +104,9 @@ header, footer {
   background-color: $dark-teal;
 }
 
-.navbar-toggle {
-  float: left;
-  margin: auto;
+.navbar-right {
+  padding-top: 10px;
+  padding-right: 2%; 
 }
 
 /* ===CUSTOM CLASSES=== */
