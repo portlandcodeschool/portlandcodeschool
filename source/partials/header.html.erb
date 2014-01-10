@@ -56,7 +56,18 @@
             </ul>
           </li>
           <li>
-            <%= link_to "Classes", "/classes.html" %>
+            <%= link_to "Attending <b class=\"caret\"></b>", "/classes.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to "Classes", "/classes.html" %>
+              </li>
+              <li>
+                <%= link_to "Student Perks", "/perks.html" %>
+              </li>
+              <li>
+                <%= link_to "Childcare", "/childcare.html" %>
+              </li>
+            </ul>
           </li>
           <li>
             <%= link_to "Contact", "/contact.html" %>
