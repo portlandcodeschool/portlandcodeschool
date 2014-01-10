@@ -12,25 +12,23 @@
       <%= current_page.data.title %>
     </title>
     
-    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" %>
-    <%= stylesheet_link_tag "/stylesheets/all" %>
+    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", "/stylesheets/all" %>
+
+    <%= javascript_include_tag "https://code.jquery.com/jquery.js", "//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" %>
+
     
   </head>
   
   <body class="<%= page_classes %>">
-    
-    <div class="">
 
-      <%= partial "partials/header" %>
-      <!-- <div class="break"></div> -->
-      <div class="container grid-container">
-
+    <%= partial "partials/header" %>
+    <div class="container">
 
         <%= yield %>
 
-      </div>
-      
-      <%= partial "partials/footer" %>
     </div>
+      <%= partial "partials/footer" %>
+    
+
   </body>
 </html>

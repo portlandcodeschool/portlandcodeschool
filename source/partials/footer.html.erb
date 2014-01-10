@@ -5,24 +5,29 @@
 
     <!-- Contact info/link -->
     <div class="col-sm-4 hidden-xs">
-      <p><%= link_to "Contact Us", "/contact.html" %></p>
-      <p>503-880-3551</p>
-      <p><%= mail_to "ckelly@portlandcodeschool.com", "ckelly@portlandcodeschool.com" %></p>
+      <p>
+        <strong>
+          <%= link_to "Contact Us", "/contact.html" %>
+        </strong><br>
+        1771 NW Pettygrove Street, Suite #140<br>
+        Portland, OR 97209
+      </p>
     </div>
 
-    <!-- Page links -->
-    <div class="col-sm-4 page-padding">
-      <%= link_to "Classes", "/classes.html" %> | 
-      <%= link_to "Calendar", "/calendar.html" %> | 
-      <%= link_to "About", "/about.html" %> |
-      <%= link_to "FAQ", "/faq.html" %>
-      <%= link_to "Contact Us", "/contact.html", :class=> "visible-xs" %> |
+    <!-- Social media buttons -->
+    <div class="col-sm-4 ">
+      <p>
+        <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://github.com/portlandcodeschool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://plus.google.com/communities/109115545781652920966", :class=>"icon-spacing" %>
+      </p>
     </div>
 
     <!-- Partners links -->
     <div class="col-sm-4">
       <div class="navbar-stacked">
-        <p>Partners</p>
+        <strong>Partners</strong>
       </div>
       <div class="navbar-stacked">
         <% link_to "http://vitamintalent.com/", :class=>"icon-spacing" do %>
