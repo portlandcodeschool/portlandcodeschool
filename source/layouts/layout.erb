@@ -16,19 +16,17 @@
 
     <%= javascript_include_tag "https://code.jquery.com/jquery.js", "//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js", "all.js" %>
 
-
   </head>
-  
+
   <body class="<%= page_classes %>">
 
     <%= partial "partials/header" %>
     <div class="container">
 
-        <%= yield %>
+      <%= yield %>
 
     </div>
-      <%= partial "partials/footer" %>
-    
+    <%= partial "partials/footer" %>
 
   </body>
 </html>
