@@ -1,3 +1,7 @@
+# Copyright (c) 2013, 2014 ICRL
+
+# See the file license.txt for copying permission.
+
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
 source 'http://rubygems.org'
