@@ -17,7 +17,7 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
-  padding-top: 150px;
+  padding-top: 70px;
 }
 
  h1 {
@@ -48,6 +48,9 @@ header, footer {
   color: $lt-teal;
   background-color: $brown;
   border-color: $brown;
+  }
+  &.navbar-fixed-top {
+    max-height: 56px;
   }
   &.navbar-default .navbar-nav li a {
     color: $dark-teal;
@@ -92,11 +95,9 @@ header, footer {
   margin: 15px auto;
 }
 
-#logo {
-  img {
-    height: 61px;
-    width: 135px;
-  }
+.logo {
+  max-height: 47px;
+  max-width: 103px;
 }
 
 .thumbnail {
@@ -107,6 +108,12 @@ header, footer {
 .navbar-right {
   padding-top: 10px;
   padding-right: 2%; 
+}
+
+.nav-pills {
+  li {
+    float: none;
+  }
 }
 
 /* ===CUSTOM CLASSES=== */
@@ -120,8 +127,8 @@ h3 {
 .class:before { 
   display: block; 
   content: " "; 
-  margin-top: -350px; 
-  height: 350px;
+  margin-top: -270px; 
+  height: 270px;
   visibility: hidden; 
 }
 
