@@ -1,77 +1,39 @@
 
 <header class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <!-- Navigation links -->
-  <div class="navbar-header col-xs-5 col-sm-4">
+  <div class="row">
+
     <!-- PCS logo -->
-    <% link_to "/index.html" do %>
-      <%= image_tag "logo-lt-teal.png", :class=>"img-responsive logo" %>
-    <% end %>
-  </div>
-
-  <!-- Apply button -->
-  <div class="visible-xs col-xs-4">
-    <button type="button" class="btn btn-default navbar-btn apply-button pull-right">
-      <%= link_to "Get Info!", "/getinfo.html" %>
-    </button>
-  </div>
-
-  <div class="col-xs-3">
-    <!-- Menu button -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-
-  <!-- Content that will toggle -->
-  <div class="collapse navbar-collapse">
-    <div class="col-xs-12 col-sm-8">
-      <ul class="nav navbar-nav pull-right">
-        <li class="dropdown">
-          <%= link_to "About <b class=\"caret\"></b>", "/about.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
-          <ul class="dropdown-menu">
-            <li>
-              <%= link_to "About", "/about.html" %>
-            </li>
-            <li>
-              <%= link_to "FAQ", "/faq.html" %>
-            </li>
-            <li>
-              <%= link_to "Calendar", "/calendar.html" %>
-            </li>
-            <li>
-              <%= link_to "About This Site", "/siteabout.html" %>
-            </li>
-            <li>
-              <%= link_to "Special Thanks", "/thanks.html" %>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <%= link_to "Attending <b class=\"caret\"></b>", "/classes.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
-          <ul class="dropdown-menu">
-            <li>
-              <%= link_to "Classes", "/classes.html" %>
-            </li>
-            <li>
-              <%= link_to "Student Benefits", "/perks.html" %>
-            </li>
-            <li>
-              <%= link_to "Childcare", "/childcare.html" %>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <%= link_to "Contact", "/contact.html" %>
-        </li>
-        <li>
-          <button type="button" class="btn btn-default navbar-btn apply-button hidden-xs">
-            <%= link_to "Get Info!", "/getinfo.html" %>
-          </button>
-        </li>
-      </ul>
+    <div class="navbar-header col-xs-5 col-sm-4">
+      <% link_to "/index.html" do %>
+        <%= image_tag "logo-lt-teal.png", :class=>"img-responsive logo" %>
+      <% end %>
     </div>
-  </div><!--/.nav-collapse-->
+
+    <!-- Apply button -->
+    <div class="visible-xs col-xs-5">
+      <button type="button" class="btn btn-default navbar-btn apply-button pull-right">
+        <%= link_to "Get Info!", "/getinfo.html" %>
+      </button>
+    </div>
+
+    <!-- Menu button -->
+    <div class="col-xs-2">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Navigation links -->
+    <div class="hidden-xs">
+      <%= partial "partials/navlinks" %>
+    </div>
+  </div>
+
+  <!-- Navigation links -->
+  <div class="row visible-xs">
+    <%= partial "partials/navlinks" %>
+  </div>
 </header>

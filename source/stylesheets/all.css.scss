@@ -45,21 +45,15 @@ h2, h3, h4, h5, h6, p {
 header, footer {
   text-align: center;
   &.navbar, &.navbar-fixed-top, &.navbar-default {
-  border-radius: 0px;
-  margin-bottom: 0px;
-  color: $lt-teal;
-  background-color: $brown;
-  border-color: $brown;
-  }
-  &.navbar-fixed-top {
-    max-height: 56px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    color: $lt-teal;
+    background-color: $brown;
+    border-color: $brown;
   }
   &.navbar-default .navbar-nav li a {
     color: $dark-teal;
-    &:hover {
-      color: $dark-teal;
-    }
-    &:visited {
+    &:hover, &:visited {
       color: $dark-teal;
     }
   }
@@ -84,6 +78,9 @@ header, footer {
   &.navbar-btn {
     margin-top: 20px;
   }
+  button.navbar-toggle {
+    margin-right: 0px;
+  }
 }
 
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
@@ -92,14 +89,15 @@ header, footer {
   font-size: 18px;
 }
 
-.row {
-  max-width: 1350px;
-  margin: 15px auto;
-}
-
 .logo {
   max-height: 47px;
   max-width: 103px;
+}
+
+.row {
+  max-width: 1350px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .thumbnail {
@@ -108,14 +106,7 @@ header, footer {
 }
 
 .navbar-right {
-  padding-top: 10px;
-  padding-right: 2%; 
-}
-
-.nav-pills {
-  li {
-    float: none;
-  }
+  padding-right: 2%;
 }
 
 /* ===CUSTOM CLASSES=== */
@@ -159,8 +150,8 @@ h3 {
 }
 
 .icon-spacing {
-  margin-right: 2%;
-  margin-left: 2%
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .page-padding {
