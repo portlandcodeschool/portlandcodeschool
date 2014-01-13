@@ -4,7 +4,7 @@
   <div class="row">
 
     <!-- Contact info/link -->
-    <div class="col-sm-4 hidden-xs">
+    <div class="col-md-4 hidden-sm hidden-xs">
       <p>
         <strong>
           <%= link_to "Contact Us", "/contact.html" %>
@@ -15,7 +15,7 @@
     </div>
 
     <!-- Social media buttons -->
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <p>
         <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://GitHub.com/portlandcodeschool", :class=>"icon-spacing" %>
         <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Partners links -->
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="navbar-stacked">
         <strong>Partners</strong>
       </div>
@@ -40,6 +40,10 @@
 
         <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing" do %>
           <%= image_tag "partners/treehouse-logo.png" %>
+        <% end %>
+
+        <% link_to "http://wevillage.com/", :class=>"icon-spacing" do %>
+          <%= image_tag "partners/wv-logo-sm.png" %>
         <% end %>
       </div>
     </div>
