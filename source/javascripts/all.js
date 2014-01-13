@@ -1,6 +1,9 @@
 // require tree .
 
 
+// Copyright (c) 2013, 2014 ICRL
+// See the file license.txt for copying permission.
+
 $(document).ready(function() {
 
   $('.answer').hide();
