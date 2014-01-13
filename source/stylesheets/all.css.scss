@@ -24,6 +24,7 @@ body {
   line-height: 1.6em;
   color: $brown;
   padding-top: 70px;
+  max-width: 1400px;
 }
 
  h1 {
@@ -69,18 +70,22 @@ header, footer {
       text-decoration: none;
     }
   }
-  &.navbar-default .navbar-nav li .apply-button a {
-    color: white;
-    &:hover {
-      color: white;
-    }
-  }
   &.thumbnail {
     background-color: $brown;
     margin-bottom: 0px;
   }
   &.navbar-btn {
     margin-top: 20px;
+  }
+  &.btn-default {
+    color: white;
+    background-color: $red;
+    border-color: $red;
+    &:hover {
+      color: white;
+      background-color: $dark-teal;
+      border-color: white;
+    }
   }
   button.navbar-toggle {
     margin-right: 0px;
@@ -133,11 +138,12 @@ h3 {
   border-color: $red;
   background-color: $red;
   width: 100px;
+  float:right;
   &:hover {
     color: white;
     background-color: $dark-teal;
   }
-  a {
+  &.btn-default {
     color: white;
     &:hover {
       color: white;
