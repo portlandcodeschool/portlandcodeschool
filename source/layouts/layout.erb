@@ -16,6 +16,8 @@
       <%= "Portland Code School: " if current_page.data.title != "Portland Code School" %>
       <%= current_page.data.title %>
     </title>
+
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     
     <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", "/stylesheets/all" %>
 
@@ -25,13 +27,13 @@
 
   <body class="<%= page_classes %>">
 
+    <%= partial "partials/header" %>
     <div class="container">
-      <%= partial "partials/header" %>
 
       <%= yield %>
 
     </div>
-      <%= partial "partials/footer" %>
+    <%= partial "partials/footer" %>
 
   </body>
 </html>
