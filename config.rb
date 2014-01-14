@@ -1,3 +1,6 @@
+# Copyright (c) 2013, 2014 ICRL
+# See the file license.txt for copying permission.
+
 ###
 # Compass
 ###
@@ -44,6 +47,7 @@ activate :livereload
 #     "Helping"
 #   end
 # end
+activate :directory_indexes
 
 set :css_dir, 'stylesheets'
 

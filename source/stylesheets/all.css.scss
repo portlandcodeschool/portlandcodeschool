@@ -1,6 +1,12 @@
 @charset "utf-8";
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Exo+2:400,400italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(//fonts.googleapis.com/css?family=Exo+2:400,400italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+
+// Copyright (c) 2013, 2014 ICRL
+// See the file license.txt for copying permission.
+
+// All code copyright Burnside Digital and Portland Code School. Main authors are Shawna C. Scott (technical and design lead, http://shawnacscott.com) and Timothy Winters (https://github.com/timothywinters). For additional contributors, please see the "Contributors" section of the "About This Site" page.
 
 /* ===COLOR PALETTE== */
 
@@ -17,7 +23,8 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
-  padding-top: 150px;
+  padding-top: 70px;
+  max-width: 1400px;
 }
 
  h1 {
@@ -43,18 +50,15 @@ h2, h3, h4, h5, h6, p {
 header, footer {
   text-align: center;
   &.navbar, &.navbar-fixed-top, &.navbar-default {
-  border-radius: 0px;
-  margin-bottom: 0px;
-  color: $lt-teal;
-  background-color: $brown;
-  border-color: $brown;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    color: $lt-teal;
+    background-color: $brown;
+    border-color: $brown;
   }
   &.navbar-default .navbar-nav li a {
-    color: $lt-teal;
-    &:hover {
-      color: $dark-teal;
-    }
-    &:visited {
+    color: $dark-teal;
+    &:hover, &:visited {
       color: $dark-teal;
     }
   }
@@ -66,18 +70,25 @@ header, footer {
       text-decoration: none;
     }
   }
-  &.navbar-default .navbar-nav li .apply-button a {
-    color: white;
-    &:hover {
-      color: white;
-    }
-  }
   &.thumbnail {
     background-color: $brown;
     margin-bottom: 0px;
   }
   &.navbar-btn {
     margin-top: 20px;
+  }
+  &.btn-default {
+    color: white;
+    background-color: $red;
+    border-color: $red;
+    &:hover {
+      color: white;
+      background-color: $dark-teal;
+      border-color: white;
+    }
+  }
+  button.navbar-toggle {
+    margin-right: 0px;
   }
 }
 
@@ -87,16 +98,15 @@ header, footer {
   font-size: 18px;
 }
 
-.row {
-  max-width: 1350px;
-  margin: 15px auto;
+.logo {
+  max-height: 47px;
+  max-width: 103px;
 }
 
-#logo {
-  img {
-    height: 61px;
-    width: 135px;
-  }
+.row {
+  max-width: 1350px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .thumbnail {
@@ -105,8 +115,7 @@ header, footer {
 }
 
 .navbar-right {
-  padding-top: 10px;
-  padding-right: 2%; 
+  padding-right: 2%;
 }
 
 /* ===CUSTOM CLASSES=== */
@@ -120,8 +129,8 @@ h3 {
 .class:before { 
   display: block; 
   content: " "; 
-  margin-top: -170px; 
-  height: 170px; 
+  margin-top: -270px; 
+  height: 270px;
   visibility: hidden; 
 }
 
@@ -129,11 +138,12 @@ h3 {
   border-color: $red;
   background-color: $red;
   width: 100px;
+  float:right;
   &:hover {
     color: white;
     background-color: $dark-teal;
   }
-  a {
+  &.btn-default {
     color: white;
     &:hover {
       color: white;
@@ -150,8 +160,8 @@ h3 {
 }
 
 .icon-spacing {
-  margin-right: 2%;
-  margin-left: 2%
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .page-padding {
