@@ -1,92 +1,63 @@
-<% @title = "Portland Code School - About Us" %>
-<div class="about-wrapper">
+---
+title: About
+---
 
-  <h1>About Portland Code School</h1>
-  <p>Portland Code School students learn from experienced programmers, develop the skills needed to join a leading tech company, and have direct access to local sponsoring companies interested in hiring new developers.</p>
-  <p>There is a huge and rapidly growing demand for able-minded programmers who are not only capable of skillful programming, but also are skillful at communicating with clients and peers. When tech employers are asked what two things they consider most, other than straight coding skills, most of them say:</p>
-  <p>1) Can they solve problems?</p>
-  <p>2) Can they work as part of a team?</p>
-  <p>It's a continuation of our efforts, then, to not only teach students how to code, but to help them build portfolios, improve their interviewing and business sense, and otherwise light their path to employment in the tech industry.</p>
-  <br>
+<div class="row">
+  <h2>About Portland Code School</h2>
+  <hr>
+  <p>
+    Portland Code School students learn from experienced programmers, develop the skills needed to join a leading tech company, and have direct access to a network of local companies interested in hiring new developers. In addition to learning the nuts and bolts of coding, we teach you to solve problems, work as part of a team, and communicate clearly with clients and peers.
+  </p>
+  <p>
+    You will learn the basics through a variety of methods, including in person lessons, screencasts, and reading documentation. You will solidify your understanding and hone your teamwork skills with code challenges structured like real client specs. Pair programming with classmates will be an essential component of everything you do. By the end of the course, you will know how to work with others to create technical solutions, have a portfolio to show employers, and have honed your interview and business sense. For more information about the nitty gritty details, please see our <%= link_to "frequently asked questions", "/faq.html" %>, or <%= link_to "contact us", "/contact.html" %>.
+  </p>
+</div>
 
-  <h2>Our Mission</h2>
-  <p>To teach the next generation of Portland programmers the skills they need to be competent, well-rounded programmers able to excel in a web development career.</p>
-  <br>
-
-  <h2>Our Vision</h2>
-  <p>We envision The Portland Code School as the leading developer of the next generation of Portland programmers. Working in collaboration with Portland coder communities and employers, we provide aspiring programmers with a jumping off point to dive into a web development career.</p>
-  <br>
-
-  <h2>Our History</h2>
-  <p>The Portland Code School began in September of 2012 as an idea, when founder Chuck Lauer Vose realized how huge the demand was for competent programmers in Portland and how few new programmers there were coming from Portland. After teaching a “Rapid Web Development” course at the Portland Art Institute, Chuck realized there is an abyss of misunderstandings, gaps in information, and false starts between beginner tutorials and full-time software development. Too many programmers were getting lost in this abyss. Since Portland is already a top-notch city for developers; Chuck wanted to make it an oasis for newcomers also.</p>
-  <p>Through collaboration with and help from programmer communities across Portland and beyond, the Portland Code School was born.</p>
-
-  <br>
-  <br>
-
-  <h2>Special Thanks</h2>
-  <p>
-    <strong>Chuck Lauer Vose - Founder of Portand Code School and Former Instructor</strong><br>
-    Chuck is an inspirational instructor with a crazy depth of knowledge. He's such an excellent person, he can't help but enable those around him to also be excellent.
-  </p>
-  <p>
-    <strong>Erica Lauer Vose - Former Director of Portland Code School</strong><br>
-    Erica is a brilliant, detail-oriented orchestrator of programs. With a kind heart and a gentle soul, wherever she goes in this world, good things will follow.
-  </p>
-  <p>
-    <strong>Omid Rahmat - Burnside Digital</strong><br>
-    Omid was the first financial backer, and the first business analyst to help us on our path. He was there to give us seed money to get started, and he was there to make sure we were on track to be off of investment funds as soon as possible. And even above that, he's dealt with all the legal paperwork to get the program running to this day.
-  </p>
-  <p>
-    <strong>Bill Siebold - Art Institute</strong><br>
-    Bill has been a constant source of inspiration and sound judgement for us in the formation of the program. His experience in tech education and his drive to see the program succeed has been unendingly inspiring and helpful. He was the initial sounding board, and the voice of reason, when there were so many voices to listen to.
-  </p>
-  <p>
-    <strong>Hal Newton - PageMutant / WholeBrain</strong><br>
-    Hal has been a godsend at the late stages of the first session by helping us coordinate and understand how to talk to CTOs and VPs at organizations that need to find great people. His words of wisdom, his network of peers, and his gentle guidance were brought to bare at exactly the right time.
-  </p>
-  <p>
-    <strong>Marc Charbonneau, Patrick Curtain, Victor Christensen - Burnside Digital</strong><br>
-    Everyone at Burnside Digital was amazing, but these four stepped forward frequently and helped me through jams with either sweat or brainpower. One man can only do so much.
-  </p>
-  <p>
-    <strong>Pete Kinnecom, Rachel Sakry, Matt Danskey - Portland Code School</strong><br>
-    The first group of students, the guinnea pigs. I have no words for the depth of gratitude I have towards this trio and I can't wait to see them flourish in their new careers!
-  </p>
-
-  <br>
-  <br>
-
-  <h2>Dedications</h2>
-  <p>
-    <strong>Chuck Lauer Vose</strong>
-  </p>
-  <p>
-    <strong>Nathan Calies</strong>
-  </p>
-  <p>
-    <strong>Erica Lauer Vose</strong>
-  </p>
-  <p>
-    <strong>Dave Shanley, Ben Cullen-Kerney, Kristina Turney, & Kevin Steigerwald - Crowd Compass</strong>
-  </p>
-  <p>
-    <strong>Lorenzo Ciacci - The Clymb</strong>
-  </p>
-  <p>
-    <strong>Luc Perkins - AppFog</strong>
-  </p>
-  <p>
-    <strong>Jewel Mlnarik - Temboo</strong>
-  </p>
-  <p>
-    <strong>Jade Rubick - New Relic</strong>
-  </p>
-  <p>
-    <strong>Randall Hansen - Puppet Labs</strong>
-  </p>
-
+<div class="row">
+  <h2>Meet The Team</h2>
+  <hr>
+  <div class="col-md-3 color-block">
+    <%= image_tag "Cris_Bio.jpg", :class=>"thumbnail circle" %>
   </div>
+  <div class ="col-md-9">
+    <h3>Cris Kelly</h3>
+    <h4>Portland Code School Director</h4>
+    <p>
+      Cris comes to PCS with 20 years of experience as an experiential educator and professional team builder. Adding programming and web development to his personal portfolio, he was one of the first graduates of PCS and has gone on to be a driving force in building out the school as the premier educational resource in the area. A Portlander by way of Minnesota, California, and Ashland, OR, he is also a musician, game designer, rock climber, and father of one amazing boy (who insists on wearing his Spider Man pajamas to the store, and wants to be either a Firefighter or a Transformer when he grows up).
+    </p>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-md-3 color-block">
+    <%= image_tag "al_zimmerman_headshot.jpg", :class=>"thumbnail circle" %>
+  </div>
+  <div class="col-md-9">
+    <h3>Al Zimmerman</h3>
+    <h4>Instructor</h4>
+    <p>
+      Al Zimmerman has 30 years of experience in software design, product development, information technology, and management. He has been teaching various aspects of software engineering and programming for over 10 years to middle school students, college students, and professional engineers.
+    </p>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-md-3 color-block">
+    <%= image_tag "http://placekitten.com/200/200", :class=>"thumbnail circle" %>
+  </div>
+  <div class="col-md-9">
+    <h3>David Manning</h3>
+    <h4>Instructor</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elementum ultrices. Phasellus vitae sapien non dui fermentum vestibulum. Sed ac sapien pretium, ornare diam at, vestibulum tortor.
+    </p>
+  </div>
+</div>
 
+<div class="row">
+  <h2>Our History</h2>
+  <hr>
+  <p>
+    Portland Code School began as the brain child of Chuck Lauer Vose in September 2012. While teaching a web development course at a local college, Chuck saw that there was a huge gap between the skills one could learn from beginner coding tutorials and the skills needed to be a successful full-time software developer. He realized also that the demand for competent new programmers in Portland far exceeded the supply. Through collaboration with programmer communities across Portland and beyond, Portland Code School was born to bridge that gap. We are indebted to a great many people, and would like to give <%= link_to "special thanks", "/thanks.html" %> for their help in making this dream a reality. 
+  </p>
+</div>

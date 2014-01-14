@@ -1,36 +1,36 @@
-<% @title = "Portland Code School - Contact" %>
-<% @body_id = 'Contact' %>
+---
+title: Contact
+---
 
+<h2>Contact Us</h2>
+<hr>
 
-<div class="home-img">
-  <img src="images/home_photo.png" alt="">
-  <!-- <img src="images/corevent.jpg" alt="job fair"> -->
-</div>
-<div class="text-a">
-  <h1>Contact <strong>Portland Code School</strong></h1>
-</div>
-<div id="com-box" class="apply-box">
-  <div id="phone-box" class="text-b">
-    <h4><img src="images/icon-phone.png" alt="phone"><a href="tel:+1-503-880-3551">503-880-3551</a></h4>
+<div class="row">
+  <div class="col-md-6">
+    <p>
+      <strong>Cris Kelly, Director:</strong><br>
+      <%= mail_to "info@portlandcodeschool.com", "info@portlandcodeschool.com" %>
+    </p>
+    <p>
+      <strong>Phone Number:</strong><br>
+      <a href="tel:+1-503-880-3551">503-880-3551</a>
+    </p>
+    <p>
+      <strong>Address:</strong><br>
+      1771 NW Pettygrove Street, Suite #140<br>
+      Portland, OR 97209
+    </p>
   </div>
-  <div id="email-box" class="apply-arrow">
-    <h4><a href="mailto:ckelly@portlandcodeschool.com">ckelly@portlandcodeschool.com</a></h4>
-  </div>
-  <div id="address-box">
-    <h4>1771 NW Pettygrove St. #140 <br>
-      Portland, OR 97209</h4>
-  </div>
-</div>
 
-<div class="contact-bottom-box">
-  <div class="mailingList">
-    <div id="mc_embed_signup" class="alpha third-col">
-      <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div class="mc-field-group">
-          <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-        </div>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </form>
+  <div class="col-md-6">
+    <div class="google-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x549509fc952cea4f%3A0x44acebf19c59abb1!2s1771+NW+Pettygrove+St%2C+Portland%2C+OR+97209!5e0!3m2!1sen!2sus!4v1388972403850" width="600" height="450" frameborder="0" style="border:0"></iframe>
     </div>
   </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <%= partial "partials/infoform" %>
 </div>

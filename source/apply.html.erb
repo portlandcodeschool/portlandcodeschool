@@ -1,81 +1,53 @@
-<% @title = "Portland Code School - Applying" %>
-<% @body_id = "apply" %>
+---
+title: Apply
+---
 
-<div class="yellow-box">
-  <h1>Apply</h1>
+
+<h2>Apply To Portland Code School!</h2>
+<hr>
+<p>
+  Thank you for your interest in attending Portland Code School! Please be sure to review our <%= link_to "classes page", "/classes.html" %> to decide which of our courses best fits your needs. If you aren't sure which class is for you, feel free to <%= mail_to "ckelly@portlandcodeschool.com", "email us" %> for more information.
+</p>
+<p>
+  We look for students who will work hard, challenge themselves, and be team players. This program is accelerated, and you will be required to put in time outside of class for learning, coding, and pairing if you want to succeed. Part of this application process is showing that you can learn new things and overcome technical challenges. Don't be intimidated if we ask you to do something you aren't familiar with yet! Use the linked resources we've provided, and you should be just fine. Show us you would be a stellar student at PCS!
+</p>
+
+<h3>Are You Ready?</h3>
+<hr>
+<p>
+  Note: If you have no programming experience, we highly encourage you to apply for and attend our <%= link_to "Primer course", "#" %> before applying to either the Ruby on Rails or Full-Stack Javascript course.
+</p>
+<p>
+  All prospective students need to have these materials ready to complete the application:
+  <ol>
+    <li>A <%= link_to "Github account", "https://github.com/join" %>, for creating <%= link_to "Gists", "https://gist.github.com/" %>.</li>
+    <li>A Gist of your resume. Bonus points for formatting it with <%= link_to "Markdown", "http://daringfireball.net/projects/markdown/" %>.</li>
+    <li> A Gist of your cover letter. Describe your interest in programming, any experience you have coding, and how you function in a team work environment. Again, we love Markdown!</li>
+    <li>Any optional extras or class-specific requirements.</li>
+  </ol>
+</p>
+
+<h4>Extras</h4>
+<em>Ruby on Rails</em>
+<ul>
+  <li>The link to a GitHub repository containing a "Hello World" app in Ruby on Rails. The first chapter of Michael Hartl's <%= link_to "Ruby on Rails Tutorial", "http://ruby.railstutorial.org/ruby-on-rails-tutorial-book#top" %> will walk you through the process.</li>
+</ul>
+
+
+<em>Full-Stack Javascript</em>
+<ul>
+  <li>The link to a GitHub repository containing an index.html page. The index page can simply say "Hello World" on it.</li>
+</ul>
+
+<em>Optional</em>
+<ul>
+  <li>Links to any code samples or portfolio items you are working on.</li>
+  <li>Digital evidence of you being awesome. A video of you rapping, a poem about trees, or an animated gif of you doing interpretive dance</li>
+  <li>Description of any tech community involvement, including attendance at local user groups; activity on any mailing lists, forums, or IRC channels; an active Twitter account; etc. <%= link_to "Calagator", "http://calagator.org/" %> is a great resource for finding ways to get involved!</li>
+</ul>
+
+<div class="row">
+  <button type="button" class="btn btn-default apply-button col-md-2 col-md-offset-5">
+    <%= link_to "Apply now!", "https://docs.google.com/forms/d/1IkU2Ar6UJohi9YIM-eSHTy-sSZMtB2gxeUvFqgwlVmA/viewform" %>
+  </button>
 </div>
-<div class="appTopBox">
-  <div class="appTextBox">
-    <h2>Applications</h2>
-    <p>Welcome future student! We're glad that you've made the decision to start learning to program for the web. This program is designed to teach you the essentials quickly and give you the tools and support you need to keep learning and growing as a developer.</p>
-    <div class="requiredBox"><h3>Required Application Materials</h3></div>
-  </div>
-</div>
-
-<div class="applyContent">
-  <div class="applyBox">
-    <div class="applyRailsBox">
-      <h3>For the Rails Session:</h3>
-      <ul>
-        <li>Resumé</li>
-        <li>Cover letter which addresses:</li>
-          <ul>
-            <li>Your interest and experience in programming</li>
-            <li>Why you want to learn Ruby on Rails</li>
-            <li>Who you are as a person, particular in the context of a team work environment</li>
-          </ul>
-        <li>A "Hello World" app in Ruby on Rails, committed to Github</li>
-      </ul>
-      <h4>Skill Requirements</h4>
-      <ul>
-        <li>Demonstrate understanding of programming basics</li>
-        <li>Do things in Interactive Ruby (irb)</li>
-        <li>Show us your Github account with self-created repos and lots of "green"</li>
-        <li>Write simple functions in Ruby, require gems, and generate other simple code in Ruby</li>
-        <li>Use the command line, Sublime Text 2, and Github with relative ease</li>
-      </ul>
-      <h4>Optional (but strongly encouraged) Additional Materials</h4>
-      <ul>
-        <li>Any portfolio items that show us what you are working on</li>
-        <li>Digital evidence of you being awesome. A video of you rapping, a poem about trees, or an animated gif of you doing interpretive dance</li>
-        <li>Community engagement activity including attendance at Ruby Newbies, RailsGirls/RubyNest, Hack & Help, the Portland Ruby Brigade, or activity on any related mailing lists or forums.</li>
-      </ul>
-      <p>Please send all documents, stories, videos, and digital sculptures to <a href="mailto:ckelly@portlandcodeschool.com">ckelly@portlandcodeschool.com</a>.</p>
-
-      <p>After you have submitted your documents you will receive a confirmation email within 1-2 days. Following the application deadline, we will review all applications and let you know what the next steps are.</p>
-    </div>
-
-    <div class="applyJSBox">
-      <h3>For the JavaScript Session:</h3>
-      <ul>
-        <li>Resumé</li>
-        <li>Cover letter which addresses:</li>
-          <ul>
-            <li>Why you want to be a web developer</li>
-            <li>Who you are as a person, particular in the context of a team work environment</li>
-          </ul>
-        <li>A personal (free) Github account that has a repository with an index.html page committed to it. The index page can simply say "Hello World" on it.</li>
-      </ul>
-      <h4>Skill Requirements (covered in the PCS Primer course)</h4>
-      <ul>
-        <li>Explain front-end vs. back-end web development</li>
-        <li>Draw a client-server model diagram</li>
-        <li>Open files in Sublime Text 2</li>
-        <li>Push new or altered files to a Github repo</li>
-        <li>Create a new file in a specific directory from the command line</li>
-      </ul>
-      <h4>Optional (but strongly encouraged) Additional Materials</h4>
-      <ul>
-        <li>Any portfolio items that show us what you are working on</li>
-        <li>Digital evidence of you being awesome. A video of you rapping, a poem about trees, or an animated gif of you doing interpretive dance.</li>
-        <li>Community engagement activity including attendance at Ruby Newbies, RailsGirls/RubyNest, Hack & Help, the Portland Ruby Brigade, or activity on any related mailing lists or forums.</li>
-      </ul>
-      <p>Please send all documents, stories, videos, and digital sculptures to <a href="mailto:ckelly@portlandcodeschool.com">ckelly@portlandcodeschool.com</a>.</p>
-
-      <p>After you have submitted your documents you will receive a confirmation email within 1-2 days. Following the application deadline, we will review all applications and let you know what the next steps are.</p>
-    </div>
-  </div>
-</div>
-
-
-

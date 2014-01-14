@@ -1,81 +1,34 @@
 <!doctype html>
-<!--[if lt IE 9]><html class="ie"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
-
+<html>
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title><%= @title %></title>
+    <title>
+      <%= "Portland Code School: " if current_page.data.title != "Portland Code School" %>
+      <%= current_page.data.title %>
+    </title>
+    
+    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", "/stylesheets/all" %>
 
-    <link href="images/icons/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P&text=PortlandCodeSchool' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
-    <!-- <link rel="stylesheet" href="stylesheets/screen.css"/> -->
-    <!-- <link rel="stylesheet" href="stylesheets/pages.css"/> -->
-    <link rel="stylesheet" href="stylesheets/yellow.css"/>
-    <link rel="stylesheet" href="stylesheets/application.css"/>
-    <link rel="stylesheet" href="stylesheets/responsive.css"/>
-    <%= javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js','/javascripts/core.js', '/javascripts/respond.min.js', '/javascripts/bootstrap.min.js') %>
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <link rel="stylesheet" href="stylesheets/modules/font-awesome-ie7.css"/>
-    <![endif]-->
-    <script type="text/javascript">
+    <%= javascript_include_tag "https://code.jquery.com/jquery.js", "//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" %>
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-37234345-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-
+    
   </head>
+  
+  <body class="<%= page_classes %>">
 
-  <body lang="en" id="<%= @body_id %>">
-    <div id="container">
+    <%= partial "partials/header" %>
+    <div class="container">
 
-      <div id="wrapper">
+        <%= yield %>
 
-        <header>
-          <a href="/"><img src="images/logo.png" alt="PCS logo" class="pcs-logo"></a>
-          <ul>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="employers.html">Employers</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="search-box">
-            <img src="images/mag-box.png" class="mag-box" alt="background box">
-            <a href="calendar.html"><img src="images/icons/icon-cal.png" class="mag" alt="search icon"></a>
-          </div>
-        </header>
-
-        <div class="spacer"></div>
-
-        <div id="page-wrapper">
-          <%= yield %>
-        </div>
-
-        <footer class="clearfix footerBox">
-          <div class="bottom-links">
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li class="stupidBullet">•</li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li class="stupidBullet">•</li>
-              <li><a href="http://www.github.com/portlandcodeschool" target="_blank">Github</a></li>
-            </ul>
-          </div>
-        </footer>
-      </div> <!-- end wrapper -->
-    </div> <!-- end container -->
+    </div>
+      <%= partial "partials/footer" %>
+    
 
   </body>
-
 </html>

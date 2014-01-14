@@ -1,73 +1,76 @@
-<% @title = "Portland Code School" %>
-<% @body_id = 'homepage' %>
+---
+title: Portland Code School
+---
 
-<div class="home-img">
-  <img src="images/home_photo.png" alt="">
+<div class="row">
+
+  <!-- Tagline info -->
+  <div class="col-sm-6">
+    <h2>Redesign in progress for
+      <%= link_to "Portland Code School", "http://portlandcodeschool.com/" %>
+    </h2>
+    <p>
+      Portland Code School is the place to build the skills you need to get a job programming. Whether you want to become a freelancer or a full-time software engineer at one of Portland's many tech companies, we provide an intensive learning environment that will meet you where you are and take you where you want to go. Learn more <%= link_to "about us", "/about.html" %>.
+    </p>
+  </div>
+
+  <!-- Main photo -->
+  <div class="col-sm-6 hidden-xs thumbnail">
+    <%= image_tag "students05.png" %>
+    <% link_to "Ruby on Rails", "http://portlandcodeschool.com", :class=>"caption" %>
+  </div>
+
 </div>
-<div class="text-a">
-  <p>We learned code. So can you.</p>
-</div>
-<div class="apply-box">
-  <div class="text-b">
-    <a href="apply.html">Apply</a>
-  </div>
-  <div class="apply-arrow">
-    <a href="apply.html"><img src="images/arrow.png" alt="arrow"></a>
-  </div>
-</div>
 
-<div class="greyMatter"></div>
+<hr>
 
-<div class="yellowBoxes">
-  <div class="yellowRails">
-    <div class="yellowRailsHead">
-      <img src="images/icon-rails.png" alt="rails icon" class="railsIcon">
-      <h4>Ruby on Rails</h4>
-    </div>
-    <div class="yellowRailsBody">
-      <p><span style="font-family: OpenSans-CondBold;">WHO:</span> For those with a technical background and the code hobbyist.</p>
-      <p><span style="font-family: OpenSans-CondBold;">WHAT:</span> Rails is a robust framework written in the Ruby language that is used to build amazing, full featured dynamic websites. Read more about Ruby on Rails here.</p>
-      <p><span style="font-family: OpenSans-CondBold;">WHY:</span> Being a Rails developer is like wielding a Light Saber while wearing the One Ring on your finger at the same time. It is truly all powerful. It's also a sure way to make you HIGHLY desirable in the tech industry, and immediately command a $40-50/hr job.</p>
-    </div>
-    <a href="Rails-ClassDetails.pdf" target="_blank">Class Details</a>
+<div class="row">
+
+  <!-- Javascript -->
+  <div class="col-md-6">
+    <p class="thumbnail">
+      <% link_to "/classes.html#javascript-class" do %>
+        <%= image_tag "js.jpg" %>
+      <% end %>
+      <h3 class="caption">Full-Stack Javascript</h3>
+      Learn how to build web applications and interactive website features from scratch using JavaScript. Students will learn both front-end and back-end applications of JavaScript, including jQuery, BackboneJS, and NodeJS. Every web application needs JavaScript, and the demand for JavaScript frameworks such as BackboneJS is only growing!
+    </p>
   </div>
 
-  <div class="yellowJS">
-    <div class="yellowJSHead">
-      <img src="images/icon-js.png" alt="javascript icon" class="jsIcon">
-      <h4>Full Stack JavaScript</h4>
-    </div>
-    <div class="yellowJSBody">
-      <p><span style="font-family: OpenSans-CondBold;">WHO:</span> For novices and code hobbyists.</p>
-      <p><span style="font-family: OpenSans-CondBold;">WHAT:</span> JavaScript is arguably the most powerful language used in web development. It can be used in many ways, from building simple jQuery sliders and creative interactivity, to object-oriented programming.</p>
-      <p><span style="font-family: OpenSans-CondBold;">WHY:</span> Learning JavaScript is like standing in tree pose on top of Machu Picchu with a foot on a zombie's throat, shooting a bazooka and knocking down a UFO. And it is the web language in the highest demand right now. Learn full stack JavaScript and help save humanity!</p>
-    </div>
-      <a href="JS-ClassDetails.pdf" target="_blank">Class Details</a>
-  </div>
-  <div class="mailingList">
-    <div id="mc_embed_signup" class="alpha third-col">
-      <form action="http://chuckvose.us1.list-manage.com/subscribe/post?u=bf62c907d00a592feb0eb305f&amp;id=50dbf0b987" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div class="mc-field-group">
-          <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-        </div>
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-      </form>
-    </div>
-  </div>
-  <div class="contactBox">
-    <div id="contact" class="third-col omega">
-      <h2>Contact Us</h2>
-      <p><a href="mailto:ckelly@portlandcodeschool.com">ckelly@portlandcodeschool.com</a> &nbsp;&nbsp;&nbsp;503-880-3551</p>
-      <div class="social-row">
-        <a href="http://www.facebook.com/PortlandCodeSchool" target="_blank"><img src="/images/fb-logo.png"></a>
-        <a href="http://www.twitter.com/pdxcodeschool" target="_blank"><img src="/images/tw-logo.png"></a>
-        <a href="mailto:ckelly@portlandcodeschool.com"><img src="/images/e-logo.png"></a>
-      </div>
-    </div>
+  <!-- Ruby on Rails -->
+  <div class="col-md-6">
+    <p class="thumbnail">
+      <% link_to "/classes.html#ruby-class" do %>
+        <%= image_tag "ruby.jpg" %>
+      <% end %>
+      <h3>Ruby on Rails</h3>
+      Learn to build interactive and dynamic web applications using Ruby on Rails. We start with a one month intensive on Ruby. After that, students will dive into the Rails framework, still building Ruby skills. 
+    </p>
   </div>
 </div>
 
+<div class="row">
 
+  <!-- Basics -->
+  <div class="col-md-6">
+    <p class="thumbnail">
+      <% link_to "/classes.html#primer-class" do %>
+        <%= image_tag "students01.png" %>
+      <% end %>
+      <h3 class="caption">Web Development Basics</h3>
+      Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
+    </p>
+  </div>
 
+  <!-- Freelancing -->
+  <div class="col-md-6">
+    <p class="thumbnail">
+      <% link_to "/classes.html#freelance-class" do %>
+        <%= image_tag "students04.png" %>
+      <% end %>
+      <h3>Front End Freelancing</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elementum ultrices. Phasellus vitae sapien non dui fermentum vestibulum. Sed ac sapien pretium, ornare diam at, vestibulum tortor.
+    </p>
+  </div>
 
-
+</div>
