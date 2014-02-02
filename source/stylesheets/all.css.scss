@@ -126,6 +126,15 @@ h3 {
   }
 }
 
+#banner {
+  position: absolute;
+  top: 56px;
+  // top: 0;
+  right: 0;
+  border: 0;
+  z-index: 999;
+}
+
 .class:before { 
   display: block; 
   content: " "; 
