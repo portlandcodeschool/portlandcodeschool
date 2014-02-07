@@ -161,6 +161,25 @@ h3 {
   }
 }
 
+.big-apply-button {
+  border-color: $red;
+  background-color: $red;
+  // width: 100px;
+  margin-bottom: 20px;
+  float:right;
+  &:hover {
+    color: white;
+    background-color: $dark-teal;
+  }
+  &.btn-default {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
 .circle {
   border-radius: 50%;
   border-style: solid;
