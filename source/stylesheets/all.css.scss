@@ -126,7 +126,16 @@ h3 {
   }
 }
 
-.class:before { 
+#banner {
+  position: absolute;
+  top: 56px;
+  // top: 0;
+  right: 0;
+  border: 0;
+  z-index: 999;
+}
+
+.link-padding:before { 
   display: block; 
   content: " "; 
   margin-top: -270px; 
@@ -139,6 +148,25 @@ h3 {
   background-color: $red;
   width: 100px;
   float:right;
+  &:hover {
+    color: white;
+    background-color: $dark-teal;
+  }
+  &.btn-default {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.big-apply-button {
+  border-color: $red;
+  background-color: $red;
+  // width: 100px;
+  margin-bottom: 20px;
+  // float:right;
   &:hover {
     color: white;
     background-color: $dark-teal;
