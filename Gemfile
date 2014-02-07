@@ -10,7 +10,6 @@ ruby "2.0.0"
 gem "middleman"
 gem "middleman-blog", "~> 3.4.1"
 gem "middleman-syntax"
-gem "middleman-gh-pages"
 gem "middleman-livereload", "~> 3.1.0"
 gem "bootstrap-sass", require: false
 
