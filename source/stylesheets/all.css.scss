@@ -23,7 +23,7 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
-  padding-top: 70px;
+  padding-top: 56px;
   max-width: 1400px;
 }
 
@@ -129,10 +129,39 @@ h3 {
 #banner {
   position: absolute;
   top: 56px;
-  // top: 0;
   right: 0;
   border: 0;
   z-index: 999;
+}
+
+#landing {
+  margin-right: -15px;
+  margin-left: -15px; 
+  background-position: 0px 0px;
+  background-color: #7b7b7b;
+  color: white;
+  background-image: url("/images/winter2013students.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+}
+
+.landing-content {
+  text-align: center;
+  a {
+    color: $lt-teal;
+    text-decoration: underline;
+    &:hover {
+      color: $dark-teal;
+    }
+    &.btn-default {
+      text-decoration: none;
+    }
+  }
+}
+
+.tagline {
+  font-size: 2.5em;
 }
 
 .link-padding:before { 
@@ -164,9 +193,7 @@ h3 {
 .big-apply-button {
   border-color: $red;
   background-color: $red;
-  // width: 100px;
   margin-bottom: 20px;
-  // float:right;
   &:hover {
     color: white;
     background-color: $dark-teal;
