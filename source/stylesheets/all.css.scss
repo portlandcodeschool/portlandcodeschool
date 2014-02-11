@@ -147,7 +147,10 @@ h3 {
 }
 
 .landing-content {
+  font-size: 1.2em;
   text-align: center;
+  padding-top: 8%;
+  padding-bottom: 8%;
   a {
     color: $lt-teal;
     text-decoration: underline;
@@ -156,6 +159,7 @@ h3 {
     }
     &.btn-default {
       text-decoration: none;
+      margin: 3% 0 3% 0;
     }
   }
 }
