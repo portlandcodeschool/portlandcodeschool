@@ -16,7 +16,19 @@ See the file license.txt for copying permission. -->
 <p>PCS course offerings include daytime and evening classes, including a new Front-end Freelancer class designed especially for individuals who plan to work from home. We hope that Coders with Kids will provide extra encouragement to busy parents for whom it may have been difficult to find time to devote to career building.
 </p>
 
-<h4>Here's the skinny:</h4> 
+<p>
+  <strong>Here's the skinny:</strong>
+</p> 
+
+<p>
+  <strong>Look for this symbol on eligible <%= link_to "classes", "/classes.html" %>:</strong>
+</p>
+<p>
+  <i class="fa fa-check-square-o fa-3x"></i>
+  <% link_to "/childcare.html" do %>
+    <%= image_tag "cwk_text.png" %>
+  <% end %>
+</p>
 
 <ul>
 <li>You will not have to pay the joining fee</li> 
@@ -26,4 +38,4 @@ See the file license.txt for copying permission. -->
 <li>If you go beyond the 15 hours in a week, you still pay the PCS rate ($7.50 per hour)</li>
 </ul>
 
-<p>For more information, check the "I'm interested in the Coders with Kids program" on the <%= link_to "Get Info", "partials/infoform.html" %> form when you apply.</p>
+<p>For more information, check the "I'm interested in the Coders With Kids program" on the <%= link_to "Get Info", "partials/infoform.html" %> form when you apply.</p>
