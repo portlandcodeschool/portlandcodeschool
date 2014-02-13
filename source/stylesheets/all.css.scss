@@ -98,6 +98,12 @@ header, footer {
   font-size: 18px;
 }
 
+.btn-group {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .logo {
   max-height: 47px;
   max-width: 103px;
@@ -123,6 +129,24 @@ header, footer {
 h3 {
   &.thanks {
     margin-bottom: 5px;
+  }
+}
+
+.class-btn {
+  color: white;
+  background-color: $red;
+  border-color: white;
+  &:hover {
+    color: $dark-teal;
+  //   background-color: $dark-teal;
+  //   border-color: $dark-teal;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $dark-teal;
+      text-decoration: none;
+    }
   }
 }
 
