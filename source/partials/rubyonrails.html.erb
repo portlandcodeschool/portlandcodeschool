@@ -3,30 +3,36 @@
 See the file license.txt for copying permission. -->
 
 <!-- ROR class info -->
-<div class="row">
-  <%= image_tag "ruby.png", :class=>"img-responsive" %>
-  
-  <h2 class="sr-only">Professional Web Application Development with Ruby on Rails</h2>
-  
-  <h4 class="link-padding">
-    Hours: 6pm-9pm, Tue/Thurs + some Saturdays 9am-Noon + 1 Saturday per month, 9am-4pm
-  </h4>
+<div class="row jumbotron">
+  <% link_to "/rubyonrails.html" do %>
+    <%= image_tag "ruby.png", :class=>"img-responsive centered" %>
+  <% end %>
+
+  <h2 class="sr-only">
+    Professional Web Application Development with Ruby on Rails
+  </h2>
 
   <p>
-    <strong>This course is eligible for 
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "cwk_text.png" %>
-      <% end %>
-    </strong>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_text.png" %>
+    <% end %>
   </p>
 
   <p>
-    <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+    <strong class="link-padding">Hours: 6pm-9pm, Tue/Thurs + some Saturdays 9am-Noon + 1 Saturday per month, 9am-4pm</strong>
   </p>
 
   <p>
     This class is designed to teach students how build interactive and dynamic web applications using Ruby on Rails in a professional team environment. We start with an intense 1-month refresher on the Ruby language. After that, we dive into the Rails framework, still building our Ruby skills. Along the way, students will become familiar with all aspects of web application architecture. Students will create a series of useful scripts and web applications, culminating in a portfolio-worthy capstone project.
   </p>
+
+  <p>
+    <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>
+
+<div class="row">
   <p>
     While prior programming and web development experience is helpful, it's not required. We have had students with zero experience work hard, take advantage of all possible learning opportunities, and create impressive skills and capstone web applications. Students with NO CODING EXPERIENCE should consider our Primer course as mandatory if they want to be successful.
   </p>

@@ -3,28 +3,35 @@
 See the file license.txt for copying permission. -->
 
 <!-- JavaScript class info -->
-<div class="row">
-  <%= image_tag "js.png", :class=>"img-responsive" %>
+<div class="row jumbotron">
+  <% link_to "/javascript.html" do %>
+    <%= image_tag "js.png", :class=>"img-responsive centered" %>
+  <% end %>
+  
 
   <h2 class="sr-only">Full-stack JavaScript</h2>
 
-  <h4 class="link-padding">Hours: 6pm-9pm, Mon/Wed + 1 Saturday per month, 9am-4pm</h4>
-
   <p>
-    <strong>This course is eligible for 
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "cwk_text.png" %>
-      <% end %>
-    </strong>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_text.png" %>
+    <% end %>
   </p>
 
   <p>
-    <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+    <strong class="link-padding">Hours: 6pm-9pm, Mon/Wed + 1 Saturday per month, 9am-4pm</strong>
   </p>
 
   <p>
     This course is designed to help students learn how to build web applications and interactive website features from scratch using JavaScript as the primary language. Students will learn both front-end and back-end applications of JavaScript (including jQuery, BackboneJS, and NodeJS). Every web application needs JavaScript, so it’s an extremely powerful language to know, and the demand for JavaScript frameworks such as BackboneJS is only growing.
   </p>
+
+  <p>
+    <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>
+
+<div class="row">
   <p>
     <strong>NOTE:</strong> Students with NO CODING EXPERIENCE should consider our Primer course before diving in to Full Stack JavaScript (see the Classes page for technical requirements).
     Students will be provided Treehouse accounts, and will be given access to the classroom from 9am-5pm M-F, as well as some Saturdays, leaving lots of time for independent and group learning. Students will primarily be working and learning in groups of 2-4 people.

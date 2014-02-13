@@ -3,26 +3,38 @@
 See the file license.txt for copying permission. -->
 
 <!-- Mobile class info -->
-<div class="row">
-  <%= image_tag "mobile_coming_soon.png", :class=>"img-responsive" %>
+<div class="row jumbotron">
+  <% link_to "/mobileapps.html" do %>
+    <%= image_tag "mobile_coming_soon.png", :class=>"img-responsive centered" %>
+  <% end %>
 
   <h2 class="sr-only">Mobile Apps</h2>
 
-  <h4 class="link-padding">
-    Hours: TBA
-  </h4>
-  
   <p>
-    <strong>This course is eligible for 
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "cwk_text.png" %>
-      <% end %>
-    </strong>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_text.png" %>
+    <% end %>
   </p>
 
-  <p><strong>Focus:</strong> Web and standalone application design for smart phone, tablet, and mobile devices</p>
-  <p><strong>Audience:</strong> Intermediate to experienced web developers</p>
+  <p>
+    <strong>Hours: TBA</strong>
+  </p>
 
+  <p>
+    <strong>Focus:</strong> Web and standalone application design for smart phone, tablet, and mobile devices
+  </p>
+
+  <p>
+    <strong>Audience:</strong> Intermediate to experienced web developers
+  </p>
+
+  <p>
+    <%= link_to "Add me to the list!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>
+
+<div class="row">
   <p>Upon successful completion, participants will be able to:
   </p>
   <ul>

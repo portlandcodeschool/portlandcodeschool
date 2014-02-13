@@ -3,33 +3,41 @@
 See the file license.txt for copying permission. -->
 
 <!-- Web Development Primer class info -->
-<div class="row">
-  <%= image_tag "webdev.png", :class=>"img-responsive" %>
-  
+<div class="row jumbotron">
+  <% link_to "/webdevelopmentprimer.html" do %>
+    <%= image_tag "webdev.png", :class=>"img-responsive centered" %>
+  <% end %>
+
   <h2 class="sr-only">Web Development Primer</h2>
-  
-  <h4 class="link-padding">Hours: Total of 15-18 hours of class time + online content over the 4 weeks.</h4>
 
   <p>
-    <strong>This course is eligible for 
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "cwk_text.png" %>
-      <% end %>
-    </strong>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_text.png" %>
+    <% end %>
   </p>
 
   <p>
-    <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+    <strong>Hours: Total of 15-18 hours of class time + online content over the 4 weeks.</strong>
   </p>
 
   <p> 
     Hit the road running with our Web Development Primer course. Learn how to use several important tools used by professional developers, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web.
   </p>
+
+  <p>
+    <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>
+
+<div class="row">
+
   <p>
     Learning Objectives - By the end of class you will be able to:
     Collaboratively create a static website using GitHub and Heroku
     Explain HTTP requests and the client-server model
     Use the command line
+  </p>
   <p>
     Create files in a text editor (Sublime Text 2) and display them in a browser
     Inspect a website’s code using the Chrome Developer Tools

@@ -94,6 +94,14 @@ header, footer {
 
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
 
+.jumbotron * {
+  margin-bottom: 25px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
 .btn {
   font-size: 18px;
 }
@@ -132,14 +140,19 @@ h3 {
   }
 }
 
+img {
+  &.centered {
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
 .class-btn {
   color: white;
   background-color: $red;
   border-color: white;
   &:hover {
     color: $dark-teal;
-  //   background-color: $dark-teal;
-  //   border-color: $dark-teal;
   }
   a {
     color: white;
@@ -188,16 +201,12 @@ h3 {
   }
 }
 
-.tagline {
-  font-size: 2em;
+.margin {
+  margin-top: 10px;
 }
 
-.link-padding:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -270px; 
-  height: 270px;
-  visibility: hidden; 
+.tagline {
+  font-size: 2em;
 }
 
 .apply-button {
@@ -235,6 +244,14 @@ h3 {
   }
 }
 
+.link-padding:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -270px; 
+  height: 270px;
+  visibility: hidden; 
+}
+
 .circle {
   border-radius: 50%;
   border-style: solid;
@@ -245,18 +262,6 @@ h3 {
 .icon-spacing {
   margin-right: 10px;
   margin-left: 10px;
-}
-
-.page-padding {
-  padding-bottom: 3%;
-}
-
-.centered {
-  float: left;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 .google-embed {

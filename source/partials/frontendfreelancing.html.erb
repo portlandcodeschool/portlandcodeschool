@@ -3,28 +3,35 @@
 See the file license.txt for copying permission. -->
 
 <!-- Front End Freelancing class info -->
-<div class="row">
-  <%= image_tag "frontend.png", :class=>"img-responsive" %>
+<div class="row jumbotron">
+  <% link_to "/frontendfreelancing.html" do %>
+    <%= image_tag "frontend.png", :class=>"img-responsive centered" %>
+  <% end %>
 
   <h2 class="sr-only">Front End Freelancing</h2>
 
-  <h4 class="link-padding">Hours: 9am-12pm, Mon/Wed/Friday</h4>
+  <p>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_text.png" %>
+    <% end %>
+  </p>
 
   <p>
-    <strong>This course is eligible for 
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "cwk_text.png" %>
-      <% end %>
-    </strong>
+    <strong class="link-padding">Hours: 9am-12pm, Mon/Wed/Friday</strong>
+  </p>
+
+  <p>
+    This comprehensive course gives you everything you need to start a freelance career in front-end web development. In this fast-paced, project-based 16-week course, you will learn all the skills necessary for web application front-end design and development.
   </p>
 
   <p>
     <%= link_to "Enroll Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
   </p>
+</div>
 
-  <p>
-    This comprehensive course gives you everything you need to start a freelance career in front-end web development. In this fast-paced, project-based 16-week course, you will learn all the skills necessary for web application front-end design and development:
-  </p>
+<div class="row">
+  <p>You will learn:</p>
   <ul>
     <li>Designing web site look, feel, and functionality based on client requirements</li>
     <li>Understanding basic principles of user interface design and user experience patterns</li>

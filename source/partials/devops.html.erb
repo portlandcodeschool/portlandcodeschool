@@ -3,26 +3,38 @@
 See the file license.txt for copying permission. -->
 
 <!-- Devops class info -->
-<div class="row">
-  <%= image_tag "devops_coming_soon.png", :class=>"img-responsive" %>
+<div class="row jumbotron">
+  <% link_to "/devops.html" do %>
+    <%= image_tag "devops_coming_soon.png", :class=>"img-responsive centered" %>
+  <% end %>
 
   <h2 class="sr-only">DevOps</h2>
 
-  <h4 class="link-padding">
-    Hours: TBA
-  </h4>
-
   <p>
-    <strong>This course is eligible for 
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "cwk_text.png" %>
-      <% end %>
-    </strong>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_text.png" %>
+    <% end %>
   </p>
 
-  <p><strong>Focus:</strong> Web application design and deployment for scalability and resiliency </p>
-  <p><strong>Audience:</strong> Programmers and system administrators</p>
+  <p>
+    <strong>Hours: TBA</strong>
+  </p>
 
+  <p>
+    <strong>Focus:</strong> Web application design and deployment for scalability and resiliency
+  </p>
+
+  <p>
+    <strong>Audience:</strong> Programmers and system administrators
+  </p>
+
+  <p>
+    <%= link_to "Add me to the list!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>
+
+<div class="row">
   <p>Upon successful completion, participants will be able to:
   </p>
   <ul>
