@@ -12,6 +12,7 @@ gem "middleman-blog", "~> 3.4.1"
 gem "middleman-syntax"
 gem "middleman-livereload", "~> 3.1.0"
 gem "bootstrap-sass", require: false
+gem "rake"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
