@@ -1,5 +1,6 @@
 namespace :assets do
   task :precompile do
-    sh "middleman build"
+    puts "I am a rake task"
+    # sh "middleman build"
   end
 end
