@@ -151,12 +151,17 @@ img {
   color: white;
   background-color: $red;
   border-color: white;
-  &:hover {
-    color: $dark-teal;
-  }
   a {
     color: white;
-    &:hover {
+    // &:hover {
+    //   color: $dark-teal;
+    //   text-decoration: none;
+    // }
+  }
+  &:hover {
+    color: $dark-teal;
+    text-decoration: none;
+    a {
       color: $dark-teal;
       text-decoration: none;
     }
@@ -173,11 +178,11 @@ img {
 
 #landing {
   margin-right: -15px;
-  margin-left: -15px; 
+  margin-left: -15px;
   background-position: 0px 0px;
   background-color: #7b7b7b;
   color: white;
-  background-image: url("/winter2013students.jpg");
+  background-image: url("/images/winter2013students.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: visible;
@@ -244,12 +249,12 @@ img {
   }
 }
 
-.link-padding:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -270px; 
+.link-padding:before {
+  display: block;
+  content: " ";
+  margin-top: -270px;
   height: 270px;
-  visibility: hidden; 
+  visibility: hidden;
 }
 
 .circle {
