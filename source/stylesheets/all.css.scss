@@ -153,10 +153,6 @@ img {
   border-color: white;
   a {
     color: white;
-    // &:hover {
-    //   color: $dark-teal;
-    //   text-decoration: none;
-    // }
   }
   &:hover {
     color: $dark-teal;
@@ -182,7 +178,7 @@ img {
   background-position: 0px 0px;
   background-color: #7b7b7b;
   color: white;
-  background-image: url("/images/winter2013students.jpg");
+  background-image: image_url("images/winter2013students.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: visible;
