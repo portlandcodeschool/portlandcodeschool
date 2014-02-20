@@ -2,10 +2,146 @@
 <!-- Copyright (c) 2013, 2014 ICRL
 See the file license.txt for copying permission. -->
 
-<div class="hidden-xs">
-  <iframe src="https://docs.google.com/forms/d/1IkU2Ar6UJohi9YIM-eSHTy-sSZMtB2gxeUvFqgwlVmA/viewform?embedded=true" width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>
+<!-- This page is pretty hacked. I've followed this tutorial (http://morning.am/tutorials/how-to-style-google-forms/) to style this form. -->
 
-<div class="visible-xs">
-  <iframe src="https://docs.google.com/forms/d/1IkU2Ar6UJohi9YIM-eSHTy-sSZMtB2gxeUvFqgwlVmA/viewform?embedded=true" width="270" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<div id="info-form">
+  <script type="text/javascript">var submitted=false;</script>
+
+  <!-- Set the custom form confirmation link address here -->
+  <iframe name="hidden_iframe" id="hidden_iframe"
+  style="display:none;" onload="if(submitted)
+  {window.location='http://portlandcodeschool.com/confirmation/';}"></iframe>
+
+  <!-- If form address on Google Docs ever changes, update the link here -->
+  <form action="https://docs.google.com/forms/d/1IkU2Ar6UJohi9YIM-eSHTy-sSZMtB2gxeUvFqgwlVmA/formResponse" method="post"
+  target="hidden_iframe" onsubmit="submitted=true;">
+      <div role="list">
+          <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
+                  <div class="ss-form-entry">
+                      <label aria-hidden="true" class="ss-q-item-label" for="entry_184696079">
+                          <div class="ss-q-title">Name
+                              <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                              <span class="ss-required-asterisk">*</span>
+                          </div>
+                          <div class="ss-q-help ss-secondary-text" dir="ltr">First &amp; Last</div>
+                      </label>
+                      <input type="text" name="entry.184696079" value="" class="ss-q-short" id="entry_184696079" dir="auto" aria-label="Name First &amp; Last " aria-required="true" required="" title="">
+                      <div class="error-message"></div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-text">
+                  <div class="ss-form-entry">
+                      <label aria-hidden="true" class="ss-q-item-label" for="entry_2078147415">
+                          <div class="ss-q-title">Email address
+                              <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                              <span class="ss-required-asterisk">*</span>
+                          </div>
+                          <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                      </label>
+                      <input type="text" name="entry.2078147415" value="" class="ss-q-short" id="entry_2078147415" dir="auto" aria-label="Email address  " aria-required="true" required="" title="">
+                      <div class="error-message"></div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="ltr" class="ss-item jfk-scrollbar ss-item-required ss-checkbox">
+                  <div class="ss-form-entry">
+                      <label aria-hidden="true" class="ss-q-item-label" for="entry_14839259">
+                          <div class="ss-q-title">Which class(es) are you interested in?
+                              <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                              <span class="ss-required-asterisk">*</span>
+                          </div>
+                          <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                      </label>
+
+                      <ul class="ss-choices ss-choices-required" role="group" aria-label="Which class(es) are you interested in?  ">
+                          <li class="ss-choice-item">
+                              <label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.824493740" value="Primer" id="group_824493740_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                                  <span class="ss-choice-label">Primer</span>
+                              </label>
+                          </li>
+                          <li class="ss-choice-item">
+                              <label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.824493740" value="Front End Freelancing" id="group_824493740_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                                  <span class="ss-choice-label">Front End Freelancing</span>
+                              </label>
+                          </li>
+                          <li class="ss-choice-item">
+                              <label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.824493740" value="Full-Stack Javascript" id="group_824493740_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                                  <span class="ss-choice-label">Full-Stack Javascript</span>
+                              </label>
+                          </li>
+                          <li class="ss-choice-item">
+                              <label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.824493740" value="Ruby on Rails" id="group_824493740_4" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                                  <span class="ss-choice-label">Ruby on Rails</span>
+                              </label>
+                          </li>
+                          <li class="ss-choice-item">
+                              <label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.824493740" value="Not sure, I&#39;d like more information" id="group_824493740_5" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+                                  <span class="ss-choice-label">Not sure, I&#39;d like more information</span>
+                              </label>
+                          </li>
+                      </ul>
+                      <div class="error-message"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="ltr" class="ss-item jfk-scrollbar  ss-paragraph-text">
+                  <div class="ss-form-entry">
+                      <label aria-hidden="true" class="ss-q-item-label" for="entry_1339473469">
+                          <div class="ss-q-title">Describe your career goals, or what you hope to achieve from attending a Portland Code School class
+                          </div>
+                          <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                      </label>
+                      <textarea name="entry.1339473469" class="ss-q-long" id="entry_1339473469" dir="auto" aria-label="Describe your career goals, or what you hope to achieve from attending a Portland Code School class  "></textarea>
+                      <div class="error-message"></div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="ss-form-question errorbox-good" role="listitem">
+              <div dir="ltr" class="ss-item jfk-scrollbar  ss-checkbox">
+                  <div class="ss-form-entry">
+                      <label aria-hidden="true" class="ss-q-item-label" for="entry_761859032">
+                          <div class="ss-q-title">
+                          </div>
+                          <div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+                      </label>
+
+                      <ul class="ss-choices" role="group" aria-label="  ">
+                          <li class="ss-choice-item">
+                              <label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.936783560" value="I&#39;m interested in the Coders with Kids program!" id="group_936783560_1" role="checkbox" class="ss-q-checkbox"></span>
+                                  <span class="ss-choice-label">I&#39;m interested in the Coders with Kids program!</span>
+                              </label>
+                          </li>
+                      </ul>
+                      <div class="error-message"></div>
+                  </div>
+              </div>
+          </div>
+          <input type="hidden" name="draftResponse" value="[,,&quot;2848431766922634011&quot;]">
+          <input type="hidden" name="pageHistory" value="0">
+          <input type="hidden" name="fromEmail" value="false">
+
+          <input type="hidden" name="fbzx" value="2848431766922634011">
+
+          <div class="ss-item ss-navigate">
+              <table id="navigation-table">
+                  <tbody>
+                      <tr>
+                          <td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                              <input type="submit" name="submit" value="Submit" id="ss-submit" class="big-apply-button btn btn-default">
+                              <div class="ss-required-asterisk">* Indicates required field.</div>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </form>
 </div>

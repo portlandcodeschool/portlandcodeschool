@@ -283,3 +283,32 @@ img {
   height: 100% !important;
   padding: 2%;
 }
+
+#info-form {
+  .ss-required-asterisk {
+    color: $red;
+  }
+  .ss-secondary-text {
+    color: grey;
+    font-weight: lighter;
+    font-size: .9em;
+  }
+  .ss-q-short {
+    display: block;
+  }
+  textarea {
+    width: 80%;
+  }
+  .ss-q-long {
+    display: block;
+    min-width: 270px;
+    min-height: 200px;
+  }
+  #ss-submit {
+    margin: 4% 0;
+  }
+  ul li {
+    list-style: none;
+    text-indent: -1em;
+  }
+}
