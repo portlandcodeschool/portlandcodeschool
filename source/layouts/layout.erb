@@ -28,14 +28,15 @@
   <body class="<%= page_classes %>">
     <a href="#content" class="sr-only">Skip to main content</a>
 
-    <%= partial "partials/header" %>
+    <div id="wrap">
+      <%= partial "partials/header" %>
+      <div class="container content-margin" id="content">
 
-    <div class="container" id="content">
+        <%= yield %>
 
-      <%= yield %>
-
+      </div>
+      <div id="push"></div>
     </div>
-
     <%= partial "partials/footer" %>
 
   </body>

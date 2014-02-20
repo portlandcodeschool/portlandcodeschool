@@ -18,12 +18,15 @@ $dark-teal: #63918E;
 
 /* ===MAIN STYLES=== */
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Exo 2', 'sans-serif';
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
-  padding-top: 56px;
 }
 
  h1 {
@@ -97,6 +100,10 @@ header, footer {
   max-width: 1400px;
 }
 
+.content-margin {
+  padding: 0 10px;
+}
+
 .jumbotron * {
   margin-bottom: 25px;
 }
@@ -122,6 +129,13 @@ header, footer {
 
 .row {
   max-width: 1350px;
+  margin: 0;
+}
+
+header, footer {
+  .row {
+    margin: 0 -15px;
+  }
 }
 
 .thumbnail {
@@ -309,4 +323,21 @@ img {
     list-style: none;
     text-indent: -1em;
   }
+}
+
+/* === STICKY FOOTER STYLES ===*/
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -155px;
+  padding-top: 56px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 155px;
 }
