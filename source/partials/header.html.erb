@@ -7,7 +7,7 @@ See the file license.txt for copying permission. -->
     <div class="row">
 
       <!-- PCS logo -->
-      <div class="navbar-header col-xs-5 col-sm-3">
+      <div class="navbar-header navbar-left col-xs-5 col-sm-2">
         <% link_to "/index.html" do %>
           <%= image_tag "logo-lt-teal.png", :class=>"img-responsive logo" %>
         <% end %>
@@ -29,7 +29,7 @@ See the file license.txt for copying permission. -->
       </div>
 
       <!-- Navigation links -->
-      <div class="hidden-xs col-sm-9">
+      <div class="hidden-xs col-sm-10">
         <%= link_to "Get Info!", "/getinfo.html", :class=>"btn btn-default navbar-btn apply-button" %>
         <%= partial "partials/navlinks" %>
       </div>
