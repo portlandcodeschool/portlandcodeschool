@@ -24,7 +24,6 @@ body {
   line-height: 1.6em;
   color: $brown;
   padding-top: 56px;
-  max-width: 1400px;
 }
 
  h1 {
@@ -93,6 +92,10 @@ header, footer {
 }
 
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
+
+.container {
+  max-width: 1400px;
+}
 
 .jumbotron * {
   margin-bottom: 25px;
@@ -278,4 +281,5 @@ img {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+  padding: 2%;
 }

@@ -3,52 +3,54 @@
 See the file license.txt for copying permission. -->
 
 <footer class="navbar navbar-default">
-  <div class="row margin">
-    <!-- Contact info/link -->
-    <div class="col-md-4 hidden-sm hidden-xs">
-      <p>
-        <strong>
-          <%= link_to "Contact Us", "/contact.html" %>
-        </strong><br>
-        1771 NW Pettygrove Street, Suite #140<br>
-        Portland, OR 97209
-      </p>
-    </div>
-
-    <!-- Social media buttons -->
-    <div class="col-md-4">
-      <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://GitHub.com/portlandcodeschool", :class=>"icon-spacing" %>
-      <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
-      <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool", :class=>"icon-spacing" %>
-      <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://plus.google.com/communities/109115545781652920966", :class=>"icon-spacing" %>
-    </div>
-
-    <!-- Partners links -->
-    <div class="col-md-4">
-      <div class="navbar-stacked">
-        <strong>Partners</strong>
+  <div class="container">
+    <div class="row margin">
+      <!-- Contact info/link -->
+      <div class="col-md-4 hidden-sm hidden-xs">
+        <p>
+          <strong>
+            <%= link_to "Contact Us", "/contact.html" %>
+          </strong><br>
+          1771 NW Pettygrove Street, Suite #140<br>
+          Portland, OR 97209
+        </p>
       </div>
-      <div class="navbar-stacked">
-        <% link_to "http://vitamintalent.com/", :class=>"icon-spacing" do %>
-          <%= image_tag "partners/vitamin-logo.png" %> 
-        <% end %>
 
-        <% link_to "http://www.corsource.com/", :class=>"icon-spacing" do %>
-          <%= image_tag "partners/corsource-logo.png" %>
-        <% end %>
+      <!-- Social media buttons -->
+      <div class="col-md-4">
+        <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://GitHub.com/portlandcodeschool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool", :class=>"icon-spacing" %>
+        <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://plus.google.com/communities/109115545781652920966", :class=>"icon-spacing" %>
+      </div>
 
-        <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing" do %>
-          <%= image_tag "partners/treehouse-logo.png" %>
-        <% end %>
+      <!-- Partners links -->
+      <div class="col-md-4">
+        <div class="navbar-stacked">
+          <strong>Partners</strong>
+        </div>
+        <div class="navbar-stacked">
+          <% link_to "http://vitamintalent.com/", :class=>"icon-spacing" do %>
+            <%= image_tag "partners/vitamin-logo.png" %>
+          <% end %>
 
-        <% link_to "http://wevillage.com/", :class=>"icon-spacing" do %>
-          <%= image_tag "partners/wv-logo-sm.png" %>
-        <% end %>
+          <% link_to "http://www.corsource.com/", :class=>"icon-spacing" do %>
+            <%= image_tag "partners/corsource-logo.png" %>
+          <% end %>
+
+          <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing" do %>
+            <%= image_tag "partners/treehouse-logo.png" %>
+          <% end %>
+
+          <% link_to "http://wevillage.com/", :class=>"icon-spacing" do %>
+            <%= image_tag "partners/wv-logo-sm.png" %>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    &copy; 2014 <%= link_to "Burnside Digital", "http://www.burnsidedigital.com/" %>
+    <div class="row">
+      &copy; 2014 <%= link_to "Burnside Digital", "http://www.burnsidedigital.com/" %>
+    </div>
   </div>
 </footer>
