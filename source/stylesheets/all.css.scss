@@ -296,7 +296,10 @@ img {
   padding: 2%;
 }
 
-#info-form {
+.form {
+  .ss-form-question {
+    padding-bottom: 2%;
+  }
   .ss-required-asterisk {
     color: $red;
   }
