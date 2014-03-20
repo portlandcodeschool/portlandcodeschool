@@ -50,6 +50,8 @@ activate :livereload
 
 activate :directory_indexes
 
+page "/google423459de028db7c6.html", :directory_index=>false
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
