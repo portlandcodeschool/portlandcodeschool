@@ -18,7 +18,10 @@ See the file license.txt for copying permission. -->
             <%= link_to "Calendar", "/calendar.html" %>
           </li>
           <li>
-            <%= link_to "Careers", "/careers.html" %>
+            <%= link_to "Work with Us", "/careers.html" %>
+          </li>
+          <li>
+            <%= link_to "Student Benefits", "/benefits.html" %>
           </li>
           <li>
             <%= link_to "About This Site", "/siteabout.html" %>
@@ -29,15 +32,8 @@ See the file license.txt for copying permission. -->
         </ul>
       </li>
       <li class="dropdown">
-        <%= link_to "Attending <b class=\"caret\"></b>", "/classes.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
-        <ul class="dropdown-menu">
-          <li>
-            <%= link_to "Classes", "/classes.html" %>
-          </li>
-          <li>
-            <%= link_to "Student Benefits", "/benefits.html" %>
-          </li>
-        </ul>
+        <%= link_to "Courses <b class=\"caret\"></b>", "/classes.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
+        <%= partial "partials/classdropdown.html" %>
       </li>
       <li>
         <%= link_to "Contact", "/contact.html" %>
