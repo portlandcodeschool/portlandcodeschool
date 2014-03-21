@@ -16,12 +16,11 @@ See the file license.txt for copying permission. -->
       </div>
       <div class="col-sm-6">
         <p>
-          Portland Code School is the place to build the skills you need to get a job programming. Whether you want to become a freelancer or a full-time software engineer at one of Portland's many tech companies, we provide an intensive learning environment that will meet you where you are and take you where you want to go. Learn more <%= link_to "about us", "/about.html" %>.
+          Portland Code School is the place to build the skills you need to get a job programming. We provide an intensive learning environment that will meet you where you are and take you where you want to go. Learn more <%= link_to "about us", "/about.html" %>.
         </p>
       </div>
-      <div class="">
-        <!-- TODO: make this a link directly to the FEF class. -->
-        <%= link_to "Get Started Now!", "/getinfo.html", :class=>"btn btn-default big-apply-button" %>
+      <div>
+        <%= partial "partials/mailinglist.html" %>
       </div>
     </div>
   </div>

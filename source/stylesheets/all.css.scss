@@ -280,6 +280,8 @@ img {
   margin-left: 10px;
 }
 
+/* ===GOOGLE EMBED CUSTOMIZATION=== */
+
 .google-embed {
   position: relative;
   padding-bottom: 75%; // This is the aspect ratio
@@ -328,14 +330,24 @@ img {
   }
 }
 
+/* === MAILCHIMP CUSTOMIZATIONS === */
+
+#mce-EMAIL {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
 /* === STICKY FOOTER STYLES ===*/
+
 /* Wrapper for page content to push down footer */
+
 #wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  /* Negative indent footer by it's height */
-  margin: 0 auto -155px;
+  margin: 0 auto -155px; /* Negative indent footer by it's height */
   padding-top: 56px;
 }
 
