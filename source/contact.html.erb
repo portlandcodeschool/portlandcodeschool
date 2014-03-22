@@ -8,10 +8,11 @@ See the file license.txt for copying permission. -->
 <h2>Contact Us</h2>
 <hr>
 
-<div class="row">
+<div class="row jumbotron">
   <div class="col-md-6">
     <p>
-      <strong>Cris Kelly, Director:</strong><br>
+      <strong>Cris Kelly, Director</strong><br>
+      <strong>Shawna Scott, Assistant Director</strong><br>
       <%= mail_to "info@portlandcodeschool.com", "info@portlandcodeschool.com" %>
     </p>
     <p>
@@ -23,6 +24,7 @@ See the file license.txt for copying permission. -->
       1771 NW Pettygrove Street, Suite #140<br>
       Portland, OR 97209
     </p>
+    <%= partial "partials/mailinglist.html" %>
   </div>
 
   <div class="col-md-6">
@@ -35,7 +37,5 @@ See the file license.txt for copying permission. -->
 <hr>
 
 <div class="row">
-  <h2>Get More Information!</h2>
-
   <%= partial "partials/infoform" %>
 </div>
