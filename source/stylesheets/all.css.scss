@@ -48,6 +48,12 @@ h2, h3, h4, h5, h6, p {
   margin-bottom: 30px;
 }
 
+td, th {
+  text-align: center;
+  padding: 1%;
+  border: solid 1px $brown;
+}
+
 /* ===HEADER/FOOTER=== */
 header, footer {
   text-align: center;
