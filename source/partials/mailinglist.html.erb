@@ -9,7 +9,7 @@ See the file license.txt for copying permission. -->
 
 
     <div class="mc-field-group">
-      <input type="email" value="" placeholder="email" name="EMAIL" class="required email" id="mce-EMAIL">
+      <input type="email" value="" placeholder="email address" name="EMAIL" class="required email" id="mce-EMAIL">
     </div>
 
     <div id="mce-responses" class="clear">
@@ -23,7 +23,7 @@ See the file license.txt for copying permission. -->
     </div>
 
     <div class="clear">
-      <input type="submit" value="Join the Community" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default big-apply-button">
+      <input type="submit" value=<% if current_page.data.title == "Portland Code School" %>"Join the Community"<% else %>"Send Me Updates"<% end %> name="subscribe" id="mc-embedded-subscribe" class="btn btn-default big-apply-button">
     </div>
 
 
