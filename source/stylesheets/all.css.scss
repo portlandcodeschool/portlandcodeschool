@@ -153,6 +153,12 @@ header, footer {
   padding-right: 2%;
 }
 
+/* ===FORMSTACK CUSTOMIZATIONS=== */
+
+#calculator .fsSubmit input.fsSubmitButton {
+  display:none;
+}
+
 /* ===CUSTOM CLASSES=== */
 
 h3 {
