@@ -52,11 +52,25 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
+    <!-- Data Visualization -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/datavisualization.html" do %>
+          <%= image_tag "dataviz.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Data Visualization</h3>
+        Whether you're an established developer, a newly minted junior, or a designer turned developer, data visualization will put an entirely new set of tools in your tool box. Learn to add dynamic, data-driven visualizations into your existing and new applications, and walk out of class with an advanced understanding of d3 and all the techniques you need for creating browser-based data visualizations.
+      </p>
+      <p>
+        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
     <!-- JavaScript -->
     <div class="col-md-6">
       <p>
         <% link_to "/javascript.html" do %>
-          <%= image_tag "js.png", :class=>"img-responsive" %>
+          <%= image_tag "js-tmp.png", :class=>"img-responsive" %>
         <% end %>
         <h3 class="sr-only">Full-Stack JavaScript</h3>
         Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries likejQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
@@ -66,19 +80,6 @@ See the file license.txt for copying permission. -->
       </p>
     </div>
 
-    <!-- Ruby on Rails -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/rubyonrails.html" do %>
-          <%= image_tag "ruby.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Ruby on Rails</h3>
-        Learn to build interactive and dynamic web applications using Ruby on Rails. We start with a one month intensive on Ruby. After that, you start building your portfolio - command line scripts, database utilities, web applications -- and take a deep dive into the Rails framework, culminating with a capstone project that you'll be proud to show employers. We emphasize team-oriented, project based practice so that you'll have both the people skills and technical chops you need.
-      </p>
-      <p>
-        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
   </div>
 
   <div class="row">
