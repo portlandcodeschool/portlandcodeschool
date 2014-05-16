@@ -3,50 +3,51 @@
 See the file license.txt for copying permission. -->
 
 <div class="collapse navbar-collapse">
-  <!-- <div class="col-xs-12 col-sm-8"> -->
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <%= link_to "About <b class=\"caret\"></b>", "/about.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
-        <ul class="dropdown-menu">
-          <li>
-            <%= link_to "About PCS", "/about.html" %>
-          </li>
-          <li>
-            <%= link_to "FAQ", "/faq.html" %>
-          </li>
-          <li>
-            <%= link_to "Student Benefits", "/benefits.html" %>
-          </li>
-          <li>
-            <%= link_to "Calendar", "/calendar.html" %>
-          </li>
-          <li>
-            <%= link_to "Meet The Team", "/meettheteam.html" %>
-          </li>
-          <li>
-            <%= link_to "Code of Conduct", "/codeofconduct.html" %>
-          </li>
-          <li>
-            <%= link_to "Work with Us", "/careers.html" %>
-          </li>
-          <li>
-            <%= link_to "About This Site", "/siteabout.html" %>
-          </li>
-          <li>
-            <%= link_to "Special Thanks", "/thanks.html" %>
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <%= link_to "Classes <b class=\"caret\"></b>", "/classes.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
-        <%= partial "partials/classdropdown.html" %>
-      </li>
-      <li>
-        <%= link_to "Contact", "/contact.html" %>
-      </li>
-      <li>
-        <%= link_to "Childcare", "/childcare.html" %>
-      </li>
-    </ul>
-  <!-- </div> -->
-</div><!--/.nav-collapse-->
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <%= link_to "About <b class=\"caret\"></b>", "/about.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
+      <ul class="dropdown-menu">
+        <li>
+          <%= link_to "About PCS", "/about.html" %>
+        </li>
+        <li>
+          <%= link_to "FAQ", "/faq.html" %>
+        </li>
+        <li>
+          <%= link_to "Student Benefits", "/benefits.html" %>
+        </li>
+        <li>
+          <%= link_to "Calendar", "/calendar.html" %>
+        </li>
+        <li>
+          <%= link_to "Meet The Team", "/meettheteam.html" %>
+        </li>
+        <li>
+          <%= link_to "Code of Conduct", "/codeofconduct.html" %>
+        </li>
+        <li>
+          <%= link_to "Work with Us", "/careers.html" %>
+        </li>
+        <li>
+          <%= link_to "About This Site", "/siteabout.html" %>
+        </li>
+        <li>
+          <%= link_to "Special Thanks", "/thanks.html" %>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <%= link_to "Classes <b class=\"caret\"></b>", "/classes.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
+      <%= partial "partials/classdropdown.html" %>
+    </li>
+    <li>
+      <%= link_to "Contact", "/contact.html" %>
+    </li>
+    <li>
+      <%= link_to "Childcare", "/childcare.html" %>
+    </li>
+    <li>
+      <%= link_to "Blog", "/blog.html" %>
+    </li>
+  </ul>
+</div>
