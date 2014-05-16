@@ -1,0 +1,19 @@
+<% wrap_layout :layout do %>
+  <article class="writing">
+    <h1><%= current_article.title %></h1>
+    <div class="article-details">
+      <div class="article-date">
+        <i class="fa fa-calendar-o"></i>
+        <%= current_article.date.strftime('%Y-%m-%d') %>
+        <div class="tags">
+          <%= "tags:" unless current_article.tags.empty? %>
+          <% current_article.tags.sort.each_with_index do |tag, i| %>
+            <% last = (i == current_article.tags.size - 1) %>
+            <%= link_to tag, tag_path(tag) %><%= "," unless last  %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+  </article>
+<% end %>

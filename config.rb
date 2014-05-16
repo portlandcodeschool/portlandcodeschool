@@ -2,6 +2,46 @@
 # See the file license.txt for copying permission.
 
 ###
+# Blog settings
+###
+
+Time.zone = "Pacific Time (US & Canada)"
+
+
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.taglink = "/tags/:tag.html"
+  blog.layout = "post"
+  blog.default_extension = ".markdown.erb"
+  blog.tag_template = "blog/tag.html"
+  blog.paginate = true
+  blog.summary_separator = /(READMORE)/
+  # blog.summary_length = 500
+  # blog.calendar_template = "calendar.html"
+  blog.permalink = ":year/:month/:day/:title.html"
+  # blog.sources = ":year-:month-:day-:title.html"
+  # blog.year_link = ":year.html"
+  # blog.month_link = ":year/:month.html"
+  # blog.day_link = ":year/:month/:day.html"
+  # blog.per_page = 10
+  # blog.page_link = "page/:num"
+end
+
+activate :syntax
+
+activate :directory_indexes
+
+page "blog/feed.xml", :layout => false
+
+set :markdown_engine, :redcarpet
+set :markdown, :layout_engine => :erb,
+               :fenced_code_blocks => true,
+               :tables => true,
+               :autolink => true,
+               :smartypants => true,
+               :with_toc_data => true
+
+###
 # Compass
 ###
 
@@ -47,8 +87,6 @@ activate :livereload
 #     "Helping"
 #   end
 # end
-
-activate :directory_indexes
 
 page "/google423459de028db7c6.html", :directory_index=>false
 

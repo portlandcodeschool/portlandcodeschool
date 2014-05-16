@@ -1,0 +1,17 @@
+---
+title: Tags
+---
+
+<section id="tag-list">
+  <h2>Post Tags</h2>
+  <button class="btn btn-default blog-btn"><%= link_to '<i class="fa fa-angle-double-left"></i> Blog', "/blog.html" %></button>
+  <ul>
+    <% blog.tags.sort.each do |name, resource| %>
+      <li>
+        <h3>
+        <%= link_to "#{name} (#{resource.size})", tag_path(name) %>
+        </h3>
+      </li>
+    <% end %>
+  </ul>
+</section>

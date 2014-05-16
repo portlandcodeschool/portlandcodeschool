@@ -16,3 +16,6 @@ gem "rake"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+
+gem 'redcarpet', github: 'vmg/redcarpet'
+gem 'nokogiri'

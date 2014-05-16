@@ -100,6 +100,34 @@ header, footer {
   }
 }
 
+/* ===BLOG STYLES=== */
+
+#posts-by-tag, #post-list {
+  ul {
+    list-style-type: none;
+  }
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    a {
+      color: $dark-teal;
+    }
+  }
+}
+
+#tag-list {
+  ul {
+    list-style-type: none;
+  }
+  a {
+    font-family: 'Exo 2', 'sans-serif';
+  }
+}
+
+.article-details {
+  margin-bottom: 30px;
+}
+
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
 
 .container {
@@ -177,6 +205,23 @@ img {
 .class-btn {
   color: white;
   background-color: $red;
+  border-color: white;
+  a {
+    color: white;
+  }
+  &:hover {
+    color: $dark-teal;
+    text-decoration: none;
+    a {
+      color: $dark-teal;
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-btn {
+  color: white;
+  background-color: $dark-teal;
   border-color: white;
   a {
     color: white;
