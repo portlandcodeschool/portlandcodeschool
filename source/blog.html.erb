@@ -8,6 +8,16 @@ per_page: 10
 
   <p>Stay up to date on the latest happenings at Portland Code School! Check back often for student profiles, new class announcements, and tech industry content. You can find a list of posts by tags <%= link_to "here", "/blog/tags/" %>.</p>
 
+  <div>
+    <%= image_tag "coming_soon.png", :class=>"img-responsive centered" %>
+  </div>
+
+  <div>
+    <h3 class="text-center">
+      Stay tuned for news and updates about Portland Code School students, classes, and events!
+    </h3>
+  </div>
+
   <ul>
     <% blog.articles.each_with_index do |article, i| %>
       <% last_article = (i == blog.articles.size - 1) %>
