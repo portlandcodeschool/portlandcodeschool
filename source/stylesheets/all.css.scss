@@ -400,7 +400,12 @@ img {
   margin-bottom: 20px;
   border-radius: 4px;
   border: none;
+  &.email-signup {
+    border: solid;
+    color: gray;
+  }
 }
+
 
 /* === STICKY FOOTER STYLES ===*/
 
