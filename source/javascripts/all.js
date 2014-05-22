@@ -12,8 +12,4 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).parent().next().slideToggle();
   });
-
-
-
-
 });
