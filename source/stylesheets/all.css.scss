@@ -138,6 +138,25 @@ header, footer {
 
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
 
+.alert-info {
+  opacity: 0.6;
+  background-color: $dark-teal;
+  color: $lt-teal;
+  border: $dark-teal;
+  a {
+    color: $lt-teal;
+    font-weight: 700;
+    &:hover {
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+  li {
+    list-style: none;
+  }
+}
+
 .container {
   max-width: 1400px;
 }
@@ -244,14 +263,6 @@ img {
   }
 }
 
-#banner {
-  position: absolute;
-  top: 56px;
-  right: 0;
-  border: 0;
-  z-index: 999;
-}
-
 #landing {
   background-position: 0px 0px;
   background-color: #7b7b7b;
@@ -341,6 +352,10 @@ img {
 .icon-spacing {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.push {
+  height: 20px;
 }
 
 /* ===GOOGLE EMBED CUSTOMIZATION=== */
