@@ -27,6 +27,14 @@ body {
   font-size: 18px;
   line-height: 1.6em;
   color: $brown;
+  a {
+    color: $dark-teal;
+    text-decoration: none;
+    &:hover {
+      color: $dark-teal;
+      text-decoration: underline;
+    }
+  }
 }
 
  h1 {
@@ -121,6 +129,15 @@ header, footer {
   }
   a {
     font-family: 'Exo 2', 'sans-serif';
+  }
+}
+
+.article {
+  li {
+    margin: 20px 0 20px 0;
+    padding: 2%;
+    border: 5px solid $dark-teal;
+    border-radius: 5px;
   }
 }
 
