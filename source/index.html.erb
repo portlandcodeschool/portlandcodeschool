@@ -36,8 +36,9 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
+    <div class="col-md-2"></div>
     <!-- Data Visualization -->
-    <div class="col-md-6">
+    <div class="col-md-8">
       <p>
         <% link_to "/datavisualization.html" do %>
           <%= image_tag "data_viz_ana_padding.png", :class=>"img-responsive" %>
@@ -55,6 +56,11 @@ See the file license.txt for copying permission. -->
       </p>
     </div>
 
+    <div class="col-md-2"></div>
+
+  </div>
+
+  <div class="row">
     <!-- Mobile with iOS -->
     <div class="col-md-6">
       <p>
@@ -68,6 +74,20 @@ See the file license.txt for copying permission. -->
       </p>
     </div>
 
+    <!-- Mobile with Phonegap -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/mobile-phonegap.html" do %>
+          <%= image_tag "mobile_phonegap.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Mobile Development with Phonegap</h3>
+        <p>Are you interested in creating mobile applications? Do you already have basic web development skills? This 8 week class is for you!</p>
+
+        <p>We will help you learn how to leverage your HTML, CSS and Javascript skills to create real mobile applications that you can sell via the Apple and Android stores.</p>
+
+        <%= partial "partials/mobile-mailing-list-signup" %>
+      </p>
+    </div>
   </div>
 
   <div class="row">
