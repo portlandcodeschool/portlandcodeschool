@@ -9,9 +9,9 @@ See the file license.txt for copying permission. -->
 
 <%= image_tag "wv-logo.png", :class=>"img-responsive" %>
 
-<p>In partnership with Karen Beninati's WeVillage, parents in the Coders with Kids program will receive vouchers for childcare. These vouchers will provide some childcare at no additional cost to tuition.</p>
+<h3>In partnership with Karen Beninati's WeVillage, parents in the Coders with Kids program receive childcare benefits.</h3>
 
-<p>WeVillage is a top-rated independent daycare facility with locations in Hillsboro and the Pearl. They operate with a convenient online reservation system, so parents will be able to redeem hourly vouchers and tailor a schedule that works for them. For more information about WeVillage, visit their web site at <%= link_to "http://www.wevillage.com", "http://www.wevillage.com" %></p>
+<p>WeVillage is a top-rated independent daycare facility with locations in Hillsboro and the Pearl. WeVillage uses a convenient online reservation system, so busy parents can tailor a schedule that works for them. For more information about WeVillage, visit their web site at <%= link_to "http://www.wevillage.com", "http://www.wevillage.com" %></p>
 
 <div class="jumbotron">
 
@@ -27,17 +27,37 @@ See the file license.txt for copying permission. -->
   </p>
 
   <ul>
-  <li>Coders with Kids waives the WeVillage joining fee.</li>
+    <li>Coders with Kids waives the WeVillage joining fee.</li>
 
-  <li>Vouchers provide a pool of resources for you to draw from over the course of your class. Factors such as age of the child, or using benefits for multiple children can affect the total hours available. Please see the calculator below to see how many hours you are eligible for.
-  </li>
+    <li>Parents receive a pool of resources for childcare at WeVillage.<span class="asterisk">*</span> Please see the calculator below for a break down of benefits.
+    </li>
 
-  <li>If you exceed the total childcare hour cap, you pay the discounted Portland Code School rate for any additional hours.</li>
+    <li>Parents who use their pool of resources are eligible for the CWK Preferred Rate.</li>
 
-  <li>Please note that parents in the 12- or 16-week classes who elect to use the deposit payment plan option for their $1000 class deposit are eligible only for the discounted childcare rate, and not any free childcare hours.</li>
-
-  <li>Please read the <%= link_to "full details", "https://docs.google.com/document/d/1uz8qQQKG9o-KKhiSYA6_ALKbp0XCaiqUdLmPFgMcXWE" %> or <%= mail_to "info@portlandcodeschool.com", "contact us" %> if you have any additional questions.</li>
   </ul>
+
+  <p><em><span class="asterisk">*</span>Please note that parents in the 12- or 16-week classes who elect to use the deposit payment plan are eligible for the CWK Preferred Rate.</em></p>
+
+  <hr>
+
+  <p>
+    <strong>Look for this symbol on eligible <%= link_to "classes", "/classes.html" %>:</strong>
+  </p>
+  <p>
+    <i class="fa fa-check-square-o fa-3x"></i>
+    <% link_to "/childcare.html" do %>
+      <%= image_tag "cwk_preferred.png" %>
+    <% end %>
+  </p>
+
+  <ul>
+    <li>Coders with Kids waives the WeVillage joining fee.</li>
+
+    <li>Parents are eligible for Portland Code School's preferred partner rate.</li>
+
+  </ul>
+
+  <p><strong>Please read the <%= link_to "full details", "https://docs.google.com/document/d/1uz8qQQKG9o-KKhiSYA6_ALKbp0XCaiqUdLmPFgMcXWE" %> or <%= mail_to "info@portlandcodeschool.com", "contact us" %> if you have any additional questions.</strong></p>
 
 </div>
 
