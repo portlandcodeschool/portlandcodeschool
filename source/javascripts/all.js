@@ -13,3 +13,11 @@ $(document).ready(function() {
     $(this).parent().next().slideToggle();
   });
 });
+
+$('.mc-news').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'mc-news');
+});
+
+$('.mc-mobile').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'mc-mobile');
+});
