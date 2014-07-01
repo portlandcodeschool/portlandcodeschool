@@ -17,11 +17,39 @@ See the file license.txt for copying permission. -->
     <% end %> <br>
   </p>
 
-  <p>
-    <strong>Cost: $1295</strong><br>
-    <strong>Friends of Portland Code School: $995</strong><br>
-    <%= mail_to "info@portlandcodeschool.com", "Contact us" %> to find out how to become a Friend of Portland Code School!
-  </p>
+<table class="table table-bordered cost-table">
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <strong>Tuition:</strong>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Base Price:
+        </td>
+        <td>
+          $1295
+        </td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          Discounts:<span class="asterisk">*</span>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Friend of PCS:
+        </td>
+        <td>
+          $300 Off
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="asterisk">*</span> <em>Discounts may be combined</em>
+
 
   <p>
     <strong>Dates: July 13 - ​September 14 (no seminars 8/10 or 8/31)</strong>
@@ -94,7 +122,7 @@ See the file license.txt for copying permission. -->
   <p>
     <ul>
       <li>6-12 months in a full time JavaScript engineering position, <strong>OR</strong></li>
-      <li>Completion of the <%= link_to "Front End Freelancing class", "/frontendfreelancing.html" %>, <strong>OR</strong></li>
+      <li>Completion of the <%= link_to "Front End Development class", "/frontend.html" %>, <strong>OR</strong></li>
       <li>Earned all badges in <%= link_to "Treehouse JavaScript deep dive", "http://teamtreehouse.com/library/javascript-foundations" %>. If you would like to use this option, but do not have a Treehouse account, contact us to get access.</li>
     </ul>
   </p>

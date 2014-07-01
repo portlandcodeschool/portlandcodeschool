@@ -15,8 +15,12 @@ See the file license.txt for copying permission. -->
     <p>
       <ul>
         <li>$365 for the three-week <%= link_to "Web Development Primer", "/webdevelopmentprimer.html" %>. If you sign up at a Portland Code School <%= link_to "public event", "https://www.facebook.com/PortlandCodeSchool/events" %>, get a $100 discount!</li>
-        <li>$3500 for the four-month part-time classes (<%= link_to "Ruby on Rails", "/rubyonrails.html" %>, <%= link_to "Full Stack JavaScript", "/javascript.html" %>, and <%= link_to "Front End Freelancing", "/frontendfreelancing.html" %>).</li>
-        <li>$6000 for the three-month full-time class (<%= link_to "JavaScript Immersion", "/javascriptimmersion.html" %>)</li>
+        <li><strong>Part-time classes:</strong> (<%= link_to "Full Stack JavaScript", "/javascript.html" %>, <%= link_to "Front End Development", "/frontend.html" %>, and <%= link_to "Mobile Development with iOS", "/mobile-ios.html" %>)</li>
+        <%= partial "partials/16-week-cost-table" %>
+        <li><strong>Full-time class:</strong> (<%= link_to "JavaScript Immersion", "/javascriptimmersion.html" %>)</li>
+        <%= partial "partials/12-week-cost-table" %>
+        <li><strong>8 Week Seminars:</strong> (<%= link_to "Data Visualization and Analytics", "/mobile-phonegap.html" %> and <%= link_to "Mobile Development with Phonegap", "/mobile-phonegap.html" %>)</li>
+        <%= partial "partials/8-week-cost-table" %>
       </ul>
     </p>
     <p>Check out our payment plans below for financing options.</p>
@@ -27,7 +31,7 @@ See the file license.txt for copying permission. -->
   <h4><%= link_to "What payment methods do you accept?", "#" %></h4>
   <div class="answer">
     <p>
-      At this time, we accept cash or check payments only, although we hope to begin accepting PayPal soon!
+      At this time, we accept PayPal for the <%= link_to "Web Development Primer", "/webdevelopmentprimer.html" %>, and cash or check for all other classes.
     </p>
   </div>
 </div>
@@ -36,15 +40,10 @@ See the file license.txt for copying permission. -->
   <h4><%= link_to "Do you have payment plans/scholarships available for your classes?", "#" %></h4>
     <div class="answer">
       <p>
-        Payment plans are available for the part- and full-time classes.
+        Payment plans are available for the part-time and full-time classes.
       </p>
       <p>
-        We require a $1000 deposit, due one week before your class begins. Then, during the course, you don't pay anything!
-      </p>
-      <p>
-        We hope to institute a work-trade program soon, allowing you to reduce the principle on your class payments by TAing for another class. Subscribe to our <%= link_to "mailing list", "/contact.html" %> to be the first to hear when we announce the details!</p>
-      <p>
-        The month after the class ends, you will begin making payments. If you choose to pay your balance in full when you receive your first invoice, your interest payment will be waived. <%= link_to "Contact us", "/contact.html" %> for an itemized payment schedule.
+        Students have 12 months to repay the payment plan price. Payments will be split equally, and students will be expected to pay once monthly, beginning concurrent with the class. Students will receive a payment schedule listing exact payment deadlines upon acceptance.
       </p>
   </div>
 </div>
@@ -97,7 +96,7 @@ See the file license.txt for copying permission. -->
 <div class="question">
   <h4><%= link_to "What if I have never coded before?", "#" %></h4>
     <div class="answer">
-    <p>That’s perfectly fine. Our <%= link_to "Web Development Primer class", "/webdevelopmentprimer.html" %> is designed to get you the technical skills needed to be accepted into any of our part- or full-time extended classes. Those skills include basic HTML, CSS, version control (specifically git), collaborative workflows using GitHub, how to use the Chrome Developer Tools, and Sublime Text. If you do not yet possess those skills, we recommend <%= link_to "enrolling", "enroll.html" %> in our <%= link_to "Web Development Primer", "/webdevelopmentprimer.html" %> class, or <%= link_to "applying", "apply.html" %> for our <%= link_to "Front End Freelancing", "/frontendfreelancing.html" %> class.</p>
+    <p>That’s perfectly fine. Our <%= link_to "Web Development Primer class", "/webdevelopmentprimer.html" %> is designed to get you the technical skills needed to be accepted into any of our part-time or full-time extended classes. Those skills include basic HTML, CSS, version control (specifically git), collaborative workflows using GitHub, how to use the Chrome Developer Tools, and Sublime Text. If you do not yet possess those skills, we recommend <%= link_to "enrolling", "enroll.html" %> in our <%= link_to "Web Development Primer", "/webdevelopmentprimer.html" %> class.</p>
   </div>
 </div>
 
@@ -113,9 +112,9 @@ See the file license.txt for copying permission. -->
     <div class="answer">
     <p>In a word, scheduling! We want to accommodate the varying schedules and learning styles of our students.</p>
 
-    <p>For students who are very self-directed, who work, or who prefer evening classes, we offer the <%= link_to "Full-Stack JavaScript", "/javascript.html" %> class. The evening class meets two nights per week for three hours each, as well as one Saturday per month. Students are expected to study for an additional 20 hours per week outside of class. This class provides 120 hours of dedicated instruction time, as well as full access to Portland Code School facilities, instructors, and TAs during open lab time. Open lab time generally runs from 10 AM - 6 PM Monday through Friday, with some weekend hours. this class runs for a full 16 weeks. The cost is $3500.</p>
+    <p>For students who are very self-directed, who work, or who prefer evening classes, we offer the <%= link_to "Full-Stack JavaScript", "/javascript.html" %> class. The evening class meets two nights per week for three hours each, as well as one Saturday per month. Students are expected to study for an additional 20 hours per week outside of class. This class provides 120 hours of dedicated instruction time, as well as full access to Portland Code School facilities, instructors, and TAs during open lab time. Open lab time generally runs from 10 AM - 6 PM Monday through Friday, with some weekend hours. This class runs for a full 16 weeks.</p>
 
-    <p>We offer the <%= link_to "JavaScript Immersion", "/javascriptimmersion.html" %> class for students who want more dedicated instruction time during regular daytime hours. The class meets from 9 AM - 5 PM Monday through Friday for 12 weeks. This class provides 480 hours of dedicated instruction time. The cost is $6000.</p>
+    <p>We offer the <%= link_to "JavaScript Immersion", "/javascriptimmersion.html" %> class for students who want more dedicated instruction time during regular daytime hours. The class meets from 9 AM - 5 PM Monday through Friday for 12 weeks. This class provides 480 hours of dedicated instruction time.</p>
   </div>
 </div>
 
@@ -123,7 +122,7 @@ See the file license.txt for copying permission. -->
   <h4><%= link_to "What happens if I can't keep up, or if I find that programming is not for me?", "#" %></h4>
     <div class="answer">
     <p>We highly recommend taking our <%= link_to "Web Development Primer class", "/webdevelopmentprimer.html" %> if you would like a low-risk introduction to programming.</p>
-    <p>Our classes provide an accelerated learning program, so you should be prepared to treat your time at Portland Code School like a professional job. If you do find that our classes are too much for you, or that programming is simply not your thing, then we retain the $1000 non-refundable deposit, and refund you a pro-rated amount of tuition.</p>
+    <p>Our classes provide an accelerated learning program, so you should be prepared to treat your time at Portland Code School like a professional job. If you do find that our classes are too much for you, or that programming is simply not your thing, then we will pro-rate any remaining tuition.</p>
   </div>
 </div>
 
