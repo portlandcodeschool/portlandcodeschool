@@ -232,6 +232,16 @@ header, footer {
   padding-right: 2%;
 }
 
+.jumbotron {
+  .list-group-item {
+    margin-bottom: 0px;
+  }
+  .badge {
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+}
+
 /* ===FORMSTACK CUSTOMIZATIONS=== */
 
 #calculator .fsSubmit input.fsSubmitButton {

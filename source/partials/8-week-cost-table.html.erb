@@ -2,23 +2,14 @@
 <!-- Copyright (c) 2013, 2014 ICRL
 See the file license.txt for copying permission. -->
 
-<table class="table table-bordered cost-table">
-  <tbody>
-    <tr>
-      <th colspan="2">
-        <strong>Tuition:</strong>
-      </th>
-    </tr>
-    <tr>
-      <td>
-        Base Price:
-      </td>
-      <td>
-        $1295
-      </td>
-    </tr>
-    <%= partial "partials/discounts" %>
-  </tbody>
-</table>
+<ul class="list-group">
+  <strong>Tuition:</strong>
+  <li class="list-group-item">
+    <span class="badge">$1295</span>
+    Base Price:
+  </li>
+</ul>
+
+<%= partial "partials/discounts" %>
 
 <span class="asterisk">*</span> <em>Discounts may be combined</em>
