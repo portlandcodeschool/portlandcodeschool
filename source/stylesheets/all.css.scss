@@ -223,11 +223,6 @@ header, footer {
   }
 }
 
-.thumbnail {
-  border: none;
-  background-color: $dark-teal;
-}
-
 .navbar-right {
   padding-right: 2%;
 }
@@ -256,11 +251,10 @@ h3 {
   }
 }
 
-img {
-  &.centered {
+.centered {
   margin-left: auto;
   margin-right: auto;
-  }
+  text-align: center;
 }
 
 .class-btn {
