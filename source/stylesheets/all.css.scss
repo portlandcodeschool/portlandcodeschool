@@ -163,13 +163,16 @@ header, footer {
 /* ===BOOTSTRAP CUSTOMIZATIONS=== */
 
 .alert-info {
-  opacity: 0.6;
-  background-color: $dark-teal;
-  color: $lt-teal;
-  border: $dark-teal;
+  // font-family: "Helvetica Neue";
+  font-weight: light;
+  background-color: lighten( $dark-teal, 20% );
+  color: darken( $dark-teal, 20% );
+  border: white;
+  margin: 1%;
+  width: 100%;
   a {
-    color: $lt-teal;
-    font-weight: 700;
+    color: darken( $dark-teal, 20% );
+    font-weight: 600;
     &:hover {
       color: white;
       font-weight: 700;
