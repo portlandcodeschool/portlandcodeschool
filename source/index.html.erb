@@ -57,14 +57,94 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
+    <!-- Web Primer -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/webdevelopmentprimer.html" do %>
+          <%= image_tag "webdev.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Web Development Primer</h3>
+        Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
+      </p>
+      <p>
+        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
     <!-- Web Foundations -->
     <div class="col-md-6">
       <p>
         <% link_to "/webfoundations.html" do %>
           <%= image_tag "webfoundations.png", :class=>"img-responsive" %>
         <% end %>
-        <h3 class="sr-only">Web Development Primer</h3>
-        Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
+        <h3 class="sr-only">Web Development Foundations</h3>
+        Continuing where the Primer leads off, our Foundations class will get you working with JavaScript/jQuery, and more advanced developing environments.
+      </p>
+      <p>
+        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <!-- JavaScript Immersion -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/javascriptimmersion.html" do %>
+          <%= image_tag "jsi2.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+        Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and EmberJS, as well as cutting-edge backend technologies like NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
+      </p>
+      <p>
+        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/javascript.html" do %>
+          <%= image_tag "jse.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
+        Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries like jQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
+      </p>
+      <p>
+        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
+    <!-- Mobile with Phonegap -->
+    <!-- <div class="col-md-6">
+      <p>
+        <% link_to "/mobile-phonegap.html" do %>
+          <%= image_tag "rapid_mobile.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Rapid Mobile App Prototyping</h3>
+        <p>
+          Are you a founder, entrepreneur, or designer looking to create mobile applications fast? Already have basic web development skills? This 8 week class is for you.
+        </p>
+        <p>
+          We will help you leverage your HTML, CSS and JavaScript skills to create real mobile applications you can use to get funding, prove design concepts, or sell via the Apple and Android stores.
+        </p>
+
+        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div> -->
+  </div>
+
+  <div class="row">
+
+    <!-- Freelancing -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/frontend.html" do %>
+          <%= image_tag "frontend_dev.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Front End Development</h3>
+        This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based course, you will learn all the skills necessary for web application front-end design and development. You learn the soft skills necessary to achieve work/life balance while working on teams and delivering quality work.
       </p>
       <p>
         <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
@@ -79,34 +159,20 @@ See the file license.txt for copying permission. -->
         <% end %>
         <h3 class="sr-only">Data Visualization</h3>
         <p>
-          This 8 week seminar will focus on functional programming skills and techniques needed to create and deploy web based data visualizations. Technologies covered in this course include d3.js, leaflet.js, coffeescript, yeoman for modern workflows, as well as SVG.
+          This 4 week seminar series will focus on functional programming skills and techniques needed to create and deploy web based data visualizations. Technologies covered in this course include d3.js, leaflet.js, coffeescript, yeoman for modern workflows, as well as SVG.
         </p>
         <p>
-          This course is designed to accommodate both newer and more advanced developers. The Sunday Seminars will introduce new material, and complete hands-on practice.
+          This course is designed to accommodate both newer and more advanced developers. The seminars will introduce new material, and complete hands-on practice.
         </p>
       </p>
       <p>
         <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
       </p>
     </div>
-
 
   </div>
 
   <div class="row">
-    <!-- JavaScript Immersion -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/javascriptimmersion.html" do %>
-          <%= image_tag "jsi.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">JavaScript Immersion</h3>
-        Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and EmberJS, as well as cutting-edge backend technologies like NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-      </p>
-      <p>
-        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
 
     <!-- Mobile with Phonegap -->
     <div class="col-md-6">
@@ -125,38 +191,6 @@ See the file license.txt for copying permission. -->
         <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
       </p>
     </div>
-  </div>
-
-  <div class="row">
-
-    <!-- JavaScript -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/javascript.html" do %>
-          <%= image_tag "js.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Full-Stack JavaScript</h3>
-        Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries like jQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-      </p>
-      <p>
-        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
-
-    <!-- Freelancing -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/frontend.html" do %>
-          <%= image_tag "frontend_dev.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Front End Development</h3>
-        This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based course, you will learn all the skills necessary for web application front-end design and development. You learn the soft skills necessary to achieve work/life balance while working on teams and delivering quality work.
-      </p>
-      <p>
-        <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
-
   </div>
 
   <hr />
