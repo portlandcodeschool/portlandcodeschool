@@ -240,6 +240,31 @@ header, footer {
   }
 }
 
+/* ===TESTIMONIALS=== */
+/* on the about page */
+
+.testimonial-footer {
+  font-size: .8em;
+  color: darkblue;
+}
+.testimonial-box {
+  max-width: 31%;
+  padding: 5px;
+}
+.testimonial-l, .testimonial-c, .testimonial-r {
+  float: left;
+}
+.testimonial-c {
+  margin: 0 25px;
+}
+
+/* ===ABOUT PAGE=== */
+
+img .row .banner-top {
+  width: 500px;
+}
+
+
 /* ===FORMSTACK CUSTOMIZATIONS=== */
 
 #calculator .fsSubmit input.fsSubmitButton {
@@ -333,7 +358,7 @@ h3 {
 .apply-button {
   border-color: $red;
   background-color: $red;
-  width: 100px;
+  width: 130px;
   float:right;
   &:hover {
     color: white;
@@ -352,6 +377,7 @@ h3 {
   border-color: $red;
   background-color: $red;
   margin-bottom: 20px;
+  width: 130px;
   &:hover {
     color: white;
     background-color: $dark-teal;
