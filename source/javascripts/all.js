@@ -6,11 +6,22 @@
 
 $(document).ready(function() {
 
-  $('.answer').hide();
-
+  // FAQ page answer toggling
   $('.question h4 a').click(function(e) {
     e.preventDefault();
     $(this).parent().next().slideToggle();
+  });
+
+  $('.primer-dates li li').css('display','none');
+
+  // Primer date toggle function
+  function primerDateShow() {
+
+  }
+
+    // Primer page date toggling
+  $('.primer-dates li').on(function(e) {
+    sdf
   });
 });
 
