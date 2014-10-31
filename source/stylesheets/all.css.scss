@@ -12,8 +12,10 @@
 $brown: #4C413C;
 $yellow: #D5B724;
 $red: #EB231C;
-$lt-teal: #B8DED4;
-$dark-teal: #63918E;
+/* $lt-teal: #B8DED4; */
+$lt-teal: #016EFA;
+/* $dark-teal: #63918E; */
+$dark-teal: #1C3E57;
 
 /* ===MAIN STYLES=== */
 
@@ -71,21 +73,21 @@ header, footer {
   &.navbar, &.navbar-fixed-top, &.navbar-default {
     border-radius: 0px;
     margin-bottom: 0px;
-    color: $lt-teal;
-    background-color: $brown;
-    border-color: $brown;
+    color: white;
+    background-color: none;
+    border-color: none;
   }
   &.navbar-default .navbar-nav li a {
     color: $dark-teal;
-    &:hover, &:visited {
-      color: $dark-teal;
+    &:hover {
+      color: $lt-teal;
     }
   }
   a {
-    color: $lt-teal;
+    color: white;
     text-decoration: none;
     &:hover {
-      color: $dark-teal;
+      color: $lt-teal;
       text-decoration: none;
     }
   }
@@ -109,6 +111,16 @@ header, footer {
   button.navbar-toggle {
     margin-right: 0px;
   }
+}
+
+footer {
+  &.navbar, &.navbar-fixed-top, &.navbar-default {
+    background-color: $dark-teal;
+  }
+}
+
+.hidden-xs {
+  margin-top: 5px;
 }
 
 .asterisk {
@@ -241,7 +253,15 @@ header, footer {
 }
 
 /* ===LANDING PAGE=== */
-
+.fifty-off {
+  position: absolute;
+  top: -36px;
+  left: -21px;
+  transform: rotate(-8deg);
+}
+.youtube-embed {
+  margin-right: 50px;
+}
 
 
 /* ===PRIMER PAGE=== */
@@ -262,7 +282,7 @@ header, footer {
 
 .testimonial-footer {
   font-size: .8em;
-  color: darkblue;
+  color: $dark-teal;
 }
 .testimonial-box {
   max-width: 31%;
@@ -373,7 +393,7 @@ h3 {
 
 .apply-button {
   border-color: $red;
-  background-color: $red;
+  background-color: none;
   width: 130px;
   float:right;
   &:hover {
@@ -381,7 +401,7 @@ h3 {
     background-color: $dark-teal;
   }
   &.btn-default {
-    color: white;
+    color: $red;
     &:hover {
       color: white;
       text-decoration: none;
@@ -391,7 +411,7 @@ h3 {
 
 .big-apply-button {
   border-color: $red;
-  background-color: $red;
+  background-color: none;
   margin-bottom: 20px;
   width: 130px;
   &:hover {
@@ -399,7 +419,7 @@ h3 {
     background-color: $dark-teal;
   }
   &.btn-default {
-    color: white;
+    color: $red;
     &:hover {
       color: white;
       text-decoration: none;
@@ -511,7 +531,6 @@ h3 {
 }
 
 /* Set the fixed height of the footer here */
-#push,
 #footer {
   height: 210px;
 }

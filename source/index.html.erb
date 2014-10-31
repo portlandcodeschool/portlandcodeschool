@@ -28,6 +28,8 @@ See the file license.txt for copying permission. -->
   </div>
 </div>
 
+<br>
+
 <div class="container content-margin">
 
   <!-- <div class="row">
@@ -36,22 +38,38 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-    <div class="col-md-2"></div>
-
-    <!-- Mobile with iOS -->
-    <div class="col-md-8">
+    <!-- iOS Development -->
+    <div class="col-md-6">
       <p>
+        <%= image_tag "images/50off.png", :class=>"img-responsive fifty-off" %>
+
         <% link_to "/mobile-ios.html" do %>
           <%= image_tag "mobile-ios.png", :class=>"img-responsive" %>
         <% end %>
         <h3 class="sr-only">Mobile Development with iOS</h3>
-        <p>Learn how to build high quality native apps! If you're an experienced developer, and looking to change your focus or enhance your current skill set, then this class will get you there. In 16 weeks, you’ll spend hundreds of hours immersed in iOS—designing spectacular interfaces in Xcode, writing conventional code in Objective-C and Cocoa, practicing unit testing and source control, and implementing industry best practices.</p>
+<!--         <p>Learn how to build high quality native apps! If you're an experienced developer, and looking to change your focus or enhance your current skill set, then this class will get you there. In 16 weeks, you’ll spend hundreds of hours immersed in iOS—designing spectacular interfaces in Xcode, writing conventional code in Objective-C and Cocoa, practicing unit testing and source control, and implementing industry best practices.</p>
+ -->
+        <p>
+          We are piloting our iOS class, which starts November 3rd, and we need your help! In return for your help, we are offering the class at 50% off!
+        </p>
+        <p>
+          All we ask in return for this huge discount, is that you fill out 2 surveys (for feedback), and participate at 100% (that is, do your best!).
+        </p>
 
-        <%= link_to "Enroll Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+        <%= link_to "Enroll Now!", "https://pcs.formstack.com/forms/ios_development_enrollment", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
       </p>
+
     </div>
 
-    <div class="col-md-2"></div>
+    <!-- Video -->
+    <div class="col-md-6">
+      <div class="youtube-embed">
+        <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p>
+        A video project by some of our fantastic students!
+      </p>
+    </div>
 
   </div>
 
@@ -208,5 +226,36 @@ See the file license.txt for copying permission. -->
       <p>
         Have kids? We know how hard it is to find the time to go to school and study! Portland Code School's unique <%= link_to "Coders with Kids", "/childcare.html" %> program makes it easy to update your skills or return to the workforce while keeping your family life in balance.
       </p>
+    </div>
+  </div>
+
+  <hr>
+  <h3>
+    Here's what our students are saying about Portland Code School:
+  </h3>
+  <div class="testimonial-footer">
+    <div class="testimonial-box testimonial-l">
+      <p>
+        "I attended the part-time, evening Javascript class while working full-time.  It can be done!  While it is entirely possible to learn on one's own, the community at PCS is what really seals the deal.  The contacts I made and the people I got to know helped me with every step of my journey.  I believe my road to employment as a developer would have included significantly more wrong turns and dead ends had I not enrolled at PCS. It would have taken me a lot longer to transition into a new career that I love!""
+      </p>
+      <p><em>
+        Kaija Rayne, Jr. Developer, Solid Interactive
+      </em></p>
+    </div>
+    <div class="testimonial-box testimonial-c">
+      <p>
+        "My experience in the JavaScript Immersion course was tremendous.  It is an intense program, but the instructors are extremely knowledgeable and they and all the other PCS staff are incredibly supportive.  I accepted a paid internship offer through PCS’s employer network only three weeks after graduating.  I would definitely recommend the JavaScript Immersion course for anyone interested in building the skills to become a junior software developer.""
+      </p>
+      <p><em>
+        Adam Horaks, Developer Intern, Attensa
+      </em></p>
+    </div>
+    <div class="testimonial-box testimonial-r">
+      <p>
+        "Enrolling in the Portland Code School was a significant commitment for me living an hour outside of Portland. Now employed as a full-time developer, in retrospect, I wish I had done it sooner. My experience in the Full-Stack JavaScript course was a complete blend of skill development, portfolio building, and networking within the Portland coding community.The enthusiastic team at PCS exposed us to every opportunity to jump start our careers. I consider the Portland Code School a great opportunity for those who desire to be a developer or any professional looking to learn a new discipline.""
+      </p>
+      <p><em>
+        Sean Sauve, Jr. Developer, Agilitas Software
+      </em></p>
     </div>
   </div>
