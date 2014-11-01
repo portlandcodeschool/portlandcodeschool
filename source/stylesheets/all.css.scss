@@ -369,7 +369,6 @@ h3 {
 .landing-content {
   font-size: 1.2em;
   text-align: center;
-  padding-top: 2%;
   a {
     color: $lt-teal;
     text-decoration: underline;
@@ -508,13 +507,15 @@ h3 {
 /* === MAILCHIMP CUSTOMIZATIONS === */
 
 #mce-EMAIL {
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-radius: 4px;
+  padding: 3px 0px 5px;
   &.email-signup {
     border: solid;
-    color: gray;
+    color: $red;
   }
+}
+#mc-embedded-subscribe {
+  margin: 8px 0px 16px 50px;
 }
 
 

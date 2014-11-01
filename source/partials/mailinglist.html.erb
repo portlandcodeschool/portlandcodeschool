@@ -10,7 +10,8 @@ See the file license.txt for copying permission. -->
 
 
     <div class="mc-field-group">
-      <input type="email" value="" placeholder="email address" name="EMAIL" class="required email" id="mce-EMAIL">
+      <input type="email" value="" placeholder=" email address" name="EMAIL" class="required email" id="mce-EMAIL">
+      <input type="submit" value=<% if current_page.data.title == "Portland Code School" %>"Subscribe!"<% else %>"Newsletter"<% end %> name="subscribe" id="mc-embedded-subscribe" class="btn btn-default big-apply-button mc-news">
     </div>
 
     <div id="mce-responses" class="clear">
@@ -21,10 +22,6 @@ See the file license.txt for copying permission. -->
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;">
       <input type="text" name="b_ad545f47273abbcf13534e6cf_419c8e5f3b" value="">
-    </div>
-
-    <div class="clear">
-      <input type="submit" value=<% if current_page.data.title == "Portland Code School" %>"Subscribe!"<% else %>"Newsletter"<% end %> name="subscribe" id="mc-embedded-subscribe" class="btn btn-default big-apply-button mc-news">
     </div>
 
 
