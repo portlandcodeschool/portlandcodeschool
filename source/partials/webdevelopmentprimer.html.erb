@@ -17,26 +17,15 @@ See the file license.txt for copying permission. -->
     <% end %>
   </p>
 
-  <ul class="list-group">
-    <li class="list-group-item">
-      <span class="badge">$495</span>
-      Price:
-    </li>
-    <li class="list-group-item">
-      <span class="badge">$395</span>
-      Discount Price<span class="asterisk">*</span>:
-    </li>
-  </ul>
-
-  <p>
-    <span class="asterisk">*</span><em>$100 discount if you sign up at a Portland Code School <%= link_to "public event", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/" %>!</em>
-  </p>
-
   <p>
     Hit the road running with our Web Development Primer course. Learn how to use several important tools used by professional developers, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web. See the <%= link_to "course website", "http://portlandcodeschool.github.io/primer" %> for complete course details, and to complete your <%= link_to "pre-class prep", "https://portlandcodeschool.github.io/primer/prep_work/" %>.
   </p>
 
   <br>
+
+  <p>
+    <%= link_to "Enroll Now!", "/enroll.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
 
   <h3>Next Primer Start Dates:</h3>
   <h4>Holiday Primer (Special Session: Nov 22 - Dec 13)</h4>
@@ -69,11 +58,26 @@ See the file license.txt for copying permission. -->
     Next class will be offered in January. <a href="mailto:info@portlandcodeschool.com">Email us</a> to be alerted when the next start date is announced.
   </p> -->
 
+  <ul class="list-group">
+    <li class="list-group-item">
+      <span class="badge">$495</span>
+      Price:
+    </li>
+    <li class="list-group-item">
+      <span class="badge">$395</span>
+      Discount Price<span class="asterisk">*</span>:
+    </li>
+  </ul>
+
+  <p>
+    <span class="asterisk">*</span><em>$100 discount if you sign up at a Portland Code School <%= link_to "public event", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/" %>!</em>
+  </p>
+
+  <br>
+
   <p>
     <%= link_to "Enroll Now!", "/enroll.html", :class=>"btn btn-default big-apply-button" %>
   </p>
+
 </div>
 
-<div class="row">
-
- <!-- Web Development Primer class info -->
