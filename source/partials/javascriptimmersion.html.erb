@@ -5,22 +5,18 @@ See the file license.txt for copying permission. -->
 <!-- JavaScript class info -->
 <div class="row jumbotron">
   <% link_to "/javascriptimmersion.html" do %>
-    <%= image_tag "jsi2.png", :class=>"img-responsive centered" %>
+    <%= image_tag "jsi2_now_enrolling.png", :class=>"img-responsive centered" %>
   <% end %>
 
 
   <h2 class="sr-only">JavaScript Immersion</h2>
 
-  <p>
+<!--   <p>
     <i class="fa fa-check-square-o fa-3x"></i>
     <% link_to "/childcare.html" do %>
       <%= image_tag "cwk_text.png" %>
     <% end %>
-  </p>
-
-  <p>
-    <%= partial "partials/12-week-cost-table"%>
-  </p>
+  </p> -->
 
   <p>
     <strong>Dates: January 5 - March 27</strong>
@@ -39,13 +35,18 @@ See the file license.txt for copying permission. -->
   </p>
 
   <p>
+    Visit the <%= link_to "class website", "http://portlandcodeschool.github.io/jsi/" %> for a more in-depth look.
+  </p>
+
+  <p>
     <%= link_to "Get Started!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
   </p>
 </div>
 
 <div class="row">
   <p>
-    <strong>NOTE:</strong> Students with NO CODING EXPERIENCE should consider our Primer course before diving in to Full Stack JavaScript (see the Classes page for technical requirements).
+    <em><strong>NOTE:</strong> Students with NO CODING EXPERIENCE should consider our Primer course before diving in to Full Stack JavaScript (see the Classes page for technical requirements).
+    Students will be provided Treehouse accounts, and will be given access to the classroom from 9am-5pm M-F, as well as some Saturdays, leaving lots of time for independent and group learning. Students will primarily be working and learning in groups of 2-4 people.</em>
   </p>
   <p>
     A week before classes commence, students will be provided Treehouse accounts and expected to complete a few interactive tutorials. This will ensure all students arrive with a similar baseline of knowledge. Students will be expected to attend classes 9am-5pm M-F, but will also have access to the classroom during off hours allowing additional time for group learning. Students will primarily be working and learning in groups of 2-4 people.
@@ -95,3 +96,9 @@ See the file license.txt for copying permission. -->
     </ul>
   </p>
 </div> <!-- !JavaScript class info -->
+
+<div class="row jumbotron">
+  <p>
+    <%= partial "partials/12-week-cost-table"%>
+  </p>
+</div>

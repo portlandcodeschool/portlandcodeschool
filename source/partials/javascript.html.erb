@@ -5,37 +5,36 @@ See the file license.txt for copying permission. -->
 <!-- JavaScript class info -->
 <div class="row jumbotron">
   <% link_to "/javascript.html" do %>
-    <%= image_tag "jse.png", :class=>"img-responsive centered" %>
+    <%= image_tag "jse_now_enrolling.png", :class=>"img-responsive centered" %>
   <% end %>
 
 
   <h2 class="sr-only">Full-stack JavaScript</h2>
 
-  <p>
+<!--   <p>
     <i class="fa fa-check-square-o fa-3x"></i>
     <% link_to "/childcare.html" do %>
       <%= image_tag "cwk_text.png" %>
     <% end %>
-  </p>
+  </p> -->
 
-  <p>
-    <%= partial "partials/16-week-cost-table"%>
-  </p>
+  <br>
 
   <p>
     <strong>Dates: January 5 - April 30</strong>
   </p>
-
   <p>
     <strong>Hours: Monday and Wednesday, 6 PM - 9 PM and one Saturday per month, 9 AM - 4 PM</strong>
   </p>
-
+<!--   <p>
+    <strong>Meet the instructor: <%= link_to "Dan Bauer", "/meettheteam.html#dan-bauer" %>!</strong>
+  </p> -->
   <p>
-    <strong>Meet the instructors, <%= link_to "Ben Verble", "/meettheteam.html#ben-verble" %> and <%= link_to "Dan Bauer", "/meettheteam.html#dan-bauer" %>!</strong>
+    This course is designed to help students learn how to build web applications and interactive website features from scratch using JavaScript as the primary language. Students will learn both front-end and back-end applications of JavaScript (including jQuery, BackboneJS, and NodeJS). Every web application needs JavaScript, so it’s an extremely powerful language to know, and the demand for JavaScript frameworks such as BackboneJS is only growing.
   </p>
 
   <p>
-    This course is designed to help students learn how to build web applications and interactive website features from scratch using JavaScript as the primary language. Students will learn both front-end and back-end applications of JavaScript (including jQuery, BackboneJS, and NodeJS). Every web application needs JavaScript, so it’s an extremely powerful language to know, and the demand for JavaScript frameworks such as BackboneJS is only growing.
+    Visit the <%= link_to "class website", "http://portlandcodeschool.github.io/jse/" %> for a more in-depth look.
   </p>
 
   <p>
@@ -45,8 +44,8 @@ See the file license.txt for copying permission. -->
 
 <div class="row">
   <p>
-    <strong>NOTE:</strong> Students with NO CODING EXPERIENCE should consider our Primer course before diving in to Full Stack JavaScript (see the Classes page for technical requirements).
-    Students will be provided Treehouse accounts, and will be given access to the classroom from 9am-5pm M-F, as well as some Saturdays, leaving lots of time for independent and group learning. Students will primarily be working and learning in groups of 2-4 people.
+    <em><strong>NOTE:</strong> Students with NO CODING EXPERIENCE should consider our Primer course before diving in to Full Stack JavaScript (see the Classes page for technical requirements).
+    Students will be provided Treehouse accounts, and will be given access to the classroom from 9am-5pm M-F, as well as some Saturdays, leaving lots of time for independent and group learning. Students will primarily be working and learning in groups of 2-4 people.</em>
   </p>
   <p>
     The Saturdays that are scheduled learning times (1 Saturday each month) will primarily consist of team building, portfolio development, and other technical areas (such as GitHub and Chrome’s Developer Tools) to round out the students’ curriculum, and broaden their exposure to web development tools.
@@ -97,3 +96,12 @@ See the file license.txt for copying permission. -->
     </ul>
   </p>
 </div> <!-- !JavaScript class info -->
+
+<div class="row jumbotron">
+  <p>
+    <%= partial "partials/16-week-cost-table"%>
+  </p>
+  <p>
+    <%= link_to "Get Started!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>

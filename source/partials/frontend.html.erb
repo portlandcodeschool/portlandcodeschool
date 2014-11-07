@@ -12,16 +12,12 @@ See the file license.txt for copying permission. -->
 
   <h2 class="sr-only">Front End</h2>
 
-  <p>
+<!--   <p>
     <i class="fa fa-check-square-o fa-3x"></i>
     <% link_to "/childcare.html" do %>
       <%= image_tag "cwk_text.png" %>
     <% end %>
-  </p>
-
-  <p>
-    <%= partial "partials/16-week-cost-table"%>
-  </p>
+  </p> -->
 
   <p>
     <strong>Dates: September 3 - December 19</strong>
@@ -31,9 +27,9 @@ See the file license.txt for copying permission. -->
     <strong class="link-padding">Hours: Monday, Wednesday, Friday, 9 AM - 12 PM</strong>
   </p>
 
-  <p>
+<!--   <p>
     <strong>Meet the instructor, <%= link_to "Al Zimmerman", "/meettheteam.html#al-zimmerman" %>!</strong>
-  </p>
+  </p> -->
 
   <p>
     This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based 16-week course, you will learn all the skills necessary for web application front-end design and development.
@@ -86,3 +82,12 @@ See the file license.txt for copying permission. -->
     </ul>
   </p>
 </div> <!-- !Front End class info -->
+
+<div class="row jumbotron">
+  <p>
+    <%= partial "partials/16-week-cost-table"%>
+  </p>
+  <p>
+    <%= link_to "Get Started!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+  </p>
+</div>
