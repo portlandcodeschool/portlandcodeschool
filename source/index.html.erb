@@ -8,6 +8,11 @@ See the file license.txt for copying permission. -->
 </div>
 <div id="landing">
   <%= image_tag "/images/banner.png", :class=>"img-responsive" %>
+
+  <div class="holiday hero-unit">
+    <h1>2 weeks left to enroll in Front End Web Development or Web Foundations!</h1>
+  </div>
+
   <div class="container">
     <!-- Announcements -->
     <div class="landing-content">
@@ -37,33 +42,6 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-    <!-- JS Immersion -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/javascriptimmersion.html" do %>
-          <%= image_tag "jsi2_now_enrolling.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
-        Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and EmberJS, as well as cutting-edge backend technologies like NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-      </p>
-      <p>
-        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
-
-    <!-- Video -->
-    <div class="col-md-6">
-      <div class="youtube-embed">
-        <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p>
-        A video project by some of our fantastic students!
-      </p>
-    </div>
-  </div>  <!-- End first row -->
-
-  <div class="row">
-
   <!-- Freelancing -->
   <div class="col-md-6">
     <p>
@@ -78,38 +56,17 @@ See the file license.txt for copying permission. -->
     </p>
   </div>
 
-  <!-- JavaScript Evening -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/javascript.html" do %>
-        <%= image_tag "jse_now_enrolling.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
-      Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries like jQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-    </p>
-    <p>
-      <%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
-
-    <!-- Mobile with Phonegap -->
-    <!-- <div class="col-md-6">
+    <!-- Video -->
+    <div class="col-md-6">
+      <div class="youtube-embed">
+        <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" frameborder="0" allowfullscreen></iframe>
+      </div>
       <p>
-        <% link_to "/mobile-phonegap.html" do %>
-          <%= image_tag "rapid_mobile.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Rapid Mobile App Prototyping</h3>
-        <p>
-          Are you a founder, entrepreneur, or designer looking to create mobile applications fast? Already have basic web development skills? This 8 week class is for you.
-        </p>
-        <p>
-          We will help you leverage your HTML, CSS and JavaScript skills to create real mobile applications you can use to get funding, prove design concepts, or sell via the Apple and Android stores.
-        </p>
-
-        <%= link_to "More Info", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+        A video project by some of our fantastic students!
       </p>
-    </div> -->
-  </div>   <!-- End second row -->
+    </div>
+  </div>  <!-- End first row -->
+
 
   <div class="row">
 
@@ -143,6 +100,56 @@ See the file license.txt for copying permission. -->
       </p>
     </div>
   </div>
+
+
+  <div class="row">
+
+  <!-- JS Immersion -->
+  <div class="col-md-6">
+    <p>
+      <% link_to "/javascriptimmersion.html" do %>
+        <%= image_tag "jsi2.png", :class=>"img-responsive" %>
+      <% end %>
+      <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+      Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and EmberJS, as well as cutting-edge backend technologies like NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
+    </p>
+    <p>
+      <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
+
+  <!-- JavaScript Evening -->
+  <div class="col-md-6">
+    <p>
+      <% link_to "/javascript.html" do %>
+        <%= image_tag "jse.png", :class=>"img-responsive" %>
+      <% end %>
+      <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
+      Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries like jQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
+    </p>
+    <p>
+      <%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
+
+    <!-- Mobile with Phonegap -->
+    <!-- <div class="col-md-6">
+      <p>
+        <% link_to "/mobile-phonegap.html" do %>
+          <%= image_tag "rapid_mobile.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Rapid Mobile App Prototyping</h3>
+        <p>
+          Are you a founder, entrepreneur, or designer looking to create mobile applications fast? Already have basic web development skills? This 8 week class is for you.
+        </p>
+        <p>
+          We will help you leverage your HTML, CSS and JavaScript skills to create real mobile applications you can use to get funding, prove design concepts, or sell via the Apple and Android stores.
+        </p>
+
+        <%= link_to "More Info", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div> -->
+  </div>   <!-- End second row -->
 
   <div class="row">
 
