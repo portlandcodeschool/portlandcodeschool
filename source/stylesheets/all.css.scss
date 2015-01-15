@@ -261,6 +261,24 @@ header, footer {
   margin-right: 50px;
 }
 
+/* === HACK + HELP === */
+
+.hackhelp {
+  width: 50%;
+  margin: 0 auto;
+}
+.hackhelpbox {
+  text-align: center;
+  color: red;
+  font-family: times;
+  border: 1px solid black;
+  width: 30%;
+  margin: 0 0 2% 5%;
+  padding-top: 2%;
+}
+
+
+
 /* ===HOLIDAY ANNOUNCEMENT=== */
  #landing .holiday {
   background: blue;

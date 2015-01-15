@@ -40,13 +40,55 @@ See the file license.txt for copying permission. -->
     <h2><%= link_to "Current Classes", "/classes.html" %></h2>
   </div> -->
 
+<!-- ============= BEGIN FIRST ROW ============= -->
+
+  <div class="row">
+
+    <!-- Primer -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/webdevelopmentprimer.html" do %>
+          <%= image_tag "primer_now_enrolling.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Web Development Primer</h3>
+        Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
+      </p>
+
+      <p>
+        <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
+    <!-- Hack + Help -->
+    <div class="col-md-6 hackhelpbox hidden-xs">
+      <p>
+        <% link_to "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :target=>"_blank" do %>
+          <%= image_tag "meetup_logo.png", :class=>"img-responsive hackhelp" %>
+        <% end %>
+        <h3 class="sr-only">Hack and Help</h3>
+        <h3>Hack + Help</h3>
+        <em>Hack + Help is for anyone that is learning to code. Whether you are new to coding or experienced in coding and want to help others learn, please join us! Bring your laptop and desire to learn (and/or teach!).</em>
+      </p>
+
+      <p>
+        <%= link_to "More Info", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
+      </p>
+    </div>
+
+  </div> <!-- End first row -->
+
+<!-- ============= END FIRST ROW ============= -->
+
+
+<!-- ============= BEGIN SECOND ROW ============= -->
+
   <div class="row">
 
   <!-- Freelancing -->
-  <div class="col-md-6">
+  <!-- <div class="col-md-6">
     <p>
       <% link_to "/frontend.html" do %>
-        <%= image_tag "frontend_dev_now_enrolling.png", :class=>"img-responsive" %>
+        <%= image_tag "frontend_dev.png", :class=>"img-responsive" %>
       <% end %>
       <h3 class="sr-only">Front End Development</h3>
       This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based course, you will learn all the skills necessary for web application front-end design and development. You learn the soft skills necessary to achieve work/life balance while working on teams and delivering quality work.
@@ -54,36 +96,7 @@ See the file license.txt for copying permission. -->
     <p>
       <%= link_to "More Info", "/frontend.html", :class=>"btn btn-default big-apply-button" %>
     </p>
-  </div>
-
-    <!-- Video -->
-    <div class="col-md-6">
-      <div class="youtube-embed">
-        <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p>
-        A video project by some of our fantastic students!
-      </p>
-    </div>
-  </div>  <!-- End first row -->
-
-
-  <div class="row">
-
-  <!-- Primer -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/webdevelopmentprimer.html" do %>
-        <%= image_tag "primer_now_enrolling.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Web Development Primer</h3>
-      Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
-    </p>
-
-    <p>
-      <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
+  </div> -->
 
     <!-- Web Foundations -->
     <div class="col-md-6">
@@ -99,7 +112,31 @@ See the file license.txt for copying permission. -->
         <%= link_to "More Info", "/webfoundations.html", :class=>"btn btn-default big-apply-button" %>
       </p>
     </div>
-  </div>
+
+    <!-- Video -->
+    <div class="col-md-6">
+      <div class="youtube-embed .embed-responsive">
+        <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" allowfullscreen></iframe>
+      </div>
+      <p>
+        A video project by some of our fantastic students!
+      </p>
+    </div>
+
+  </div> <!-- End second row -->
+
+<!-- ============= END SECOND ROW ============= -->
+
+
+<!-- ============= BEGIN THIRD ROW ============= -->
+
+  <div class="row">
+
+
+
+  </div>  <!-- End third row -->
+
+<!-- ============= END THIRD ROW ============= -->
 
 
   <div class="row">
@@ -173,12 +210,12 @@ See the file license.txt for copying permission. -->
 
         <p>
           <%= link_to "More Info!", "/mobile-ios.html", :class=>"btn btn-default big-apply-button" %>
-        </p>      </p>
+        </p>      
 
     </div>
 
     <!-- Data Visualization -->
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
       <p>
         <% link_to "/datavisualization.html" do %>
           <%= image_tag "data_viz_ana.png", :class=>"img-responsive" %>
@@ -194,7 +231,7 @@ See the file license.txt for copying permission. -->
       <p>
         <%= link_to "More Info", "/datavisualization.html", :class=>"btn btn-default big-apply-button" %>
       </p>
-    </div>
+    </div> -->
 
   </div>
 
