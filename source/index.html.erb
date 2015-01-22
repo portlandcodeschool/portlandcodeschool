@@ -44,20 +44,21 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-    <!-- Primer -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/webdevelopmentprimer.html" do %>
-          <%= image_tag "primer_now_enrolling.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Web Development Primer</h3>
-        Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
-      </p>
-
-      <p>
-        <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
+  <!-- JS Immersion -->
+  <div class="col-md-6">
+    <p>
+      <% link_to "/javascriptimmersion.html" do %>
+        <%= image_tag "jsi2.png", :class=>"img-responsive" %>
+      <% end %>
+      <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+      <h3 style="text-decoration:underline;">NEXT COHORT</h3>
+      <h4 style="margin-top:-15px;">May 4 – July 31</h4>
+      Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and Angular.js, as well as cutting-edge backend technologies like Node.js. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
+    </p>
+    <p>
+      <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
 
     <!-- Hack + Help -->
     <div class="col-md-6 hackhelpbox hidden-xs">
@@ -84,6 +85,21 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
+  <!-- Primer -->
+  <div class="col-md-6">
+    <p>
+      <% link_to "/webdevelopmentprimer.html" do %>
+        <%= image_tag "primer_now_enrolling.png", :class=>"img-responsive" %>
+      <% end %>
+      <h3 class="sr-only">Web Development Primer</h3>
+      Hit the road running with our Primer course. Learn how to use the tools of a professional developer, and get a grasp on the underlying concepts of the Internet. This class assumes students have little or no experience with web technologies such as writing code for the web, so if you're new to coding, this is the place to start!
+    </p>
+
+    <p>
+      <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
+
   <!-- Freelancing -->
   <!-- <div class="col-md-6">
     <p>
@@ -97,21 +113,6 @@ See the file license.txt for copying permission. -->
       <%= link_to "More Info", "/frontend.html", :class=>"btn btn-default big-apply-button" %>
     </p>
   </div> -->
-
-    <!-- Web Foundations -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/webfoundations.html" do %>
-          <%= image_tag "webfoundations_now_enrolling.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Web Development Foundations</h3>
-        Continuing where the Primer leaves off, our Foundations class will get you working with JavaScript/jQuery, and more advanced developing environments.
-      </p>
-
-      <p>
-        <%= link_to "More Info", "/webfoundations.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div>
 
     <!-- Video -->
     <div class="col-md-6">
@@ -141,21 +142,6 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-  <!-- JS Immersion -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/javascriptimmersion.html" do %>
-        <%= image_tag "jsi2.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
-      <h4 style="text-decoration:underline;">New class dates will be announced soon!</h4>
-      Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and EmberJS, as well as cutting-edge backend technologies like NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-    </p>
-    <p>
-      <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
-
   <!-- JavaScript Evening -->
   <div class="col-md-6">
     <p>
@@ -163,11 +149,28 @@ See the file license.txt for copying permission. -->
         <%= image_tag "jse.png", :class=>"img-responsive" %>
       <% end %>
       <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
-      <h4 style="text-decoration:underline;">New class dates will be announced soon!</h4>
+      <h3 style="text-decoration:underline;">NEXT COHORT</h3>
+      <h4 style="margin-top:-15px;">July 12 – November 12</h4>
+      
       Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries like jQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
     </p>
     <p>
       <%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
+
+  <!-- Web Foundations -->
+  <div class="col-md-6">
+    <p>
+      <% link_to "/webfoundations.html" do %>
+        <%= image_tag "webfoundations_now_enrolling.png", :class=>"img-responsive" %>
+      <% end %>
+      <h3 class="sr-only">Web Development Foundations</h3>
+      Continuing where the Primer leaves off, our Foundations class will get you working with JavaScript/jQuery, and more advanced developing environments.
+    </p>
+
+    <p>
+      <%= link_to "More Info", "/webfoundations.html", :class=>"btn btn-default big-apply-button" %>
     </p>
   </div>
 
@@ -189,6 +192,9 @@ See the file license.txt for copying permission. -->
       </p>
     </div> -->
   </div>   <!-- End second row -->
+
+<!-- ============= BEGIN FOURTH ROW ============= -->
+
 
   <div class="row">
 
@@ -255,6 +261,9 @@ See the file license.txt for copying permission. -->
       </p>
     </div>
   </div> -->
+
+<!-- ============= END FOURTH ROW ============= -->
+
 
 <!-- <hr> -->
   <!-- Coders With Kids -->
