@@ -16,15 +16,12 @@ See the file license.txt for copying permission. -->
   <div class="answer">
     <p>
       <ul>
-        <li><strong>Part-time classes:</strong> (<%= link_to "Full Stack JavaScript", "/javascript.html" %>, <%= link_to "Front End Development", "/frontend.html" %>, and <%= link_to "Mobile Development with iOS", "/mobile-ios.html" %>)</li>
+        <li><strong>Part-time class:</strong> (<%= link_to "Full Stack JavaScript Evening", "/javascript.html" %>)</li>
         <%= partial "partials/16-week-cost-table" %>
-        <li><strong>Full-time class:</strong> (<%= link_to "JavaScript Immersion", "/javascriptimmersion.html" %>)</li>
+        <li><strong>Full-time class:</strong> (<%= link_to "Full Stack JavaScript Immersion", "/javascriptimmersion.html" %>)</li>
         <%= partial "partials/12-week-cost-table" %>
-        <li><strong>8 Week Seminars:</strong> (<%= link_to "Data Visualization and Analytics", "/datavisualization.html" %>, <%= link_to "Web Foundations", "/webfoundations.html" %>, and <%= link_to "Rapid Mobile Prototyping", "/mobile-phonegap.html" %>)</li>
-        <%= partial "partials/8-week-cost-table" %>
       </ul>
     </p>
-    <p>Check out our payment plans below for financing options.</p>
   </div>
 </div>
 
@@ -38,10 +35,20 @@ See the file license.txt for copying permission. -->
 </div>
 
 <div class="question">
-  <h4><%= link_to "Do you have payment plans/scholarships available for your classes?", "#" %></h4>
+  <h4><%= link_to "Do you have scholarships and/or financing available for your classes?", "#" %></h4>
     <div class="answer">
+      <h4>YES!</h4>
       <p>
-        Payment plans are available for most classes. Please contact <%= mail_to "info@portlandcodeschool.com", "info@portlandcodeschool.com" %> for full details.
+        <strong>Scholarships</strong> – If you are seeking financial assistance, scholarships might be available to assist you in your class completion and job search efforts after completion through our community partner WorkSource. <a href="mailto:apontius@pcc.edu">Contact Amy Pontius</a>, Career Specialist (apontius@pcc.edu). For more information, download <%= link_to "this informational overview", "/images/scholarship_info.pdf", :target=>"_blank" %>. There is an application process to determine eligibility, so if you're interested, contact Amy right away to see if you qualify!
+      </p>   
+      <p>
+        <strong>Financing Options</strong> – We are excited to offer financing through our partnership with <%= link_to "Climb Credit", "https://climbcredit.co/", :target=>"_blank" %>. Climb offers financing for your tuition over a 3.5 year period, although you can pay off your loan early without any penalties. When you are accepted into our program, you can apply for approval. Most applicants find out if they qualify the same day they apply.
+      </p>
+      <p>
+        <a href="/images/climb-promo-jsi.pdf" target="_blank" style="color:blue;"><strong>JavaScript Immersion Class</strong> financing information.</a>
+      </p>
+      <p>
+        <a href="/images/climb-promo-jse.pdf" target="_blank" style="color:blue;"><strong>JavaScript Evening Class </strong> financing information.</a>
       </p>
   </div>
 </div>
@@ -65,11 +72,11 @@ See the file license.txt for copying permission. -->
 </div>
 
 <div class="question">
-  <h4><%= link_to "What percentage of your students get jobs?", "#" %></h4>
+  <h4><%= link_to "What percentage of your immersion students get jobs?", "#" %></h4>
     <div class="answer">
-    <p>Out of our graduates who wanted to start development jobs, our summer 2013 cohort is 100% placed, and our winter 2013 cohort is 80% placed.</p>
-    <p>Our classes emphasize job-readiness and teach you skills professional developers use every day.</p>
-    <p>In addition, we work with several placement agencies to get you employed. Portland Code School and its partners help students with interview coaching, resumé building, and networking within Portland’s tech community.</p>
+    <p>With the exception of the cohort that had their showcase event in late December 2014, our immersion students are 100% placed (out of those seeking dev jobs).</p>
+    <!-- <p>Our classes emphasize job-readiness and teach you skills professional developers use every day.</p> -->
+    <p>In addition to providing our own job-readiness activites (company tours, mock technical interviews, etc.), we work with several staffing agencies to help get you employed.</p>
   </div>
 </div>
 
@@ -94,7 +101,7 @@ See the file license.txt for copying permission. -->
 <div class="question">
   <h4><%= link_to "What if I have never coded before?", "#" %></h4>
     <div class="answer">
-    <p>That’s perfectly fine. Our <%= link_to "Web Development Primer class", "/webdevelopmentprimer.html" %> is designed to get you the technical skills needed to be accepted into any of our part-time or full-time extended classes. Those skills include basic HTML, CSS, version control (specifically git), collaborative workflows using GitHub, how to use the Chrome Developer Tools, and Sublime Text. If you do not yet possess those skills, we recommend <%= link_to "enrolling", "enroll.html" %> in our <%= link_to "Web Development Primer", "/webdevelopmentprimer.html" %> class.</p>
+    <p>That’s perfectly fine. Our <%= link_to "Web Foundations Series", "/webdevelopmentprimer.html" %> is designed to get you the technical skills needed to be accepted into any of our advanced classes. Those skills include HTML, CSS, version control (specifically git), collaborative workflows using GitHub, how to use the Chrome Developer Tools, and Sublime Text. If you do not yet possess those skills, we recommend <%= link_to "enrolling", "enroll.html" %> in our <%= link_to "Web Foundations Series", "/webdevelopmentprimer.html" %> class.</p>
   </div>
 </div>
 
@@ -106,13 +113,13 @@ See the file license.txt for copying permission. -->
 </div>
 
 <div class="question">
-  <h4><%= link_to "What is the difference between Full-Stack JavaScript and JavaScript Immersion?", "#" %></h4>
+  <h4><%= link_to "What is the difference between Full-Stack JavaScript Evening vs. Immersion?", "#" %></h4>
     <div class="answer">
     <p>In a word, scheduling! We want to accommodate the varying schedules and learning styles of our students.</p>
 
-    <p>For students who are very self-directed, who work, or who prefer evening classes, we offer the <%= link_to "Full-Stack JavaScript", "/javascript.html" %> class. The evening class meets two nights per week for three hours each, as well as one Saturday per month. Students are expected to study for an additional 20 hours per week outside of class. This class provides 120 hours of dedicated instruction time, as well as full access to Portland Code School facilities, instructors, and TAs during open lab time. Open lab time generally runs from 10 AM - 6 PM Monday through Friday, with some weekend hours. This class runs for a full 16 weeks.</p>
+    <p>For students who are self-directed, work a day job, or who prefer evening classes for personal reasons, we offer the <%= link_to "Full-Stack JavaScript Evening Class", "/javascript.html" %>. The evening class meets two nights each week for three hours a night, as well as one Saturday per month. Students are expected to study for about 3 hours outside of class for every hour in class (about 18 hours per week outside of class). Instructors and TAs hold office hours (open labs) every day of the week that class is not held (except Fridays). Furthermore, students are provided full access to Portland Code School facilities during school hours (M-F, 9am - 9pm + most Saturdays). This class runs for a full 18 weeks.</p>
 
-    <p>We offer the <%= link_to "JavaScript Immersion", "/javascriptimmersion.html" %> class for students who want more dedicated instruction time during regular daytime hours. The class meets from 9 AM - 5 PM Monday through Friday for 12 weeks. This class provides 480 hours of dedicated instruction time.</p>
+    <p>We offer the <%= link_to "Full-Stack JavaScript Immersion Class", "/javascriptimmersion.html" %> for students who want more dedicated instruction time during regular daytime hours. The class meets from 9 AM - 5 PM Monday through Friday for 13 weeks. This class provides over 500 hours of dedicated instruction time, weekly tours of tech companies, job readiness training with professional recruiters, and a project showcase event shortly after graduation.</p>
   </div>
 </div>
 
@@ -124,14 +131,14 @@ See the file license.txt for copying permission. -->
   </div>
 </div>
 
-<div class="question">
+<!-- <div class="question">
   <h4><%= link_to "When is the application deadline?", "#" %></h4>
-    <div class="answer">
-      <p>For our core classes (Full Stack JavaScript Immersion and Evening), the deadline is currently 2 weeks before the start date.</p>
-      <p>We do accept applications on an ongoing basis, so to secure your seat in any class, we encourage you to apply as early as possible.</p>
-      <p>For workshops and seminar series (Primer and Data Viz currently), applications are due one week before the start date. But again, the earlier you apply, the more likely you are to secure your seat.</p>
+  <div class="answer">
+    <p>For our core classes (Full Stack JavaScript Immersion and Evening), the deadline is currently 2 weeks before the start date.</p>
+    <p>We do accept applications on an ongoing basis, so to secure your seat in any class, we encourage you to apply as early as possible.</p>
+    <p>For workshops and seminar series (Primer and Data Viz currently), applications are due one week before the start date. But again, the earlier you apply, the more likely you are to secure your seat.</p>
   </div>
-</div>
+</div> -->
 
 <div class="question">
   <h4><%= link_to "When do classes start?", "#" %></h4>
