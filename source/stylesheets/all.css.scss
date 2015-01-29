@@ -285,6 +285,30 @@ header, footer {
   background: white;
   padding: 0 20%;
   text-align: center;
+  clear: both;
+}
+
+/* === CODERS WITH KIDS === */
+.cwk_wrapper {
+}
+.cwk_bg {
+  background: black;
+}
+.cwk_image {
+  position: relative;
+}
+.cwk_image img {
+  opacity: .8;
+ }
+.cwk_heading h1 {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  top: 20%;
+  width: 100%;
+}
+.cwk-announcement {
 }
 
 
