@@ -42,6 +42,68 @@ See the file license.txt for copying permission. -->
 
 <!-- ============= BEGIN FIRST ROW ============= -->
 
+    <div class="row">
+
+    <!-- JS Immersion -->
+    <div class="col-md-6">
+      <p>
+        <% link_to "/javascriptimmersion.html" do %>
+          <%= image_tag "jsi.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+        <h3 style="text-decoration:underline;">NEXT COHORT</h3>
+        <h4 style="margin-top:-15px;">May 4 – July 31</h4>
+        <h5 style="color:red;"><%= link_to "ASK US ABOUT OUR EARLY BIRD DISCOUNT!", "/contact.html" %></h5>
+        Get over 500 hours of hands-on experience! For 13 weeks, 8 hours a day, you will learn how to BUILD FULL-STACK WEB APPLICATIONS WITH JAVASCRIPT in a collaborative classroom environment. Get real experience from expert instructors – and your peers – learning both front-end and back-end applications of JavaScript, including popular libraries and frameworks such as jQuery and Angular.js, as well as back-end technologies such as Node.js. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
+      </p>
+      <p>Concerned about "job placement"? So far, our JavaScript immersion graduates are 100% employed within 3 months of graduation. <%= link_to "Ask us why they are so successful", "/contact.html" %>!</p>
+      <p>
+        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div>
+
+    <!-- Freelancing -->
+    <!-- <div class="col-md-6">
+      <p>
+        <% link_to "/frontend.html" do %>
+          <%= image_tag "frontend_dev.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Front End Development</h3>
+        This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based course, you will learn all the skills necessary for web application front-end design and development. You learn the soft skills necessary to achieve work/life balance while working on teams and delivering quality work.
+      </p>
+      <p>
+        <%= link_to "More Info", "/frontend.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+    </div> -->
+
+      <!-- Video -->
+  <!--     <div class="col-md-6">
+        <div class="youtube-embed .embed-responsive">
+          <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" allowfullscreen></iframe>
+        </div>
+        <p>
+          A video project by some of our fantastic students!
+        </p>
+      </div> -->
+
+      <div class="col-md-6" climb-ad>
+        <% link_to "/images/climb-promo-jsi.pdf" do %>
+          <%= image_tag "climb-ad.png", :class=>"img-responsive climb-ad-img" %>
+        <% end %>
+        
+        <div class="next-cohort">
+          <h3>Similar to a student loan, <%= link_to "Climb Credit", "https://climbcredit.co/", :target=>"_blank" %> offers AMAZING financing for Portland Code School students. <%= link_to "Contact us", "/contact" %> for more information.</h3>
+        </div>
+
+      </div>
+
+    </div> <!-- End FIRST row -->
+
+<!-- ============= END FIRST ROW ============= -->
+
+
+<!-- ============= BEGIN SECOND ROW ============= -->
+
   <div class="row">
 
   <!-- Primer -->
@@ -53,8 +115,10 @@ See the file license.txt for copying permission. -->
       <h3 class="sr-only">Web Foundations Series</h3>
       <h3 style="text-decoration:underline;">NEXT COHORT BEGINS</h3>
       <h4 style="margin-top:-15px;">Saturday, March 7</h4>
-      <p>PRIMER BASIC – In the first class you will learn the very basics of building websites using HTML, CSS and GitHub. This class assumes students have little or no experience with web technologies.</p>
-      <p>PRIMER PRO – Diving deeper, the Primer Pro also helps you understand the world of coding as a professional web developer. Create interactive and responsive websites for small businesses using advanced tools such as JavaScript/jQuery and Bootstrap. Students also get the opportunity to experience an exclusive tour of one of Portland's leading tech companies.</p>
+      <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/enroll.html" %></h5>
+      <p>Our Web Foundations Series is for people who have little or no experience with web technologies. It is a two part series, and you are free to enroll in just one or both classes.</p>
+      <p>PRIMER BASIC (4 weeks) – In the first class, you will learn the very basics of building websites using HTML, CSS and GitHub. Build a website in a small group and put it on the web!</p>
+      <p>PRIMER PRO (4 weeks) – Diving deeper, create interactive and responsive websites for small businesses using advanced tools such as JavaScript/jQuery and Bootstrap. Students also get the opportunity to experience an exclusive tour of one of Portland's leading tech companies. This second class helps you understand the world of coding as a professional web developer before entering our advanced, career-track classes.</p>
     </p>
 
     <p>
@@ -75,55 +139,6 @@ See the file license.txt for copying permission. -->
 
       <p>
         <%= link_to "More Info", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
-      </p>
-    </div>
-
-  </div> <!-- End first row -->
-
-<!-- ============= END FIRST ROW ============= -->
-
-
-<!-- ============= BEGIN SECOND ROW ============= -->
-
-  <div class="row">
-
-  <!-- JS Immersion -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/javascriptimmersion.html" do %>
-        <%= image_tag "jsi.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
-      <h3 style="text-decoration:underline;">NEXT COHORT</h3>
-      <h4 style="margin-top:-15px;">May 4 – July 31</h4>
-      Learn the fundamentals of programming in JavaScript, in a full time, collaborative classroom environment. You will start developing new skills immediately while writing a lot of code! You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries and frameworks like jQuery and Angular.js, as well as cutting-edge backend technologies like Node.js. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-    </p>
-    <p>
-      <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
-
-  <!-- Freelancing -->
-  <!-- <div class="col-md-6">
-    <p>
-      <% link_to "/frontend.html" do %>
-        <%= image_tag "frontend_dev.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Front End Development</h3>
-      This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based course, you will learn all the skills necessary for web application front-end design and development. You learn the soft skills necessary to achieve work/life balance while working on teams and delivering quality work.
-    </p>
-    <p>
-      <%= link_to "More Info", "/frontend.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div> -->
-
-    <!-- Video -->
-    <div class="col-md-6">
-      <div class="youtube-embed .embed-responsive">
-        <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" allowfullscreen></iframe>
-      </div>
-      <p>
-        A video project by some of our fantastic students!
       </p>
     </div>
 
