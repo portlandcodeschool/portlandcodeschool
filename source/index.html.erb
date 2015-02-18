@@ -7,231 +7,124 @@ See the file license.txt for copying permission. -->
 
 </div>
 <div id="landing">
-  <%= image_tag "/images/banner.png", :class=>"img-responsive" %>
+  <%= image_tag "/images/banner-pdx.png", :class=>"img-responsive" %>
 
   <!-- <div class="holiday hero-unit">
     <h1>2 weeks left to enroll in Front End Web Development or Web Foundations!</h1>
   </div> -->
 
-  <div class="container">
-    <!-- Announcements -->
-    <div class="landing-content">
-      <!-- Tagline info -->
-      <!-- <div class="col-sm-6">
-        <h2 class="tagline">Build the skills you want with the support you need.</h2>
-      </div>
-      <div class="col-sm-6">
-        <p>
-          Portland Code School is the place to build the skills you need to get a job programming. We provide an intensive learning environment that will meet you where you are and take you where you want to go. Learn more <%= link_to "about us", "/about.html" %>.
-        </p>
-      </div> -->
-      <div>
-        <%= partial "partials/mailinglist.html" %>
-      </div>
-    </div>
-  </div>
 </div>
 
 <br>
 
-<div class="container content-margin">
+<div class="container content-margin"></div>
 
-  <!-- <div class="row">
-    <h2><%= link_to "Current Classes", "/classes.html" %></h2>
-  </div> -->
+  <div class="well priority-box">
+    <% link_to "/uxdesign.html" do %>
+      <%= image_tag "/images/ux-banner.png", :class=>"img-responsive" %>
+    <% end %>
+    <h3 class="sr-only">UX Design</h3>
+    <h3 style="text-decoration:underline;">NEXT COHORT</h3>
+    <h4 style="margin-top:-15px;">March 21 - April 11 (Saturdays, 10am - 5pm)</h4>
+    <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/uxdesign.html" %></h5>
+    <p>Our Web Foundations Series is for people who have little or no experience with web technologies. It is a two part series, and you are free to enroll in just one or both classes.</p>
+    <p>
+      <%= link_to "More Info", "/uxdesign.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
 
-<!-- ============= BEGIN FIRST ROW ============= -->
+  <div class="well priority-box">
+    <% link_to "/advancedfe.html" do %>
+      <%= image_tag "advancedfe.png", :class=>"img-responsive" %>
+    <% end %>
+    <h3 class="sr-only">Advanced Front End Dev Tools</h3>
+    <h3 style="text-decoration:underline;">Next Cohort</h3>
+    <h4 style="margin-top:-15px;">March 17 - April 9 (Tue/Thur, 6-9pm)</h4>
+    <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/advancedfe.html" %></h5>
+    <p>Ready to go beyond the basics? This class is for people who have some Front End Design and Development experience and want learn technologies and techniques used by practicing Front End Web Developers.</p>
+    <p>
+      <%= link_to "More Info", "/advancedfe.html", :class=>"btn btn-default big-apply-button" %>
+    </p>
+  </div>
 
-    <div class="row">
-
-    <!-- JS Immersion -->
-    <div class="col-md-6">
-      <p>
-        <% link_to "/javascriptimmersion.html" do %>
+  <div class="well priority-box">
+    <% link_to "/javascriptimmersion.html" do %>
           <%= image_tag "jsi.png", :class=>"img-responsive" %>
         <% end %>
         <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
         <h3 style="text-decoration:underline;">NEXT COHORT</h3>
         <h4 style="margin-top:-15px;">May 4 – July 31</h4>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/javascriptimmersion.html" %></h5>
         <h5 style="color:red;"><%= link_to "ASK US ABOUT OUR EARLY BIRD DISCOUNT!", "/contact.html" %></h5>
-        Get over 500 hours of hands-on experience! For 13 weeks, 8 hours a day, you will learn how to BUILD FULL-STACK WEB APPLICATIONS WITH JAVASCRIPT in a collaborative classroom environment. Get real experience from expert instructors – and your peers – learning both front-end and back-end applications of JavaScript, including popular libraries and frameworks such as jQuery and Angular.js, as well as back-end technologies such as Node.js. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-      </p>
-      <p>Concerned about "job placement"? So far, our JavaScript immersion graduates are 100% employed within 3 months of graduation. <%= link_to "Ask us why they are so successful", "/contact.html" %>!</p>
-      <p>
+        <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript.</p>
         <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
       </p>
-    </div>
+  </div>
 
-    <!-- Freelancing -->
-    <!-- <div class="col-md-6">
-      <p>
-        <% link_to "/frontend.html" do %>
-          <%= image_tag "frontend_dev.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Front End Development</h3>
-        This comprehensive course gives you everything you need to start a career in front-end web development. In this fast-paced, project-based course, you will learn all the skills necessary for web application front-end design and development. You learn the soft skills necessary to achieve work/life balance while working on teams and delivering quality work.
-      </p>
-      <p>
-        <%= link_to "More Info", "/frontend.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div> -->
-
-      <!-- Video -->
-  <!--     <div class="col-md-6">
-        <div class="youtube-embed .embed-responsive">
-          <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" allowfullscreen></iframe>
-        </div>
-        <p>
-          A video project by some of our fantastic students!
-        </p>
-      </div> -->
-
-      <div class="col-md-6" climb-ad>
-        <% link_to "/images/climb-promo-jsi.pdf" do %>
-          <%= image_tag "climb-ad.png", :class=>"img-responsive climb-ad-img" %>
-        <% end %>
-        
-        <div class="next-cohort">
-          <h3>Similar to a student loan, <%= link_to "Climb Credit", "https://climbcredit.co/", :target=>"_blank" %> offers AMAZING financing for Portland Code School students. <%= link_to "Contact us", "/contact" %> for more information.</h3>
-        </div>
-
-      </div>
-
-    </div> <!-- End FIRST row -->
-
-<!-- ============= END FIRST ROW ============= -->
-
-
-<!-- ============= BEGIN SECOND ROW ============= -->
-
-  <div class="row">
-
-  <!-- Primer -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/webdevelopmentprimer.html" do %>
-        <%= image_tag "wfseries.png", :class=>"img-responsive" %>
-      <% end %>
+  <div class="well priority-box">
+    <% link_to "/webdevelopmentprimer.html" do %>
+      <%= image_tag "wfseries.png", :class=>"img-responsive" %>
+    <% end %>
       <h3 class="sr-only">Web Foundations Series</h3>
       <h3 style="text-decoration:underline;">NEXT COHORT BEGINS</h3>
       <h4 style="margin-top:-15px;">Saturday, March 7</h4>
       <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/enroll.html" %></h5>
       <p>Our Web Foundations Series is for people who have little or no experience with web technologies. It is a two part series, and you are free to enroll in just one or both classes.</p>
-      <p>PRIMER BASIC (4 weeks) – In the first class, you will learn the very basics of building websites using HTML, CSS and GitHub. Build a website in a small group and put it on the web!</p>
-      <p>PRIMER PRO (4 weeks) – Diving deeper, create interactive and responsive websites for small businesses using advanced tools such as JavaScript/jQuery and Bootstrap. Students also get the opportunity to experience an exclusive tour of one of Portland's leading tech companies. This second class helps you understand the world of coding as a professional web developer before entering our advanced, career-track classes.</p>
+      <p>
+        <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
+      </p>
+  </div>
+
+  <div class="well priority-box">
+    <!-- JavaScript Evening -->
+    <% link_to "/javascript.html" do %>
+      <%= image_tag "jse.png", :class=>"img-responsive" %>
+    <% end %>
+    <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
+    <h3 style="text-decoration:underline;">NEXT COHORT</h3>
+    <h4 style="margin-top:-15px;">July 12 – November 12</h4>
+    <p>Looking to switch careers, but don't have the bandwidth for the immersion class? Our evening class takes students from minimal experience to job-ready in less than 6 months.</p>
+    <p><%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %></p>
+  </div>
+
+  <div class="well priority-box">
+    <% link_to "/images/climb-promo-jsi.pdf" do %>
+      <%= image_tag "climb-ad.png", :class=>"img-responsive climb-ad-img" %>
+    <% end %>
+    
+    <div class="next-cohort">
+      <h3>Similar to a student loan, <%= link_to "Climb Credit", "https://climbcredit.co/", :target=>"_blank" %> offers AMAZING financing for Portland Code School students. <%= link_to "Contact us", "/contact" %> for more information.</h3>
+    </div>
+  </div>
+
+  <div class="well priority-box">
+    <p>
+      <% link_to "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :target=>"_blank" do %>
+        <%= image_tag "meetup_logo.png", :class=>"img-responsive hackhelp" %>
+      <% end %>
+      <h3 class="sr-only">Hack and Help</h3>
+      <h3>Hack + Help</h3>
+      <em>Hack + Help is for anyone that is learning to code. Whether you are new to coding or experienced in coding and want to help others learn, please join us! Bring your laptop and desire to learn (and/or teach!).</em>
     </p>
 
     <p>
-      <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
+      <%= link_to "More Info", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
+    </p>
+  </div>
+
+  <div class="well priority-box">
+    <div class="youtube-embed .embed-responsive">
+      <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" allowfullscreen></iframe>
+    </div>
+    <p>
+      A video project by some of our fantastic students!
     </p>
   </div>
 
     <!-- Hack + Help -->
-    <div class="col-md-6 hackhelpbox hidden-xs">
-      <p>
-        <% link_to "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :target=>"_blank" do %>
-          <%= image_tag "meetup_logo.png", :class=>"img-responsive hackhelp" %>
-        <% end %>
-        <h3 class="sr-only">Hack and Help</h3>
-        <h3>Hack + Help</h3>
-        <em>Hack + Help is for anyone that is learning to code. Whether you are new to coding or experienced in coding and want to help others learn, please join us! Bring your laptop and desire to learn (and/or teach!).</em>
-      </p>
+<!-- <div class="col-md-6 hackhelpbox hidden-xs"></div> -->
 
-      <p>
-        <%= link_to "More Info", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
-      </p>
-    </div>
-
-  </div> <!-- End second row -->
-
-<!-- ============= END SECOND ROW ============= -->
-
-
-<!-- ============= BEGIN THIRD ROW ============= -->
-
-  <div class="row">
-
-
-
-  </div>  <!-- End third row -->
-
-<!-- ============= END THIRD ROW ============= -->
-
-
-  <div class="row">
-
-  <!-- JavaScript Evening -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/javascript.html" do %>
-        <%= image_tag "jse.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
-      <h3 style="text-decoration:underline;">NEXT COHORT</h3>
-      <h4 style="margin-top:-15px;">July 12 – November 12</h4>
-      
-      Learn how to build web applications and interactive website features from scratch using JavaScript. It's easy to learn, yet provides sophisticated object-oriented strength. You will learn both front-end and back-end applications of JavaScript, including popular front-side libraries like jQuery as well as cutting-edge backend technologies like BackboneJS and NodeJS. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
-    </p>
-    <p>
-      <%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
-
-  <!-- Primer -->
-  <div class="col-md-6">
-    <p>
-      <% link_to "/advanced.html" do %>
-        <%= image_tag "advanced.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Web Foundations Series</h3>
-      <h3 style="text-decoration:underline;">COMING SOON!</h3>
-      <h4 style="margin-top:-15px;">UX, Angular.js, WordPress</h4>
-      <p>Taught by leaders in the industry, these short classes are designed for experienced devs looking to expand or enhance their current skills.</p>
-    </p>
-
-    <p>
-      <%= link_to "More Info", "/advanced.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
-
-  <!-- Web Foundations -->
-  <!-- <div class="col-md-6">
-    <p>
-      <% link_to "/webfoundations.html" do %>
-        <%= image_tag "webfoundations_now_enrolling.png", :class=>"img-responsive" %>
-      <% end %>
-      <h3 class="sr-only">Web Development Foundations</h3>
-      PRIMER PRO – Continuing where the Primer Basic leaves off, our Foundations class will get you working with JavaScript/jQuery, Bootstrap, and more advanced developing environments.
-    </p>
-
-    <p>
-      <%= link_to "More Info", "/webfoundations.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div> -->
-
-    <!-- Mobile with Phonegap -->
-    <!-- <div class="col-md-6">
-      <p>
-        <% link_to "/mobile-phonegap.html" do %>
-          <%= image_tag "rapid_mobile.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Rapid Mobile App Prototyping</h3>
-        <p>
-          Are you a founder, entrepreneur, or designer looking to create mobile applications fast? Already have basic web development skills? This 8 week class is for you.
-        </p>
-        <p>
-          We will help you leverage your HTML, CSS and JavaScript skills to create real mobile applications you can use to get funding, prove design concepts, or sell via the Apple and Android stores.
-        </p>
-
-        <%= link_to "More Info", "/apply.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-    </div> -->
-  </div>   <!-- End second row -->
-
-<!-- ============= BEGIN FOURTH ROW ============= -->
-
-
-  <div class="row">
+  <!-- <div class="row"> -->
 
     <!-- iOS Development -->
     <!-- <div class="col-md-6">
@@ -274,9 +167,9 @@ See the file license.txt for copying permission. -->
       </p>
     </div> -->
 
-  </div>
+  <!-- </div> -->
 
-  <div class="row">
+  <!-- <div class="row"> -->
 
     <!-- Mobile with Phonegap -->
     <!-- <div class="col-md-6">
@@ -297,27 +190,7 @@ See the file license.txt for copying permission. -->
     </div>
   </div> -->
 
-<!-- ============= END FOURTH ROW ============= -->
-
-
-<!-- <hr> -->
-  <!-- Coders With Kids -->
-<!--   <div class="row">
-    <div class="col-md-4 text-center">
-      <% link_to "/childcare.html" do %>
-        <%= image_tag "coders_with_kids.png", :class=>"img-responsive centered" %>
-      <% end %> -->
-<!--     </div>
-    <div class="col-md-8">
-      <h3 class="text-center">Childcare for Portland Code School students, on your schedule!</h3>
-      <p>
-        Have kids? We know how hard it is to find the time to go to school and study! Portland Code School's unique <%= link_to "Coders with Kids", "/childcare.html" %> program makes it easy to update your skills or return to the workforce while keeping your family life in balance.
-      </p>
-    </div>
-  </div> -->
-
-  <hr>
-  <h3>
+<!--  <h3>
     What do students say about their experience at PCS?
   </h3>
   <div class="testimonial-footer">
@@ -344,5 +217,6 @@ See the file license.txt for copying permission. -->
       <p><em>
         Sean Sauve, Jr. Developer, Agilitas Software
       </em></p>
-    </div>
-  </div>
+    </div> -->
+  
+</div>

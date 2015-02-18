@@ -264,12 +264,24 @@ header, footer {
 .climb-ad-img {
   margin-bottom: 20px;
 }
+.priority-box {
+  text-align: center;
+  margin-top: -28px;
+}
+.priority-box img {
+  margin: 20px auto 0;
+}
+
+/* === JAVASCRIPT IMMERSION === */
+.tech-list li {
+  margin: -10px 0;
+  font-size: .8em;
+}
 
 /* === HACK + HELP === */
-
 .hackhelp {
   width: 50%;
-  margin: 0 auto;
+  text-align: center;
 }
 .hackhelpbox {
   text-align: center;
@@ -323,8 +335,7 @@ header, footer {
   text-align: center;
 } 
 
-
-/* ===PRIMER PAGE=== */
+/* === PRIMER PAGE === */
 .primer-dates li {
   margin: 0;
   list-style: none;
@@ -337,8 +348,7 @@ header, footer {
   background-color:rgba(99, 145, 139, 0.5);
 }
 
-/* ===TESTIMONIALS=== */
-/* on the about page */
+/* === TESTIMONIALS === */
 
 .testimonial-footer {
   font-size: .8em;
@@ -353,6 +363,18 @@ header, footer {
 }
 .testimonial-c {
   margin: 0 25px;
+}
+.testimonial-img {
+  width: 20%;
+  float: left;
+  margin-right: 2%;
+}
+.testimonial-text {
+  color: blue;
+  width: 75%;
+}
+.testimonial-name {
+  
 }
 
 /* ===ABOUT PAGE=== */

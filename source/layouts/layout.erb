@@ -16,11 +16,13 @@
       <%= current_page.data.title %>
     </title>
 
-    <%= favicon_tag "images/favicon.ico" %>
+    <!-- <%= favicon_tag "images/favicon.ico" %> -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", "/stylesheets/all" %>
 
-    <%= javascript_include_tag "//code.jquery.com/jquery.js", "//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js", "all.js" %>
+    <%= javascript_include_tag "//code.jquery.com/jquery.js", "//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js", "all.js", "jssor.js", "jssor.slider.js" %>
+
 
     <!-- Google Analytics code -->
     <script>
@@ -50,6 +52,14 @@
       <div id="push"></div>
     </div>
     <%= partial "partials/footer" %>
+
+    <script type="text/javascript">
+    var _cd_options = {
+        animation: 'ad',
+        elementId: '_cd_container'
+    }
+    </script>
+    <script src="https://fightforthefuture.github.io/countdown-widget/widget.min.js" async></script>
 
   </body>
 </html>
