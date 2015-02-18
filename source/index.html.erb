@@ -17,108 +17,149 @@ See the file license.txt for copying permission. -->
 
 <br>
 
-<div class="container content-margin"></div>
+<div class="container content-margin">
 
-  <div class="well priority-box">
-    <% link_to "/uxdesign.html" do %>
-      <%= image_tag "ux-banner.png", :class=>"img-responsive" %>
-    <% end %>
-    <h3 class="sr-only">UX Design</h3>
-    <h3 style="text-decoration:underline;">NEXT COHORT</h3>
-    <h4 style="margin-top:-15px;">March 21 - April 11 (Saturdays, 10am - 5pm)</h4>
-    <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/uxdesign.html" %></h5>
-    <p>UX Design is a four-week introduction to the process and profession of user experience (UX) design.</p>
-    <p>
-      <%= link_to "More Info", "/uxdesign.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
+<!-- ============== BEGIN ROW 1 ============== -->
+
+  <div class="row">
+
+  <!-- UX Design -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/uxdesign.html" do %>
+          <%= image_tag "ux-banner.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">UX Design</h3>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/uxdesign.html" %></h5>
+        <p>UX Design is a four-week introduction to the process and profession of user experience (UX) design.</p>
+        <%= link_to "More Info", "/uxdesign.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+<!-- Advanced Front End Tools -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/advancedfe.html" do %>
+          <%= image_tag "advancedfe.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Advanced Front End Dev Tools</h3>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/advancedfe.html" %></h5>
+        <p>Learn industry standard technologies and techniques used by practicing Front End Web Developers.</p>
+        <%= link_to "More Info", "/advancedfe.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
   </div>
 
-  <div class="well priority-box">
-    <% link_to "/advancedfe.html" do %>
-      <%= image_tag "advancedfe.png", :class=>"img-responsive" %>
-    <% end %>
-    <h3 class="sr-only">Advanced Front End Dev Tools</h3>
-    <h3 style="text-decoration:underline;">Next Cohort</h3>
-    <h4 style="margin-top:-15px;">March 17 - April 9 (Tue/Thur, 6-9pm)</h4>
-    <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/advancedfe.html" %></h5>
-    <p>Ready to go beyond the basics? This class is for people who have some Front End Design and Development experience and want learn technologies and techniques used by practicing Front End Web Developers.</p>
-    <p>
-      <%= link_to "More Info", "/advancedfe.html", :class=>"btn btn-default big-apply-button" %>
-    </p>
-  </div>
+<!-- ============== END ROW 1 ============== -->
 
-  <div class="well priority-box">
-    <% link_to "/javascriptimmersion.html" do %>
-      <%= image_tag "jsi.png", :class=>"img-responsive" %>
-    <% end %>
-    <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
-    <h3 style="text-decoration:underline;">NEXT COHORT</h3>
-    <h4 style="margin-top:-15px;">May 4 – July 31</h4>
-    <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/javascriptimmersion.html" %></h5>
-    <h5 style="color:red;"><%= link_to "ASK US ABOUT OUR EARLY BIRD DISCOUNT!", "/contact.html" %></h5>
-    <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript.</p>
-    <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
-  </div>
+<!-- ============== BEGIN ROW 2 ============== -->
 
-  <div class="well priority-box">
-    <% link_to "/webdevelopmentprimer.html" do %>
-      <%= image_tag "wfseries.png", :class=>"img-responsive" %>
-    <% end %>
-      <h3 class="sr-only">Web Foundations Series</h3>
-      <h3 style="text-decoration:underline;">NEXT COHORT BEGINS</h3>
-      <h4 style="margin-top:-15px;">Saturday, March 7</h4>
-      <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/enroll.html" %></h5>
-      <p>Our Web Foundations Series is for people who have little or no experience with web technologies. It is a two part series, and you are free to enroll in just one or both classes.</p>
-      <p>
-        <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
-      </p>
-  </div>
+  <div class="row">
 
-  <div class="well priority-box">
-    <!-- JavaScript Evening -->
-    <% link_to "/javascript.html" do %>
-      <%= image_tag "jse.png", :class=>"img-responsive" %>
-    <% end %>
-    <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
-    <h3 style="text-decoration:underline;">NEXT COHORT</h3>
-    <h4 style="margin-top:-15px;">July 12 – November 12</h4>
-    <p>Looking to switch careers, but don't have the bandwidth for the immersion class? Our evening class takes students from minimal experience to job-ready in less than 6 months.</p>
-    <p><%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %></p>
-  </div>
+<!-- JavaScript Immersion -->
 
-  <div class="well priority-box">
-    <% link_to "/images/climb-promo-jsi.pdf" do %>
-      <%= image_tag "climb-ad.png", :class=>"img-responsive climb-ad-img" %>
-    <% end %>
-    
-    <div class="next-cohort">
-      <h3>Similar to a student loan, <%= link_to "Climb Credit", "https://climbcredit.co/", :target=>"_blank" %> offers AMAZING financing for Portland Code School students. <%= link_to "Contact us", "/contact" %> for more information.</h3>
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/javascriptimmersion.html" do %>
+          <%= image_tag "jsi.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING! ASK US ABOUT OUR EARLY BIRD DISCOUNT.", "/contact.html" %></h5>
+        <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript.</p>
+        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+<!-- Foundations Series -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/webdevelopmentprimer.html" do %>
+          <%= image_tag "wfseries.png", :class=>"img-responsive" %>
+        <% end %>
+          <h3 class="sr-only">Web Foundations Series</h3>
+          <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/webdevelopmentprimer.html" %></h5>
+          <p>Our Web Foundations Series is for people who have little or no experience with web technologies.</p>
+          <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+  </div>  
+
+<!-- ============== END ROW 2 ============== -->
+
+<!-- ============== BEGIN ROW 3 ============== -->
+
+  <div class="row">
+
+<!-- JavaScript Evening -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/javascript.html" do %>
+          <%= image_tag "jse.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Full-Stack JavaScript (Evening)</h3>
+        <p>Looking to switch careers, but don't have the bandwidth for the immersion class? Our evening class takes students from minimal experience to job-ready in less than 6 months.</p>
+        <%= link_to "More Info", "/javascript.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+<!-- Advanced Classes -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <%= image_tag "advanced.png", :class=>"img-responsive" %>
+        <h3 class="sr-only">Advanced Classes</h3>
+        <h4>Coming Soon:</h4>
+        <p>Angular.js, WordPress for Women, and Node.js</p>
+        <%= link_to "More Info", "/contact.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+  </div> 
+
+<!-- ============== END ROW 3 ============== -->
+
+<!-- ============== BEGIN ROW 4 ============== -->
+
+  <div class="row">
+
+  <!-- Climb Credit -->
+
+      <div class="col-md-6">
+        <div class="priority-box">
+          <% link_to "/images/climb-promo-jsi.pdf" do %>
+            <%= image_tag "climb-ad.png", :class=>"img-responsive climb-ad-img" %>
+          <% end %>
+          <div class="priority-box">
+            <h4>Similar to a student loan, <%= link_to "Climb Credit", "https://climbcredit.co/", :target=>"_blank" %> offers AMAZING financing for Portland Code School students. <%= link_to "Contact us", "/contact" %> for more information.</h4>
+          </div>
+        </div>
+      </div>
+
+  <!-- Hack + Help -->
+
+    <div class="col-md-6">
+      <div class="priority-box">
+        <% link_to "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :target=>"_blank" do %>
+          <%= image_tag "meetup_logo.png", :class=>"img-responsive hackhelp" %>
+        <% end %>
+        <h3 class="sr-only">Hack and Help</h3>
+        <br>
+        <%= link_to "Hack + Help", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
+        <p><em>Hack + Help is for anyone that is learning to code. Whether you are new to coding or experienced in coding and want to help others learn, please join us! Bring your laptop and desire to learn (and/or teach!).</em></p>
+      </div>
     </div>
   </div>
 
-  <div class="well priority-box">
-    <p>
-      <% link_to "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :target=>"_blank" do %>
-        <%= image_tag "meetup_logo.png", :class=>"img-responsive hackhelp" %>
-      <% end %>
-      <h3 class="sr-only">Hack and Help</h3>
-      <h3>Hack + Help</h3>
-      <em>Hack + Help is for anyone that is learning to code. Whether you are new to coding or experienced in coding and want to help others learn, please join us! Bring your laptop and desire to learn (and/or teach!).</em>
-    </p>
+<!-- ============== END ROW 4 ============== -->
 
-    <p>
-      <%= link_to "More Info", "http://www.meetup.com/Portland-Code-School-Learning-and-Development-Group/", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
-    </p>
-  </div>
+</div> <!-- END CONTAINER  -->
 
-  <div class="well priority-box">
-    <div class="youtube-embed .embed-responsive">
-      <iframe width="445" height="315" src="//www.youtube.com/embed/UCO11xMGO9g" allowfullscreen></iframe>
-    </div>
-    <p>
-      A video project by some of our fantastic students!
-    </p>
-  </div>
+
 
     <!-- Hack + Help -->
 <!-- <div class="col-md-6 hackhelpbox hidden-xs"></div> -->
@@ -218,4 +259,3 @@ See the file license.txt for copying permission. -->
       </em></p>
     </div> -->
   
-</div>
