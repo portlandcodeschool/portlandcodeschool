@@ -562,7 +562,7 @@ h3 {
     color: $red;
   }
   .ss-secondary-text {
-    color: grey;
+    color: gray;
     font-weight: lighter;
     font-size: .9em;
   }
@@ -618,3 +618,19 @@ h3 {
 #footer {
   height: 210px;
 }
+
+/* === MEDIA QUERIES ===*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .landing-apply-btn {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+

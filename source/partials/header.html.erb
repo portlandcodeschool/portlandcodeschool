@@ -13,11 +13,6 @@ See the file license.txt for copying permission. -->
         <% end %>
       </div>
 
-      <!-- Apply button -->
-      <div class="col-xs-5 visible-xs">
-        <%= link_to "Get Started!", "/apply.html", :class=>"btn btn-default navbar-btn apply-button" %>
-      </div>
-
       <!-- Menu button -->
       <div class="col-xs-2">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -30,7 +25,10 @@ See the file license.txt for copying permission. -->
 
       <!-- Navigation links -->
       <div class="hidden-xs col-sm-10">
-        <%= link_to "Get Started!", "/apply.html", :class=>"btn btn-default navbar-btn apply-button" %>
+        <div class="landing-apply-btn">
+          <%= link_to "Get Started!", "/apply.html", :class=>"btn btn-default navbar-btn apply-button" %>
+        </div>
+        
         <%= partial "partials/navlinks" %>
       </div>
     </div>
