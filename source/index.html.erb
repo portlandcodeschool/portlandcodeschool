@@ -25,7 +25,7 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-  <!-- UX Design -->
+<!-- UX Design -->
 
     <div class="col-md-6">
       <div class="well priority-box">
@@ -111,9 +111,24 @@ See the file license.txt for copying permission. -->
       </div>
     </div>
 
-<!-- Advanced Classes -->
+<!-- WordPress -->
 
     <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/wordpress.html" do %>
+          <%= image_tag "banners/wordpress.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">WordPress for Small Businesses</h3>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/wordpress.html" %></h5>
+        <p>Ready to make a website for your business that you can update yourself? This is an easy but thorough introduction to WordPress. Walk in with an idea, walk out with a website.</p>
+        <%= link_to "More Info", "/wordpress.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+
+<!-- Advanced Classes -->
+
+    <!-- <div class="col-md-6">
       <div class="well priority-box">
         <%= image_tag "banners/coming-soon.png", :class=>"img-responsive" %>
         <h3 class="sr-only">Advanced Classes</h3>
@@ -121,7 +136,8 @@ See the file license.txt for copying permission. -->
         <p>Angular.js, WordPress for Small Businesses, and Node.js</p>
         <%= link_to "More Info", "/contact.html", :class=>"btn btn-default big-apply-button" %>
       </div>
-    </div>
+    </div> -->
+
   </div> 
 
 <!-- ============== END ROW 3 ============== -->
