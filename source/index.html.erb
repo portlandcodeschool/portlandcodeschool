@@ -8,10 +8,17 @@ See the file license.txt for copying permission. -->
 </div>
 <div id="landing">
 
+<div class="container">
+  <div class="moving">
+    <h2>We've moved!</h2>
+    <h3>As of April 4, our new <em>and improved</em> location is: 735 SW 20th Place, Suite 230</h3>
+    <h4>Right next to the Timber's Stadium (Providence Park), 2 blocks from the Goose Hollow MAX station!</h4>
+  </div>
+</div>
   <%= image_tag "Banner-Portland_and_Mt_Hood.png", :class=>"img-responsive" %>
 
   <h1 id="tag-line">Learn to code. Change your life.</h1>
-
+  
   <!-- <div class="holiday hero-unit">
     <h1>2 weeks left to enroll in Front End Web Development or Web Foundations!</h1>
   </div> -->
@@ -26,17 +33,54 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-<!-- UX Design -->
+<!-- JavaScript Immersion -->
 
     <div class="col-md-6">
       <div class="well priority-box">
-        <% link_to "/uxdesign.html" do %>
-          <%= image_tag "banners/ux.png", :class=>"img-responsive" %>
+        <% link_to "/javascriptimmersion.html" do %>
+          <%= image_tag "banners/JSi.png", :class=>"img-responsive" %>
         <% end %>
-        <h3 class="sr-only">UX Design</h3>
-        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/uxdesign.html" %></h5>
-        <p>UX Design is a four-week introduction to the process and profession of user experience (UX) design.</p>
-        <%= link_to "More Info", "/uxdesign.html", :class=>"btn btn-default big-apply-button" %>
+        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/contact.html" %></h5>
+        <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript using Node.js,  MVC framework, and Test-Driven Development.</p>
+        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+<!-- WordPress -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/wordpress.html" do %>
+          <%= image_tag "banners/wordpress.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">WordPress for Small Businesses</h3>
+        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/wordpress.html" %></h5>
+        <p>Ready to make a website for your business that you can update yourself? This is an easy but thorough introduction to WordPress. Walk in with an idea, walk out with a website.</p>
+        <%= link_to "More Info", "/wordpress.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- ============== END ROW 1 ============== -->
+
+<!-- ============== BEGIN ROW 2 ============== -->
+
+  <div class="row">
+
+<!-- Foundations Series -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/webdevelopmentprimer.html" do %>
+          <%= image_tag "banners/wfs.png", :class=>"img-responsive" %>
+        <% end %>
+          <h3 class="sr-only">Web Foundations Series</h3>
+          <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/webdevelopmentprimer.html" %></h5>
+          <p>Our Web Foundations Series is for people who have little or no experience with web technologies.</p>
+          <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
       </div>
     </div>
 
@@ -51,42 +95,6 @@ See the file license.txt for copying permission. -->
         <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/advancedfe.html" %></h5>
         <p>Learn industry standard technologies and techniques used by practicing Front End Web Developers.</p>
         <%= link_to "More Info", "/advancedfe.html", :class=>"btn btn-default big-apply-button" %>
-      </div>
-    </div>
-
-  </div>
-
-<!-- ============== END ROW 1 ============== -->
-
-<!-- ============== BEGIN ROW 2 ============== -->
-
-  <div class="row">
-
-<!-- JavaScript Immersion -->
-
-    <div class="col-md-6">
-      <div class="well priority-box">
-        <% link_to "/javascriptimmersion.html" do %>
-          <%= image_tag "banners/JSi.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
-        <h5 style="color:red;"><%= link_to "NOW ENROLLING! ASK US ABOUT OUR EARLY BIRD DISCOUNT.", "/contact.html" %></h5>
-        <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript.</p>
-        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
-      </div>
-    </div>
-
-<!-- Foundations Series -->
-
-    <div class="col-md-6">
-      <div class="well priority-box">
-        <% link_to "/webdevelopmentprimer.html" do %>
-          <%= image_tag "banners/wfs.png", :class=>"img-responsive" %>
-        <% end %>
-          <h3 class="sr-only">Web Foundations Series</h3>
-          <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/webdevelopmentprimer.html" %></h5>
-          <p>Our Web Foundations Series is for people who have little or no experience with web technologies.</p>
-          <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
       </div>
     </div>
 
@@ -112,17 +120,17 @@ See the file license.txt for copying permission. -->
       </div>
     </div>
 
-<!-- WordPress -->
+<!-- UX Design -->
 
     <div class="col-md-6">
       <div class="well priority-box">
-        <% link_to "/wordpress.html" do %>
-          <%= image_tag "banners/wordpress.png", :class=>"img-responsive" %>
+        <% link_to "/uxdesign.html" do %>
+          <%= image_tag "banners/ux.png", :class=>"img-responsive" %>
         <% end %>
-        <h3 class="sr-only">WordPress for Small Businesses</h3>
-        <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/wordpress.html" %></h5>
-        <p>Ready to make a website for your business that you can update yourself? This is an easy but thorough introduction to WordPress. Walk in with an idea, walk out with a website.</p>
-        <%= link_to "More Info", "/wordpress.html", :class=>"btn btn-default big-apply-button" %>
+        <h3 class="sr-only">UX Design</h3>
+        <h5 style="color:red;"><%= link_to "GET MORE INFO!", "/apply.html" %></h5>
+        <p>UX Design is a four-week introduction to the process and profession of user experience (UX) design.</p>
+        <%= link_to "More Info", "/uxdesign.html", :class=>"btn btn-default big-apply-button" %>
       </div>
     </div>
 
