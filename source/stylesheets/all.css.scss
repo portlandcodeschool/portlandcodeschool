@@ -595,6 +595,12 @@ h3 {
   }
 }
 
+.apply-form .hidden-xs, 
+.apply-form .visible-xs {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* === MAILCHIMP CUSTOMIZATIONS === */
 
 #mce-EMAIL {

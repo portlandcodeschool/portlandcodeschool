@@ -18,8 +18,7 @@ See the file license.txt for copying permission. -->
 
         <h2 class="sr-only">JavaScript Immersion</h2>
 
-        <h2>Now Enrolling!</h2>
-        <h5 style="color:red;"><%= link_to "ASK US ABOUT OUR EARLY BIRD DISCOUNT!", "/contact.html", :target=>"_blank" %></h5>
+        <h3><%= link_to "Now Enrolling!", "/apply.html" %></h3>
 
         <p>
           Get over 500 hours of hands-on experience! For 13 weeks, 8 hours a day, you will learn how to BUILD FULL-STACK WEB APPLICATIONS WITH JAVASCRIPT in a collaborative classroom environment. Get real experience from expert instructors – and your peers – learning both front-end and back-end applications of JavaScript, including popular libraries and frameworks such as jQuery and Angular.js, as well as back-end technologies such as Node.js. Every web application needs JavaScript, and the demand for JavaScript developers is only growing!
@@ -37,18 +36,18 @@ See the file license.txt for copying permission. -->
         </p>
 
         <div class="next-cohort">
-          <h3 style="text-decoration:underline;">NEXT COHORT</h3>
+          <h2 style="text-decoration:underline;">NEXT COHORT</h3>
           <h4 style="margin-top:-15px;">May 4 – July 31</h4>
           <h5>
             NOTE: This cohort is extended to 13 weeks to make up for the missed classes due to holidays: May 25 (Memorial Day) and July 3 (Independence Day observed)
           </h5>
           <p>
-            <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
+            <%= link_to "Apply Now!", "/apply", :class=>"btn btn-default big-apply-button", :target=>"_blank" %>
           </p>
         </div>
 
         <p><strong>Not sure if you're ready?</strong></p>
-        <p><%= link_to "Book a time with Cris Kelly", "https://criskelly.youcanbook.me/", :target=>"_blank" %>, the director, to get all your questions answered, and start the enrollment process!</p>
+        <p><%= link_to "Contact us", "/contact", :target=>"_blank" %> to get all your questions answered!</p>
       </div>
 
       <div class="row">
@@ -108,7 +107,7 @@ See the file license.txt for copying permission. -->
           <%= partial "partials/12-week-cost-table"%>
         </p>
         <p>
-          <%= link_to "Apply Now!", "/apply.html", :class=>"btn btn-default big-apply-button" %>
+          <%= link_to "Apply Now!", "/apply", :class=>"btn btn-default big-apply-button" %>
         </p>
       </div>
     </div>
