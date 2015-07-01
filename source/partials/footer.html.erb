@@ -27,7 +27,7 @@ See the file license.txt for copying permission. -->
         <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
         <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool", :class=>"icon-spacing" %>
         <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://google.com/+Portlandcodeschool", :class=>"icon-spacing", :rel=>"publisher" %>
-        <%= link_to "<i class=\"fa fa-rss-square fa-2x\"></i>", "http://portlandcodeschool.com/blog/feed.xml", :class=>"icon-spacing", :relative=>false %>
+       <!--  <%= link_to "<i class=\"fa fa-rss-square fa-2x\"></i>", "http://portlandcodeschool.com/blog/feed.xml", :class=>"icon-spacing", :relative=>false %> -->
       </div>
 
       <!-- Partners links -->
@@ -41,31 +41,36 @@ See the file license.txt for copying permission. -->
             <%= image_tag "partners/climb-logo.png", :height=>"50px" %>
           <% end %>
 
-          <% link_to "http://vitamintalent.com/", :class=>"icon-spacing", :target=>"_blank" do %>
-            <%= image_tag "partners/vitamin-logo.png" %>
+          <% link_to "http://www.worksourceoregon.org/", :class=>"icon-spacing", :target=>"_blank" do %>
+            <%= image_tag "partners/work_source_logo_small.jpg" %>
           <% end %>
 
           <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing", :target=>"_blank" do %>
             <%= image_tag "partners/treehouse-logo.png" %>
           <% end %>
 
-          <% link_to "http://www.corsource.com/", :class=>"icon-spacing", :target=>"_blank" do %>
-            <%= image_tag "partners/corsource-logo.png" %>
-          <% end %>
-
-          <% link_to "http://www.oregon.gov/employ/pages/default.aspx", :class=>"icon-spacing", :target=>"_blank" do %>
-            <%= image_tag "partners/oed_small.png" %>
-          <% end %>
-
-          <% link_to "http://www.worksourceoregon.org/", :class=>"icon-spacing", :target=>"_blank" do %>
-            <%= image_tag "partners/work_source_logo_small.jpg" %>
-          <% end %>
         </div>
+
+        <br>
+
+        <div class="navbar-stacked">
+
+          <% link_to "http://www.pcc.edu/climb/", :class=>"icon-spacing", :target=>"_blank" do %>
+            <%= image_tag "partners/pcc-logo.png" %>
+          <% end %>
+
+        </div>
+
+
+
+
       </div>
     </div>
 
+
+
     <div class="row">
-      &copy; 2014 <%= link_to "Burnside Digital", "http://www.burnsidedigital.com/" %>
+      &copy; 2015 Portland Code School
     </div>
   </div>
 </footer>
