@@ -7,57 +7,64 @@ See the file license.txt for copying permission. -->
 
 <div class="row">
   <br>
-  <h2>Careers at Portland Code School</h2>
-  <hr>
-
-  <p>Do you love to code AND love to teach?</p>
-
-  <p>Do you love to help others experience the joy of coding?</p>
-
-  <p>Do you want to be rewarded by helping others advance their skills?</p>
-
-  <p>Our instructors know that today's programming jobs require teamwork, collaboration, lifelong learning, and mad technical skills. Our instructors work hard to help our students discover and grow these skills in themselves.</p>
-
-  <p>If you have reached the top of your field, and are ready to share your knowledge with others who are thirsty to learn what you know, <%= link_to "contact us", "/contact.html" %> today!</p>
-
-  <p>Currently, we are looking for expert instructors for the following languages:</p>
-
-  <ul>
-    <li>Android</li>
-    <li>iOS/Swift</li>
-    <li>JavaScript</li>
-    <li>Angular.js</li>
-    <li>Node.js</li>
-  </ul>
-
-  <p>Do you have an area of expertise you'd like to teach at PCS? <%= link_to "Tell us about it!", "/contact.html" %></p>
-
-  <!--  <p>At the same time, our instructors are working freelance programmers and developers, keeping up to date with the latest technologies and keeping clients happy with exceptional results.</p> -->
-
-   <!-- <p>We are always on the lookout for that rare combination of programming experience and a passion for teaching.</p> -->
-
-   <!-- <p>If you have experience in one or more of the following areas, we would love to talk to you:</p> -->
+  <div class="about-box">
+    <div class="about-us">
+      <h2>Job Opportunities at Portland Code School</h2>
+      <hr>
 
 
- <!--  <ul>
-    <li>Classroom teaching at the corporate or college level</li>
-    <li>Programming, software engineering, or web application product development</li>
-    <li>Front-end development, including HTML5, CSS3, and JavaScript, including experience with popular libraries like jQuery and Bootstrap</li>
-    <li>Mobile development, including jQuery-mobile, PhoneGap/Cordova, iOS, Android, etc.</li>
-    <li>Server-side application development in JavaScript, Ruby, or Python and experience with web application frameworks like Rails</li>
-    <li>Instructional design and curriculum development</li>
-  </ul> -->
+      <!-- iOS class info -->
+      <div class="row jumbotron">
+        <% link_to "/careers" do %>
+          <%= image_tag "banners/careers.png", :class=>"img-responsive centered" %>
+        <% end %>
 
-  <!-- <p>What you do that Portland code school will depend on the level of experience you bring and the kind of work you'd like to do. We have opportunities for:</p>
+        <h2 class="sr-only">Job Opportunities at Portland Code School</h2>
 
-  <p><strong>Lead instructors</strong> -- responsible for curriculum development, instructional design, and classroom instruction. All our lead instructors have industry experience in software engineering, programming, and web development.</p>
+        <h3>PCS is hiring!</h3>
 
-  <p><strong>Co-teachers</strong> -- practicing programmers and developers who are passionate about helping students learn in a classroom environment</p>
+        <p>Are you an expert programmer and "a natural teacher?" Do you embody these three core values: Positivity, Curiosity, and Empathy? If so, then we want to talk with you!</p>  
+        <p>Our instructors understand that today's programming jobs require teamwork, collaboration, lifelong learning, and solid technical skills. It is for this reason that we work with students on many levels – not just technically.</p>
 
-  <p><strong>Teaching assistants</strong> -- responsible for classroom facilitation and one on one student coaching. These people are most often students or beginning developers who know that teaching is one of the best ways to learn.</p>
+        <p>As they usher new people into the tech arena, our instructors also understand that their number one job is to ensure a positive learning experience for all students. At PCS, we offer a collaborative classroom environment, and we need instructors who can create a positive and productive classroom.</p>  
 
-  <p><strong>Technical Advisors/Industry experts</strong> -- Practicing programmers and developers who are visitors to the classroom to help students become aware of state-of-the-art trends and techniques</p>
+        <p><b>We are currently hiring for several part-time and full-time positions:</b></p>
 
-  <p><strong>Mentors</strong> -- Practicing programmers and developers who coach students one on one at local meet ups.</p> -->
+        <div class="next-cohort">
+          <h3 style="text-decoration:underline;">JavaScript Immersion Instructor (or Co-Instructors)</h3>
+          <h4 style="margin-top:-15px;"><%= link_to "JSi Job Description (PDF)", "/images/JSi-job-description.pdf", :target=>"_blank" %></h4>
+          <h5>Class runs August 10 – November 6</h5>
+        </div>
+
+        <div class="next-cohort">
+          <h3 style="text-decoration:underline;">JavaScript Evening Co-Instructor(s)</h3>
+          <h4 style="margin-top:-15px;"><%= link_to "JSe Job Description (PDF)", "/images/JSe-job-description.pdf", :target=>"_blank" %></h4>
+          <h5>Class runs July 13 – November 12</h5>
+        </div>
+
+        <div class="next-cohort">
+          <h3 style="text-decoration:underline;">Foundations Series Co-Instructor(s)</h3>
+          <h4 style="margin-top:-15px;"><%= link_to "Foundations Job Description (PDF)", "/images/FoundationsJobDescription.pdf", :target=>"_blank" %></h4>
+          <h5>Classes are ongoing, 4-8 weeks long</h5>
+        </div>
+
+        <div class="next-cohort">
+          <h3>If you are ready to share your knowledge with others who are hungry to learn what you know:</h3>
+          <p><%= mail_to "info@portlandcodeschool.com", "Email Us", :class=>"btn btn-default big-apply-button" %></p>
+        </div>
+
+        <p>Do you have an area of expertise you'd like to teach at PCS? <%= mail_to "info@portlandcodeschool.com", "Tell us about it!" %></p>
+
+        <!-- <div class="next-cohort">
+          <h3 style="text-decoration:underline;">Curriculum Developer(s) and/or Co-Instructor(s)</h3>
+          <h4 style="margin-top:-15px;">Various Workshops</h4>
+          <h5>Classes vary in length from 1 day to 4 weeks</h5>
+          <h5>Node, Angular, React, SQL vs. NoSQL, WordPress, UX Design, and other topics</h5>
+        </div> -->
+
+      </div> <!-- End jumbotron -->
+    </div> <!-- End about-us -->
+  </div> <!-- End about-box -->
+</div> <!-- End row -->
 
 </div>

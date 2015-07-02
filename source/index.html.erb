@@ -24,7 +24,7 @@ See the file license.txt for copying permission. -->
   </div> -->
 
   <div class="col-md-12">
-    <h2 style="text-align:center; background: yellow; margin-top:0;">PLEASE NOTE: PCS OFFICES AND CLASSES WILL BE CLOSED JULY 3-5</h2>
+    <h2 style="text-align:center; background: yellow; margin-top:0;">PLEASE NOTE: PCS OFFICE AND CLASSES WILL BE CLOSED JULY 3-5</h2>
   </div>
 
 </div>
@@ -180,7 +180,7 @@ See the file license.txt for copying permission. -->
 
   <div class="row">
 
-  <!-- UX Design -->
+<!-- UX Design -->
 
     <div class="col-md-6">
       <div class="well priority-box">
@@ -191,6 +191,20 @@ See the file license.txt for copying permission. -->
         <h5 style="color:red;"><%= link_to "NOW ENROLLING!", "/uxdesign" %></h5>
         <p>This course is a four-week introduction to the process and profession of user experience (UX) design. Pulling in expert UX professionals as guest speakers, you will get ...</p>
         <%= link_to "More Info", "/uxdesign.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+<!-- Careers -->
+
+    <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/careers" do %>
+          <%= image_tag "banners/careers.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Careers at PCS</h3>
+        <h5 style="color:red;"><%= link_to "NOW HIRING!", "/careers" %></h5>
+        <p>Are you an expert programmer and "a natural teacher?" Do you embody these three core values: Positivity, Curiosity, and Empathy? If so, then we want to talk with you!</p>    
+        <%= link_to "More Info", "/careers", :class=>"btn btn-default big-apply-button" %>
       </div>
     </div>
 

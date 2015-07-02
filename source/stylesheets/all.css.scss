@@ -114,7 +114,10 @@ header, footer {
 footer {
   &.navbar, &.navbar-fixed-top, &.navbar-default {
     background-color: $dark-teal;
-  }
+  } 
+}
+#footer {
+  min-height: 300px;
 }
 
 .hidden-xs {
@@ -281,6 +284,13 @@ header, footer {
     color: blue;
   }
 }
+
+/* === CAREERS PAGE === */
+
+#job-list li {
+  list-style: none;
+}
+
 
 /* === JAVASCRIPT IMMERSION === */
 .tech-list li {

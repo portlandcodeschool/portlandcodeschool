@@ -21,13 +21,16 @@ See the file license.txt for copying permission. -->
       <!-- Social media buttons -->
       <div class="col-md-4">
         <br>
-        <br>
-        <br>
         <%= link_to "<i class=\"fa fa-github-square fa-2x\"></i>", "http://GitHub.com/portlandcodeschool", :class=>"icon-spacing" %>
         <%= link_to "<i class=\"fa fa-twitter-square fa-2x\"></i>", "http://twitter.com/pdxcodeschool", :class=>"icon-spacing" %>
         <%= link_to "<i class=\"fa fa-facebook-square fa-2x\"></i>", "https://www.facebook.com/PortlandCodeSchool", :class=>"icon-spacing" %>
         <%= link_to "<i class=\"fa fa-google-plus-square fa-2x\"></i>", "https://google.com/+Portlandcodeschool", :class=>"icon-spacing", :rel=>"publisher" %>
        <!--  <%= link_to "<i class=\"fa fa-rss-square fa-2x\"></i>", "http://portlandcodeschool.com/blog/feed.xml", :class=>"icon-spacing", :relative=>false %> -->
+
+       <div class="row">
+         &copy; 2015 Portland Code School
+       </div>
+
       </div>
 
       <!-- Partners links -->
@@ -36,41 +39,38 @@ See the file license.txt for copying permission. -->
           <strong>Partners</strong>
         </div>
         <div class="navbar-stacked">
-
           <% link_to "https://climbcredit.co/portlandcodeschool", :class=>"icon-spacing", :target=>"_blank" do %>
             <%= image_tag "partners/climb-logo.png", :height=>"50px" %>
           <% end %>
-
-          <% link_to "http://www.worksourceoregon.org/", :class=>"icon-spacing", :target=>"_blank" do %>
-            <%= image_tag "partners/work_source_logo_small.jpg" %>
+          <% link_to "http://www.bitloremobile.com/portland92815/", :class=>"icon-spacing", :target=>"_blank" do %>
+            <%= image_tag "partners/bitlore-logo.png" %>
           <% end %>
-
-          <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing", :target=>"_blank" do %>
-            <%= image_tag "partners/treehouse-logo.png" %>
-          <% end %>
-
         </div>
 
         <br>
 
         <div class="navbar-stacked">
+          <% link_to "https://www.bloc.io/", :class=>"icon-spacing", :target=>"_blank" do %>
+            <%= image_tag "partners/bloc-logo-white-100.png" %>
+          <% end %>
+          <% link_to "http://teamtreehouse.com/", :class=>"icon-spacing", :target=>"_blank" do %>
+            <%= image_tag "partners/treehouse-logo.png" %>
+          <% end %>
+          <% link_to "http://www.worksourceoregon.org/", :class=>"icon-spacing", :target=>"_blank" do %>
+            <%= image_tag "partners/work_source_logo_small.jpg" %>
+          <% end %>
+        </div>
 
+        <br>
+
+        <div class="navbar-stacked">
           <% link_to "http://www.pcc.edu/climb/", :class=>"icon-spacing", :target=>"_blank" do %>
             <%= image_tag "partners/pcc-logo.png" %>
           <% end %>
-
         </div>
 
+      </div> <!-- End col-md-4 -->
+    </div> <!-- End row -->
 
-
-
-      </div>
-    </div>
-
-
-
-    <div class="row">
-      &copy; 2015 Portland Code School
-    </div>
   </div>
 </footer>
