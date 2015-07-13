@@ -1,5 +1,5 @@
 ---
-title: All Classes
+title: All PCS Classes
 ---
 
 <!-- Copyright (c) 2013, 2014 ICRL
@@ -7,23 +7,30 @@ See the file license.txt for copying permission. -->
 
 <%= partial "partials/classnavlinks" %>
 
-<h3>Build Your Skills:</h3>
-<%= partial "partials/mobile-ios" %>
-<hr>
-<%= partial "partials/mobile-phonegap" %>
-<hr>
-<%= partial "partials/datavisualization" %>
-<hr>
-<hr>
+<% link_to "/webdevelopmentprimer" do %>
+  <%= image_tag "banners/wfs.png", :class=>"img-responsive centered" %>
+<% end %>
 
-<h3>First Time Coders:</h3>
-<%= partial "partials/webfoundations" %>
-<hr>
-<hr>
+<% link_to "/mobile-ios" do %>
+  <%= image_tag "banners/ios.png", :class=>"img-responsive centered" %>
+<% end %>
 
-<h3>Become a Junior Developer:</h3>
-<%= partial "partials/frontend" %>
-<hr>
-<%= partial "partials/javascript" %>
-<hr>
-<%= partial "partials/javascriptimmersion.html" %>
+<% link_to "/javascriptimmersion" do %>
+  <%= image_tag "banners/JSi.png", :class=>"img-responsive centered" %>
+<% end %>
+
+<% link_to "/advancedfe" do %>
+  <%= image_tag "banners/afe.png", :class=>"img-responsive centered" %>
+<% end %>
+
+<% link_to "/uxdesign" do %>
+  <%= image_tag "banners/ux.png", :class=>"img-responsive centered" %>
+<% end %>
+
+<% link_to "/javascript" do %>
+  <%= image_tag "banners/JSe.png", :class=>"img-responsive centered" %>
+<% end %>
+
+<% link_to "/js-ruby-rails" do %>
+  <%= image_tag "banners/rails.png", :class=>"img-responsive centered" %>
+<% end %>
