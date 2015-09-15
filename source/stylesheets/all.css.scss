@@ -273,6 +273,17 @@ header, footer {
 .priority-box img {
   margin: 0 auto;
 }
+.row .intro-priority-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.intro-priority-box {
+  background: #d8d8d8;
+  border-radius: 5px;
+  .col-md-6 {
+    margin-top: -15px;
+  }
+}
 #tag-line {
   text-align: center;
 }
@@ -365,6 +376,9 @@ header, footer {
 
 .primer-january {
   background-color:rgba(99, 145, 139, 0.5);
+}
+.intro-img-box {
+  margin-bottom: -20px;
 }
 
 /* === TESTIMONIALS === */

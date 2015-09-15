@@ -78,34 +78,37 @@ See the file license.txt for copying permission. -->
   <div class="row">
 
 <!-- Foundations Series -->
-
-    <div class="col-md-6">
-      <div class="well priority-box">
-        <% link_to "/webdevelopmentprimer.html" do %>
-          <%= image_tag "banners/wfs.png", :class=>"img-responsive" %>
-        <% end %>
-          <h3 class="sr-only">Web Foundations Series</h3>
-          <h5 style="color:red;"><%= link_to "ENROLL IN BOTH CLASSES AND RECEIVE A $100 DISCOUNT!", "/webdevelopmentprimer.html" %></h5>
-          <p>Our Web Foundations Series is for people who have little or no experience with web technologies. Take the Primer Basic to get your toes wet, or take the whole series...</p>
-          <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
+    <div class="col-md-12 intro-priority-box">
+    <h1>Academy Introduction Series</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well priority-box">
+            <% link_to "/webdevelopmentprimer.html" do %>
+              <%= image_tag "banners/intro-pwd.png", :class=>"img-responsive" %>
+            <% end %>
+              <h3 class="sr-only">Web Foundations Series</h3>
+              <h5 style="color:red;">The class formerly known as "PRIMER BASIC"</h5>
+              <p>Our Intro to Web Development Series is for people who have little or no experience with web technologies. Take this intro class to get your toes wet...</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well priority-box">
+            <% link_to "/webdevelopmentprimer.html" do %>
+              <%= image_tag "banners/intro-mwd.png", :class=>"img-responsive" %>
+            <% end %>
+              <h3 class="sr-only">Web Foundations Series</h3>
+              <h5 style="color:red;">The class formerly known as "PRIMER PRO"</h5>
+              <p>Now that you can build a basic website, advance your skills by learning responsive design tools and techniques, and get introduced to the power of JavaScript!</p>
+          </div>
+        </div>
       </div>
-    </div>
-
-<!-- JavaScript Immersion -->
-
-    <div class="col-md-6">
-      <div class="well priority-box">
-        <% link_to "/javascriptimmersion.html" do %>
-          <%= image_tag "banners/JSi.png", :class=>"img-responsive" %>
-        <% end %>
-        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
-        <h5 style="color:red;"><%= link_to "Now accepting applications for 2016!", "/apply" %></h5>
-        <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript using Node.js,  MVC framework, and Test-Driven Development.</p>
-        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
-      </div>
+      <%= link_to "More Info", "/webdevelopmentprimer.html", :class=>"btn btn-default big-apply-button" %>
     </div>
 
   </div>
+
+
+
 
   <!-- ============== BEGIN ROW 2 ============== -->
 
@@ -193,9 +196,25 @@ See the file license.txt for copying permission. -->
       </div>
     </div>
 
-<!-- Careers -->
+<!-- JavaScript Immersion -->
 
     <div class="col-md-6">
+      <div class="well priority-box">
+        <% link_to "/javascriptimmersion.html" do %>
+          <%= image_tag "banners/JSi.png", :class=>"img-responsive" %>
+        <% end %>
+        <h3 class="sr-only">Full-Stack JavaScript (Immersion)</h3>
+        <h5 style="color:red;"><%= link_to "Now accepting applications for 2016!", "/apply" %></h5>
+        <p>Get over 500 hours of hands-on experience, building full-stack web applications with JavaScript using Node.js,  MVC framework, and Test-Driven Development.</p>
+        <%= link_to "More Info", "/javascriptimmersion.html", :class=>"btn btn-default big-apply-button" %>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Careers -->
+
+<!--     <div class="col-md-6">
       <div class="well priority-box">
         <% link_to "/careers" do %>
           <%= image_tag "banners/careers.png", :class=>"img-responsive" %>
@@ -207,7 +226,7 @@ See the file license.txt for copying permission. -->
       </div>
     </div>
 
-  </div>
+  </div> -->
 
 <!-- ============== END ROW 5 ============== -->
 

@@ -7,49 +7,64 @@ See the file license.txt for copying permission. -->
   <div class="about-box">
 
     <div class="about-us">
-      <h2>Web Foundations Series</h2>
+      <h2>Intro to Web Development Series</h2>
       <hr>
 
       <!-- Web Development Primer class info -->
       <div class="row jumbotron">
-        <% link_to "/webdevelopmentprimer.html" do %>
-          <%= image_tag "banners/wfs.png", :class=>"img-responsive centered" %>
-        <% end %>
+          <div class="col-md-6">
+            <div class="well priority-box">
+              <% link_to "/webdevelopmentprimer.html" do %>
+                <%= image_tag "banners/intro-pwd.png", :class=>"img-responsive" %>
+              <% end %>
+                <h3 class="sr-only">Web Foundations Series</h3>
+                <h5 style="color:red;">The class formerly known as "PRIMER BASIC"</h5>
+            </div>
+          </div>
+            <div class="col-md-6">
+              <div class="well priority-box">
+                <% link_to "/webdevelopmentprimer.html" do %>
+                  <%= image_tag "banners/intro-mwd.png", :class=>"img-responsive" %>
+                <% end %>
+                  <h3 class="sr-only">Web Foundations Series</h3>
+                  <h5 style="color:red;">The class formerly known as "PRIMER PRO"</h5>
+              </div>
+            </div>
 
         <h2 class="sr-only">Web Foundations Series</h2>
 
         <h3><%= link_to "Now Enrolling!", "/enroll.html" %></h2>
 
         <p>
-          Get your very first taste of tech! This <%= link_to "two part program", "http://portlandcodeschool.github.io/primer" %> is for people who are ready to explore the field of web development and learn some of the industry standard skills and tools.
+          Get your very first taste of tech! This <%= link_to "two part program", "http://portlandcodeschool.github.io/primer", :target=>"_blank" %> is for people who are ready to explore the field of web development and learn some of the industry standard skills and tools.
         </p>  
         <p>
-          Take the Primer Basic to get your toes wet, or take the whole series to springboard farther into the exciting world of code!
+          Take the Intro to Web Development class to get your toes wet, or take the two-part series to springboard farther into the exciting world of code!
         </p>
 
         <ul>
-          <li><strong>Primer Basic</strong> - In the first class you will learn the very basics of building websites in a fun, collaborative environment using HTML, CSS and GitHub. This class assumes students have little or no experience with web technologies.</li>
-          <li><strong>Primer Pro</strong> - create interactive and responsive websites for small businesses using advanced tools such as JavaScript/jQuery and Bootstrap. Students also get the opportunity to experience an exclusive tour of one of Portland's leading tech companies. This second class helps you understand the world of coding as a professional web developer before entering our advanced, career-track classes (such as Full Stack JavaScript).</li>
+          <li><strong>Intro to Web Development</strong> - In the first class you will learn the very basics of building websites in a fun, collaborative environment using HTML, CSS and GitHub. This class assumes students have little or no experience with web technologies.</li>
+          <li><strong>Mobile Web Design and Development</strong> - create interactive and responsive websites for small businesses using advanced tools such as JavaScript/jQuery and Bootstrap. Students also get the opportunity to experience an exclusive tour of one of Portland's leading tech companies. This second class helps you understand the world of coding as a professional web developer before entering our advanced, career-track classes (such as Full Stack JavaScript).</li>
         </ul>
 
         <p>
-          Visit the <%= link_to "class website", "http://portlandcodeschool.github.io/primer" %> for a detailed look at the curriculum, and to read student testimonials. Get your first 100 hours of coding with our Web Foundations Series! 
+          Visit the <%= link_to "class website", "http://portlandcodeschool.github.io/primer", :target=>"_blank" %> for a detailed look at the curriculum, and to read student testimonials. Get your first 100 hours of coding with our Intro to Web Development Series! 
         </p>
 
         <br>
 
         <div class="next-cohort">
-          <h2 style="text-decoration:underline;">NEXT WEB FOUNDATIONS SERIES</h2>
-          <h3>PRIMER BASIC</h3>
+          <h2 style="text-decoration:underline;">NEXT INTRO SERIES</h2>
+          <h3>Intro to Web Development</h3>
           <h3 style="margin-top:-15px;">September 29 – October 22</h3>
           <h4 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h4>
-          <h3>PRIMER PRO</h3>
+          <h3>Mobile Web Design and Development</h3>
           <h3 style="margin-top:-15px;">October 27 – November 19</h3>
           <h4 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h4>
           <p>
             <%= link_to "Enroll Now!", "/enroll.html", :class=>"btn btn-default big-apply-button" %>
           </p>
-          <p><em>NOTE: The current Series is underway, and you may test in to the Primer Pro (second class) that runs August 4 – August 27. <%= mail_to "info@portlandcodeschool.com/", "Email us" %> if you are interested.</em></p>
+          <!-- <p><em>NOTE: The current Series is underway, and you may test in to the Primer Pro (second class) that runs August 4 – August 27. <%= mail_to "info@portlandcodeschool.com/", "Email us" %> if you are interested.</em></p> -->
         </div>  
 
         <br>
@@ -57,20 +72,20 @@ See the file license.txt for copying permission. -->
         <ul class="list-group">
           <li class="list-group-item">
             <span class="badge">$495</span>
-            Primer Basic
+            Intro to Web Development
           </li>
           <li class="list-group-item">
             <span class="badge">$595</span>
-            Primer Pro
+            Mobile Web Design and Development
           </li>
           <li class="list-group-item">
             <span class="badge">$990</span>
-            Web Foundations Series (Primer Basic + Primer Pro)<span class="asterisk">*</span>
+            Intro Series (Intro to Web Development &amp; Mobile Web Development)<span class="asterisk">*</span>
           </li>
         </ul>
 
         <p>
-          <span class="asterisk">*</span><em>Receive a $100 discount when you sign up for the entire series!</em> However, you may also sign up for the Primer Basic, and add the Primer Pro class later at the regular tuition price.  
+          <span class="asterisk">*</span><em>Receive a $100 discount when you sign up for the entire series!</em> However, you may also sign up for the Intro to Web Development, and add the Mobile Web Design and Development class later at the regular tuition price.  
         </p>
 
         <br>
