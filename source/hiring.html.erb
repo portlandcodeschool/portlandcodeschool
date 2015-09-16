@@ -23,13 +23,19 @@ title: Hiring our Graduates
       <br>
       <%= image_tag "/images/in-class.jpg", :class=>"img-responsive" %>
     </div>
-  </div>
+
+  </div> <!-- end row -->
 
   <div class="row">
 
     <div class="col-md-6">
+      <br>
+      <%= image_tag "/images/intern_photo.jpg", :class=>"img-responsive" %>
+    </div>
+
+    <div class="col-md-6">
       <h3>
-        From graduates of our Full Stack JavaScript classes, you can expect:
+        From graduates of our Full Stack JavaScript immersion class, you can expect:
       </h3>
       <ul>
         <li>500 hours of collaborative development with JavaScript</li>
@@ -37,16 +43,27 @@ title: Hiring our Graduates
         <li>Backbone experience on the front end</li>
         <li>Data persistence (PostgreSQL or NoSQL)</li>
         <li>Mocha for TDD</li>
-        <li>GitHub for version control</li>
-        <li>Experience with GitHub as a collaborative tool</li>
+        <li>GitHub experience, as both a collaborative tool and for version control</li>
         <li>Ability and desire to learn new technologies</li>
         <li>A positive, contributing member of your team</li>
       </ul>
     </div>
 
-    <div class="col-md-6">
+  </div> <!-- end row -->
+
+  <hr>
+
+  <div class="row">
+
+  <div class="col-md-12 hiring-bottom-text">
+    <h3>Are you ready for some talented, highly motivated junior devs and interns?</h3>
+    <p>Contact <%= mail_to "ckelly@portlandcodeschool.com", "Cris Kelly", :subject=>"Hiring a PCS Grad" %>, Director of Business Development, for more details; or click here:</p>
+    <%= mail_to "info@portlandcodeschool.com", "Hire a dev!", :class=>"btn btn-default big-apply-button", :subject=>"Hiring a PCS Grad" %>
+  </div>    
+
+    <!-- <div class="col-md-6">
       <h3>
-        What our graduates will expect if hired into an internship
+        What our graduates will expect if hired into an internship:
       </h3>
       <ul>
         <li>Minimum 2 to 3 months in duration</li>
@@ -57,24 +74,12 @@ title: Hiring our Graduates
         <li>To be a valued, contributing member of the team</li>
         <li>Work on projects that matter to the company</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 
-  <hr>
 
-  <div class="row">
 
-    <div class="col-md-6">
-      <br>
-      <%= image_tag "/images/intern_photo.jpg", :class=>"img-responsive" %>
-    </div>
 
-    <div class="col-md-6">
-      <h3>Are you ready for some talented, highly motivated junior devs and interns?</h3>
-      <p>Contact <%= mail_to "ckelly@portlandcodeschool.com", "Cris Kelly", :subject=>"Hiring a PCS Grad" %>, director of PCS, for more details.</p>
-      <%= mail_to "ckelly@portlandcodeschool.com", "Hire a dev!", :class=>"btn btn-default big-apply-button", :subject=>"Hiring a PCS Grad" %>
-    </div>
 
-  </div>
 </div>
 
