@@ -8,6 +8,9 @@ See the file license.txt for copying permission. -->
       <%= link_to "About <b class=\"caret\"></b>", "/about.html", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
       <ul class="dropdown-menu" id="dropdown">
         <li>
+          <%= link_to "Contact", "/contact" %>
+        </li>
+        <li>
           <%= link_to "About PCS", "/about" %>
         </li>
         <li>
@@ -16,9 +19,6 @@ See the file license.txt for copying permission. -->
         <li>
           <%= link_to "FAQ", "/faq" %>
         </li>
-<!--         <li>
-          <%= link_to "Partnership with PCC", "/pcc" %>
-        </li> -->
         <li>
           <%= link_to "Friends of PCS", "/friendsofpcs" %>
         </li>
@@ -40,14 +40,14 @@ See the file license.txt for copying permission. -->
       <%= link_to "Classes <b class=\"caret\"></b>", "/classes", :data=>{:toggle=>"dropdown"}, :class=>"dropdown-toggle" %>
       <%= partial "partials/classdropdown" %>
     </li>
-    <li>
+    <!-- <li>
       <%= link_to "Contact", "/contact" %>
+    </li> -->
+    <li>
+      <%= link_to "Employers", "/hiring" %>
     </li>
     <li>
-      <%= link_to "Careers", "/careers" %>
-    </li>
-    <li>
-      <%= link_to "Events", "/calendar" %>
+      <%= link_to "FAQ", "/faq" %>
     </li>
     <!-- <li>
       <%= link_to "Blog", "/blog" %>

@@ -226,6 +226,10 @@ footer {
 .logo {
   max-height: 66px;
   max-width: 165px;
+  transition: .5s all;
+}
+.logo:hover {
+  opacity: .4;
 }
 
 .row {
