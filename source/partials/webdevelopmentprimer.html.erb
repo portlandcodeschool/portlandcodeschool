@@ -7,7 +7,7 @@ See the file license.txt for copying permission. -->
   <div class="about-box">
 
     <div class="about-us">
-      <h2>Intro to Web Development Series</h2>
+      <h2>Introduction to Web Development Series</h2>
       <hr>
 
       <!-- Web Development Primer class info -->
@@ -33,13 +33,12 @@ See the file license.txt for copying permission. -->
 
         <h2 class="sr-only">Web Foundations Series</h2>
 
-        <h3><%= link_to "Now Enrolling!", "/enroll.html" %></h2>
+        <h3><%= link_to "Now offered at two campus locations: PCC Climb Center and Portland Code School!", "#two-locations" %></h3>
+
+        <h2>Intro to Web Development Series</h2>
 
         <p>
-          Get your very first taste of tech! This <%= link_to "two part program", "http://portlandcodeschool.github.io/primer", :target=>"_blank" %> is for people who are ready to explore the field of web development and learn some of the industry standard skills and tools.
-        </p>  
-        <p>
-          Take the Intro to Web Development class to get your toes wet, or take the two-part series to springboard farther into the exciting world of code!
+          Remove the mystery of coding, and get your very first taste of tech! This <%= link_to "two part program", "http://portlandcodeschool.github.io/primer", :target=>"_blank" %> is for people who are ready to explore the field of web development and learn some of the industry standard skills and tools. Take the Intro to Web Development class to get your toes wet, or take the two-part series to springboard farther into the exciting world of code!
         </p>
 
         <ul>
@@ -51,19 +50,52 @@ See the file license.txt for copying permission. -->
           Visit the <%= link_to "class website", "http://portlandcodeschool.github.io/primer", :target=>"_blank" %> for a detailed look at the curriculum, and to read student testimonials. Get your first 100 hours of coding with our Intro to Web Development Series! 
         </p>
 
+        <h3><%= link_to "Now offered at two campus locations: PCC Climb Center and Portland Code School!", "#two-locations" %></h3>
+
         <br>
 
-        <div class="next-cohort">
+        <div class="next-cohort" id="two-locations">
           <h2 style="text-decoration:underline;">NEXT INTRO SERIES</h2>
-          <h3>Intro to Web Development</h3>
-          <h3 style="margin-top:-15px;">September 29 – October 22</h3>
-          <h4 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h4>
-          <h3>Mobile Web Design and Development</h3>
-          <h3 style="margin-top:-15px;">October 27 – November 19</h3>
-          <h4 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h4>
-          <p>
-            <%= link_to "Enroll Now!", "/enroll.html", :class=>"btn btn-default big-apply-button" %>
-          </p>
+          <h3>Now offered at two locations in Portland:</h3>
+          <div class="col-md-6">
+            <h3 style="color:red;">PCC Climb Center</h3>
+            <div class="well priority-box">
+              <% link_to "http://climb.pcc.edu/LearntoCode", :target=>"_blank" do %>
+                <%= image_tag "partners/PCC-logo-500.png", :class=>"img-responsive" %>
+              <% end %>
+                <h3 class="sr-only">Web Foundations Series</h3>
+                <hr style="border-bottom: 1px solid black;">
+                <h3>Intro to Web Development</h3>
+                <h4 style="margin-top:-15px;">October 12 - November 4</h4>
+                <h5 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h5>
+                <h3>Mobile Web Design and Development</h3>
+                <h4 style="margin-top:-15px;">November 9 - December 7</h4>
+                <h5 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h5>
+                <hr style="border-bottom: 1px solid black;">
+                <p><%= link_to "Enroll at PCC", "http://climb.pcc.edu/LearntoCode", :class=>"btn btn-default big-apply-button", :target=>"_blank" %></p>
+            </div>
+          </div>
+            <div class="col-md-6">
+              <h3 style="color:red;">Portland Code School</h3>
+              <div class="well priority-box">
+                <% link_to "/" do %>
+                  <%= image_tag "logo_color.png", :class=>"img-responsive" %>
+                <% end %>
+                <h3 class="sr-only">Web Foundations Series</h3>
+                <hr style="border-bottom: 1px solid black;">
+                <h3>Intro to Web Development</h3>
+                <h4 style="margin-top:-15px;">September 29 – October 22</h4>
+                <h5 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h5>
+                <h3>Mobile Web Design and Development</h3>
+                <h4 style="margin-top:-15px;">October 27 – November 19</h4>
+                <h5 style="margin-top:-15px;">Tuesday/Thursday (6pm - 9pm)</h5>
+                <hr style="border-bottom: 1px solid black;">
+                <p><%= link_to "Enroll at PCS", "/enroll.html", :class=>"btn btn-default big-apply-button" %></p>
+              </div>
+            </div>
+
+            <p>Questions? <%= mail_to "info@portlandcodeschool.com", "Please email us." %></p>
+
           <!-- <p><em>NOTE: The current Series is underway, and you may test in to the Primer Pro (second class) that runs August 4 – August 27. <%= mail_to "info@portlandcodeschool.com/", "Email us" %> if you are interested.</em></p> -->
         </div>  
 
@@ -86,12 +118,6 @@ See the file license.txt for copying permission. -->
 
         <p>
           <span class="asterisk">*</span><em>Receive a $100 discount when you sign up for the entire series!</em> However, you may also sign up for the Intro to Web Development, and add the Mobile Web Design and Development class later at the regular tuition price.  
-        </p>
-
-        <br>
-
-        <p>
-          <%= link_to "Enroll Now!", "/enroll.html", :class=>"btn btn-default big-apply-button" %>
         </p>
 
       </div>
